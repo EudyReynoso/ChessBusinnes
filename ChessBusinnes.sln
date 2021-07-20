@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{06C51DFD-0FF8-41E0-AF2A-CF3CADC61B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidades", "CapaEntidades\CapaEntidades.csproj", "{A1F3E90A-1538-4967-8A18-375FE38734A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloNegocio", "CapaModeloNegocio\CapaModeloNegocio.csproj", "{2F90281D-886D-4FE9-8FEC-1ACB1138A1F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgReadme", "imgReadme", "{6BFF7C51-EE41-4621-8785-F23406C7459F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\OneDrive\Escritorio\ImgEmpleado.PNG = ..\..\..\OneDrive\Escritorio\ImgEmpleado.PNG
+		..\..\..\OneDrive\Escritorio\ImgEstadoDeLeche.PNG = ..\..\..\OneDrive\Escritorio\ImgEstadoDeLeche.PNG
+		..\..\..\OneDrive\Escritorio\ImgNewSuplidor.PNG = ..\..\..\OneDrive\Escritorio\ImgNewSuplidor.PNG
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06C51DFD-0FF8-41E0-AF2A-CF3CADC61B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C51DFD-0FF8-41E0-AF2A-CF3CADC61B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C51DFD-0FF8-41E0-AF2A-CF3CADC61B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C51DFD-0FF8-41E0-AF2A-CF3CADC61B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F3E90A-1538-4967-8A18-375FE38734A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F3E90A-1538-4967-8A18-375FE38734A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F3E90A-1538-4967-8A18-375FE38734A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F3E90A-1538-4967-8A18-375FE38734A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F90281D-886D-4FE9-8FEC-1ACB1138A1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F90281D-886D-4FE9-8FEC-1ACB1138A1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F90281D-886D-4FE9-8FEC-1ACB1138A1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F90281D-886D-4FE9-8FEC-1ACB1138A1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C42FEEF-5388-4013-8CCC-4737677428D3}
+	EndGlobalSection
+EndGlobal
