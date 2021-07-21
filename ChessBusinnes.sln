@@ -11,13 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloNegocio", "CapaMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{6974AEBC-C6E1-4CE3-AAAB-A997DF69C512}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgReadme", "imgReadme", "{6BFF7C51-EE41-4621-8785-F23406C7459F}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\OneDrive\Escritorio\ImgEmpleado.PNG = ..\..\..\OneDrive\Escritorio\ImgEmpleado.PNG
-		..\..\..\OneDrive\Escritorio\ImgEstadoDeLeche.PNG = ..\..\..\OneDrive\Escritorio\ImgEstadoDeLeche.PNG
-		..\..\..\OneDrive\Escritorio\ImgNewSuplidor.PNG = ..\..\..\OneDrive\Escritorio\ImgNewSuplidor.PNG
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
