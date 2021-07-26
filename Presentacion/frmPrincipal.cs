@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaModeloNegocio;
 using MaterialSkin;
@@ -22,7 +15,7 @@ namespace Presentacion
         private bool Editar = false;
         private bool EditarSulidor = false;
         private bool EditarEntrada = false;
-       private readonly MaterialSkinManager materialSkinManager;
+        private readonly MaterialSkinManager materialSkinManager;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -263,8 +256,6 @@ namespace Presentacion
             }
         }
 
-
-
         private void btnEmpleadoEliminar_Click(object sender, EventArgs e)
         {
             if (dataGridSuplidor.SelectedRows.Count > 0)
@@ -361,6 +352,8 @@ namespace Presentacion
                     entradaDeLeche.EditarEntradaDeLeche(entradaDeLeche1);
                     Refrescar();
                     RefrescarEntrdas();
+                    MaterialMessageBox.Show("Editado correctamente");
+                    EditarEntrada = false;
                 }
             }
         }

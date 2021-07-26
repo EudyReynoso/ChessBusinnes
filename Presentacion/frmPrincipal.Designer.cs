@@ -28,22 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle271 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle272 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle273 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle274 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle275 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle276 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle277 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle278 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle279 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle280 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabsContent = new MaterialSkin.Controls.MaterialTabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.Empleado = new System.Windows.Forms.TabPage();
             this.DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -93,23 +89,14 @@
             this.dataGridSuplidor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.Creadores = new System.Windows.Forms.TabPage();
-            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.TabsContent.SuspendLayout();
             this.Inicio.SuspendLayout();
-            this.materialCard1.SuspendLayout();
             this.Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.Entrada.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEntradasDELeche)).BeginInit();
             this.suplidor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).BeginInit();
-            this.Creadores.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabsContent
@@ -121,7 +108,6 @@
             this.TabsContent.Controls.Add(this.Creadores);
             this.TabsContent.Depth = 0;
             this.TabsContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabsContent.ImageList = this.imageList1;
             this.TabsContent.Location = new System.Drawing.Point(3, 64);
             this.TabsContent.MouseState = MaterialSkin.MouseState.HOVER;
             this.TabsContent.Multiline = true;
@@ -134,40 +120,13 @@
             // Inicio
             // 
             this.Inicio.BackColor = System.Drawing.Color.White;
-            this.Inicio.Controls.Add(this.materialCard1);
             this.Inicio.Controls.Add(this.materialLabel6);
-            this.Inicio.ImageKey = "icons8_home_32px.png";
-            this.Inicio.Location = new System.Drawing.Point(4, 39);
+            this.Inicio.ImageKey = "(ninguno)";
+            this.Inicio.Location = new System.Drawing.Point(4, 22);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1137, 569);
+            this.Inicio.Size = new System.Drawing.Size(1137, 586);
             this.Inicio.TabIndex = 5;
             this.Inicio.Text = "Inicio";
-            // 
-            // materialCard1
-            // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.materialLabel7);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(187, 122);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(755, 103);
-            this.materialCard1.TabIndex = 1;
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
-            this.materialLabel7.Location = new System.Drawing.Point(35, 14);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(679, 79);
-            this.materialLabel7.TabIndex = 0;
-            this.materialLabel7.Text = resources.GetString("materialLabel7.Text");
             // 
             // materialLabel6
             // 
@@ -201,11 +160,11 @@
             this.Empleado.Controls.Add(this.materialLabel3);
             this.Empleado.Controls.Add(this.materialLabel2);
             this.Empleado.Controls.Add(this.materialLabel1);
-            this.Empleado.ImageKey = "new_property_80px.png";
-            this.Empleado.Location = new System.Drawing.Point(4, 39);
+            this.Empleado.ImageKey = "(ninguno)";
+            this.Empleado.Location = new System.Drawing.Point(4, 22);
             this.Empleado.Name = "Empleado";
             this.Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleado.Size = new System.Drawing.Size(1137, 569);
+            this.Empleado.Size = new System.Drawing.Size(1137, 586);
             this.Empleado.TabIndex = 1;
             this.Empleado.Text = "Nuevo Empleado";
             // 
@@ -215,48 +174,48 @@
             this.DataGrid.AllowUserToDeleteRows = false;
             this.DataGrid.AllowUserToResizeColumns = false;
             this.DataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle271.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle271;
             this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGrid.BackgroundColor = System.Drawing.Color.White;
             this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle272.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle272.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle272.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle272.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle272.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle272.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle272.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle272;
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle273.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle273.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle273.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle273.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle273.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle273.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle273.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle273;
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGrid.DoubleBuffered = true;
             this.DataGrid.EnableHeadersVisualStyles = false;
             this.DataGrid.GridColor = System.Drawing.Color.White;
             this.DataGrid.HeaderBgColor = System.Drawing.Color.White;
             this.DataGrid.HeaderForeColor = System.Drawing.Color.Black;
-            this.DataGrid.Location = new System.Drawing.Point(3, 320);
+            this.DataGrid.Location = new System.Drawing.Point(3, 337);
             this.DataGrid.MultiSelect = false;
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
             this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle274.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle274.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle274.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle274.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle274.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle274.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle274.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle274;
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -326,7 +285,7 @@
             this.btnEditar.Depth = 0;
             this.btnEditar.HighEmphasis = true;
             this.btnEditar.Icon = null;
-            this.btnEditar.Location = new System.Drawing.Point(769, 201);
+            this.btnEditar.Location = new System.Drawing.Point(629, 214);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEditar.Name = "btnEditar";
@@ -347,7 +306,7 @@
             this.btnEliminar.Depth = 0;
             this.btnEliminar.HighEmphasis = true;
             this.btnEliminar.Icon = null;
-            this.btnEliminar.Location = new System.Drawing.Point(495, 201);
+            this.btnEliminar.Location = new System.Drawing.Point(364, 214);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
@@ -369,7 +328,7 @@
             this.btnGuardar.DrawShadows = false;
             this.btnGuardar.HighEmphasis = true;
             this.btnGuardar.Icon = null;
-            this.btnGuardar.Location = new System.Drawing.Point(214, 201);
+            this.btnGuardar.Location = new System.Drawing.Point(118, 214);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGuardar.Name = "btnGuardar";
@@ -526,10 +485,10 @@
             this.Entrada.Controls.Add(this.comboRecolector);
             this.Entrada.Controls.Add(this.ComboSuplodires);
             this.Entrada.Controls.Add(this.DataGridEntradasDELeche);
-            this.Entrada.ImageKey = "identification_documents_32px.png";
-            this.Entrada.Location = new System.Drawing.Point(4, 39);
+            this.Entrada.ImageKey = "(ninguno)";
+            this.Entrada.Location = new System.Drawing.Point(4, 22);
             this.Entrada.Name = "Entrada";
-            this.Entrada.Size = new System.Drawing.Size(1137, 569);
+            this.Entrada.Size = new System.Drawing.Size(1137, 586);
             this.Entrada.TabIndex = 2;
             this.Entrada.Text = "Entrada de Leche";
             // 
@@ -766,30 +725,32 @@
             // 
             this.DataGridEntradasDELeche.AllowUserToAddRows = false;
             this.DataGridEntradasDELeche.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle275.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle275;
+            this.DataGridEntradasDELeche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridEntradasDELeche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridEntradasDELeche.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DataGridEntradasDELeche.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridEntradasDELeche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle276.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle276.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle276.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle276.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle276.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle276.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle276.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle276;
             this.DataGridEntradasDELeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DataGridEntradasDELeche.Dock = System.Windows.Forms.DockStyle.Bottom;
+            dataGridViewCellStyle277.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle277.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle277.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle277.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle277.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle277.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle277.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle277;
             this.DataGridEntradasDELeche.DoubleBuffered = true;
             this.DataGridEntradasDELeche.EnableHeadersVisualStyles = false;
             this.DataGridEntradasDELeche.HeaderBgColor = System.Drawing.Color.White;
@@ -801,7 +762,7 @@
             this.DataGridEntradasDELeche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridEntradasDELeche.RowHeadersVisible = false;
             this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1137, 215);
+            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1137, 232);
             this.DataGridEntradasDELeche.TabIndex = 8;
             // 
             // suplidor
@@ -819,10 +780,10 @@
             this.suplidor.Controls.Add(this.materialLabel16);
             this.suplidor.Controls.Add(this.dataGridSuplidor);
             this.suplidor.Controls.Add(this.materialLabel13);
-            this.suplidor.ImageKey = "supplier_64px.png";
-            this.suplidor.Location = new System.Drawing.Point(4, 39);
+            this.suplidor.ImageKey = "(ninguno)";
+            this.suplidor.Location = new System.Drawing.Point(4, 22);
             this.suplidor.Name = "suplidor";
-            this.suplidor.Size = new System.Drawing.Size(1137, 569);
+            this.suplidor.Size = new System.Drawing.Size(1137, 586);
             this.suplidor.TabIndex = 4;
             this.suplidor.Text = "Nuevo Suplidor";
             this.suplidor.UseVisualStyleBackColor = true;
@@ -1007,35 +968,35 @@
             // 
             this.dataGridSuplidor.AllowUserToAddRows = false;
             this.dataGridSuplidor.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle278.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle278;
             this.dataGridSuplidor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridSuplidor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridSuplidor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle279.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle279.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle279.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle279.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle279.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle279.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle279.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle279;
             this.dataGridSuplidor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle280.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle280.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle280.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle280.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle280.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle280.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle280.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle280;
             this.dataGridSuplidor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridSuplidor.DoubleBuffered = true;
             this.dataGridSuplidor.EnableHeadersVisualStyles = false;
             this.dataGridSuplidor.HeaderBgColor = System.Drawing.Color.White;
             this.dataGridSuplidor.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 334);
+            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 351);
             this.dataGridSuplidor.MultiSelect = false;
             this.dataGridSuplidor.Name = "dataGridSuplidor";
             this.dataGridSuplidor.ReadOnly = true;
@@ -1060,100 +1021,13 @@
             // 
             // Creadores
             // 
-            this.Creadores.Controls.Add(this.materialLabel24);
-            this.Creadores.Controls.Add(this.materialLabel11);
-            this.Creadores.Controls.Add(this.materialLabel10);
-            this.Creadores.Controls.Add(this.materialLabel9);
-            this.Creadores.Controls.Add(this.materialLabel8);
-            this.Creadores.ImageKey = "people_30px.png";
-            this.Creadores.Location = new System.Drawing.Point(4, 39);
+            this.Creadores.ImageKey = "(ninguno)";
+            this.Creadores.Location = new System.Drawing.Point(4, 22);
             this.Creadores.Name = "Creadores";
-            this.Creadores.Size = new System.Drawing.Size(1137, 569);
+            this.Creadores.Size = new System.Drawing.Size(1137, 586);
             this.Creadores.TabIndex = 3;
             this.Creadores.Text = "Creadores";
             this.Creadores.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel24
-            // 
-            this.materialLabel24.AutoSize = true;
-            this.materialLabel24.Depth = 0;
-            this.materialLabel24.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel24.Location = new System.Drawing.Point(59, 278);
-            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel24.Name = "materialLabel24";
-            this.materialLabel24.Size = new System.Drawing.Size(256, 17);
-            this.materialLabel24.TabIndex = 1;
-            this.materialLabel24.Text = "NIFERSON NICOLVIN TAVAREZ LIRIANO";
-            // 
-            // materialLabel11
-            // 
-            this.materialLabel11.AutoSize = true;
-            this.materialLabel11.Depth = 0;
-            this.materialLabel11.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel11.Location = new System.Drawing.Point(59, 226);
-            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel11.Name = "materialLabel11";
-            this.materialLabel11.Size = new System.Drawing.Size(177, 17);
-            this.materialLabel11.TabIndex = 1;
-            this.materialLabel11.Text = "EUDY REYNOSO GONZALEZ";
-            // 
-            // materialLabel10
-            // 
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel10.Location = new System.Drawing.Point(59, 175);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(182, 17);
-            this.materialLabel10.TabIndex = 1;
-            this.materialLabel10.Text = "Reynaldo Alberto De La Cruz";
-            // 
-            // materialLabel9
-            // 
-            this.materialLabel9.AutoSize = true;
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.materialLabel9.Location = new System.Drawing.Point(59, 127);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(187, 17);
-            this.materialLabel9.TabIndex = 1;
-            this.materialLabel9.Text = "ANGELICA ROSARIO VARGAS";
-            // 
-            // materialLabel8
-            // 
-            this.materialLabel8.AutoSize = true;
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel8.Location = new System.Drawing.Point(58, 56);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(764, 24);
-            this.materialLabel8.TabIndex = 0;
-            this.materialLabel8.Text = "Este sistema esta creado por los estudiantes de informatica de la universidad  UT" +
-    "ECO";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icons8_home_32px.png");
-            this.imageList1.Images.SetKeyName(1, "identification_documents_32px.png");
-            this.imageList1.Images.SetKeyName(2, "new_property_80px.png");
-            this.imageList1.Images.SetKeyName(3, "services_30px.png");
-            this.imageList1.Images.SetKeyName(4, "supplier_64px.png");
-            this.imageList1.Images.SetKeyName(5, "people_30px.png");
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 4;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // frmPrincipal
             // 
@@ -1170,7 +1044,6 @@
             this.TabsContent.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
             this.Inicio.PerformLayout();
-            this.materialCard1.ResumeLayout(false);
             this.Empleado.ResumeLayout(false);
             this.Empleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
@@ -1180,8 +1053,6 @@
             this.suplidor.ResumeLayout(false);
             this.suplidor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).EndInit();
-            this.Creadores.ResumeLayout(false);
-            this.Creadores.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1193,8 +1064,6 @@
         private System.Windows.Forms.TabPage Entrada;
         private System.Windows.Forms.TabPage suplidor;
         private System.Windows.Forms.TabPage Creadores;
-        private System.Windows.Forms.ImageList imageList1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
@@ -1240,14 +1109,7 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid;
         private MaterialSkin.Controls.MaterialButton btnEliminarEntradaDeLeche;
         private MaterialSkin.Controls.MaterialButton btnEditarEntrada;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
-        private MaterialSkin.Controls.MaterialCard materialCard1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel8;
-        private MaterialSkin.Controls.MaterialLabel materialLabel24;
-        private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialLabel materialLabel10;
-        private MaterialSkin.Controls.MaterialLabel materialLabel9;
     }
 }
 
