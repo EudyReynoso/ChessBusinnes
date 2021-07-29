@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +111,18 @@
     <Content Include="ImgReaadme\ImgEmpleado.PNG" />
     <Content Include="ImgReaadme\ImgEstadoDeLeche.PNG" />
     <Content Include="ImgReaadme\ImgNewSuplidor.PNG" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\Entrar.png" />
+    <None Include="Resources\save_24px.png" />
+    <None Include="Resources\delete_bin_24px.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\Rectangle 3.png" />
+    <None Include="Resources\Corners.png" />
+    <None Include="Resources\Corners1.png" />
+    <None Include="Resources\forma.png" />
+    <None Include="Resources\gradientent.png" />
+    <None Include="Resources\Logo Redondeado.png" />
+    <None Include="Resources\LogoY fondo.png" />
     <Content Include="Resources\undraw_secure_login_pdn4.png" />
   </ItemGroup>
   <ItemGroup />

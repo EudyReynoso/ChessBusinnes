@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle271 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle272 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle273 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle274 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle275 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle276 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle277 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle278 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle279 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle280 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.TabsContent = new MaterialSkin.Controls.MaterialTabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.Empleado = new System.Windows.Forms.TabPage();
             this.DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.comboPuesto = new MaterialSkin.Controls.MaterialComboBox();
@@ -88,9 +89,8 @@
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.dataGridSuplidor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.Creadores = new System.Windows.Forms.TabPage();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabsContent.SuspendLayout();
-            this.Inicio.SuspendLayout();
             this.Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.Entrada.SuspendLayout();
@@ -105,41 +105,27 @@
             this.TabsContent.Controls.Add(this.Empleado);
             this.TabsContent.Controls.Add(this.Entrada);
             this.TabsContent.Controls.Add(this.suplidor);
-            this.TabsContent.Controls.Add(this.Creadores);
             this.TabsContent.Depth = 0;
             this.TabsContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabsContent.ImageList = this.imageList1;
             this.TabsContent.Location = new System.Drawing.Point(3, 64);
             this.TabsContent.MouseState = MaterialSkin.MouseState.HOVER;
             this.TabsContent.Multiline = true;
             this.TabsContent.Name = "TabsContent";
             this.TabsContent.SelectedIndex = 0;
-            this.TabsContent.Size = new System.Drawing.Size(1145, 612);
+            this.TabsContent.Size = new System.Drawing.Size(1269, 612);
             this.TabsContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabsContent.TabIndex = 0;
             // 
             // Inicio
             // 
             this.Inicio.BackColor = System.Drawing.Color.White;
-            this.Inicio.Controls.Add(this.materialLabel6);
-            this.Inicio.ImageKey = "(ninguno)";
-            this.Inicio.Location = new System.Drawing.Point(4, 22);
+            this.Inicio.ImageKey = "home_24px.png";
+            this.Inicio.Location = new System.Drawing.Point(4, 35);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1137, 586);
+            this.Inicio.Size = new System.Drawing.Size(1261, 573);
             this.Inicio.TabIndex = 5;
             this.Inicio.Text = "Inicio";
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel6.Location = new System.Drawing.Point(422, 24);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(303, 41);
-            this.materialLabel6.TabIndex = 0;
-            this.materialLabel6.Text = "Sistema de registro ";
             // 
             // Empleado
             // 
@@ -160,11 +146,11 @@
             this.Empleado.Controls.Add(this.materialLabel3);
             this.Empleado.Controls.Add(this.materialLabel2);
             this.Empleado.Controls.Add(this.materialLabel1);
-            this.Empleado.ImageKey = "(ninguno)";
-            this.Empleado.Location = new System.Drawing.Point(4, 22);
+            this.Empleado.ImageKey = "new empleado.png";
+            this.Empleado.Location = new System.Drawing.Point(4, 35);
             this.Empleado.Name = "Empleado";
             this.Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleado.Size = new System.Drawing.Size(1137, 586);
+            this.Empleado.Size = new System.Drawing.Size(1261, 573);
             this.Empleado.TabIndex = 1;
             this.Empleado.Text = "Nuevo Empleado";
             // 
@@ -174,52 +160,52 @@
             this.DataGrid.AllowUserToDeleteRows = false;
             this.DataGrid.AllowUserToResizeColumns = false;
             this.DataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle271.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle271;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGrid.BackgroundColor = System.Drawing.Color.White;
             this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle272.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle272.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle272.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle272.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle272.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle272.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle272.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle272;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle273.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle273.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle273.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle273.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle273.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle273.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle273.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle273;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGrid.DoubleBuffered = true;
             this.DataGrid.EnableHeadersVisualStyles = false;
             this.DataGrid.GridColor = System.Drawing.Color.White;
             this.DataGrid.HeaderBgColor = System.Drawing.Color.White;
             this.DataGrid.HeaderForeColor = System.Drawing.Color.Black;
-            this.DataGrid.Location = new System.Drawing.Point(3, 337);
+            this.DataGrid.Location = new System.Drawing.Point(3, 293);
             this.DataGrid.MultiSelect = false;
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
             this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle274.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle274.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle274.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle274.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle274.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle274.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle274.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle274;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid.Size = new System.Drawing.Size(1131, 246);
+            this.DataGrid.Size = new System.Drawing.Size(1255, 277);
             this.DataGrid.TabIndex = 9;
             // 
             // comboPuesto
@@ -248,7 +234,7 @@
             // 
             this.radioFemenino.AutoSize = true;
             this.radioFemenino.Depth = 0;
-            this.radioFemenino.Location = new System.Drawing.Point(929, 108);
+            this.radioFemenino.Location = new System.Drawing.Point(1081, 70);
             this.radioFemenino.Margin = new System.Windows.Forms.Padding(0);
             this.radioFemenino.MouseLocation = new System.Drawing.Point(-1, -1);
             this.radioFemenino.MouseState = MaterialSkin.MouseState.HOVER;
@@ -264,7 +250,7 @@
             // 
             this.radioMasculino.AutoSize = true;
             this.radioMasculino.Depth = 0;
-            this.radioMasculino.Location = new System.Drawing.Point(929, 63);
+            this.radioMasculino.Location = new System.Drawing.Point(929, 70);
             this.radioMasculino.Margin = new System.Windows.Forms.Padding(0);
             this.radioMasculino.MouseLocation = new System.Drawing.Point(-1, -1);
             this.radioMasculino.MouseState = MaterialSkin.MouseState.HOVER;
@@ -284,12 +270,12 @@
             this.btnEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEditar.Depth = 0;
             this.btnEditar.HighEmphasis = true;
-            this.btnEditar.Icon = null;
-            this.btnEditar.Location = new System.Drawing.Point(629, 214);
+            this.btnEditar.Icon = global::Presentacion.Properties.Resources.edit;
+            this.btnEditar.Location = new System.Drawing.Point(770, 214);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(188, 61);
+            this.btnEditar.Size = new System.Drawing.Size(170, 39);
             this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "Editar";
             this.btnEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -305,12 +291,12 @@
             this.btnEliminar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEliminar.Depth = 0;
             this.btnEliminar.HighEmphasis = true;
-            this.btnEliminar.Icon = null;
-            this.btnEliminar.Location = new System.Drawing.Point(364, 214);
+            this.btnEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
+            this.btnEliminar.Location = new System.Drawing.Point(505, 214);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(188, 61);
+            this.btnEliminar.Size = new System.Drawing.Size(170, 39);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -327,12 +313,12 @@
             this.btnGuardar.Depth = 0;
             this.btnGuardar.DrawShadows = false;
             this.btnGuardar.HighEmphasis = true;
-            this.btnGuardar.Icon = null;
-            this.btnGuardar.Location = new System.Drawing.Point(118, 214);
+            this.btnGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.btnGuardar.Location = new System.Drawing.Point(259, 214);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(189, 61);
+            this.btnGuardar.Size = new System.Drawing.Size(170, 39);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -436,7 +422,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(952, 25);
+            this.materialLabel3.Location = new System.Drawing.Point(879, 80);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(36, 19);
@@ -485,10 +471,10 @@
             this.Entrada.Controls.Add(this.comboRecolector);
             this.Entrada.Controls.Add(this.ComboSuplodires);
             this.Entrada.Controls.Add(this.DataGridEntradasDELeche);
-            this.Entrada.ImageKey = "(ninguno)";
-            this.Entrada.Location = new System.Drawing.Point(4, 22);
+            this.Entrada.ImageKey = "entradaLeche.png";
+            this.Entrada.Location = new System.Drawing.Point(4, 35);
             this.Entrada.Name = "Entrada";
-            this.Entrada.Size = new System.Drawing.Size(1137, 586);
+            this.Entrada.Size = new System.Drawing.Size(1261, 573);
             this.Entrada.TabIndex = 2;
             this.Entrada.Text = "Entrada de Leche";
             // 
@@ -499,12 +485,12 @@
             this.btnEditarEntrada.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEditarEntrada.Depth = 0;
             this.btnEditarEntrada.HighEmphasis = true;
-            this.btnEditarEntrada.Icon = null;
+            this.btnEditarEntrada.Icon = global::Presentacion.Properties.Resources.edit;
             this.btnEditarEntrada.Location = new System.Drawing.Point(756, 265);
             this.btnEditarEntrada.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditarEntrada.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEditarEntrada.Name = "btnEditarEntrada";
-            this.btnEditarEntrada.Size = new System.Drawing.Size(160, 60);
+            this.btnEditarEntrada.Size = new System.Drawing.Size(170, 39);
             this.btnEditarEntrada.TabIndex = 21;
             this.btnEditarEntrada.Text = "Editar";
             this.btnEditarEntrada.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -519,12 +505,12 @@
             this.btnEliminarEntradaDeLeche.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEliminarEntradaDeLeche.Depth = 0;
             this.btnEliminarEntradaDeLeche.HighEmphasis = true;
-            this.btnEliminarEntradaDeLeche.Icon = null;
-            this.btnEliminarEntradaDeLeche.Location = new System.Drawing.Point(493, 265);
+            this.btnEliminarEntradaDeLeche.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
+            this.btnEliminarEntradaDeLeche.Location = new System.Drawing.Point(467, 265);
             this.btnEliminarEntradaDeLeche.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminarEntradaDeLeche.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminarEntradaDeLeche.Name = "btnEliminarEntradaDeLeche";
-            this.btnEliminarEntradaDeLeche.Size = new System.Drawing.Size(175, 60);
+            this.btnEliminarEntradaDeLeche.Size = new System.Drawing.Size(170, 39);
             this.btnEliminarEntradaDeLeche.TabIndex = 20;
             this.btnEliminarEntradaDeLeche.Text = "eliminar";
             this.btnEliminarEntradaDeLeche.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -552,12 +538,12 @@
             this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(241, 265);
+            this.materialButton3.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.materialButton3.Location = new System.Drawing.Point(181, 265);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
-            this.materialButton3.Size = new System.Drawing.Size(181, 60);
+            this.materialButton3.Size = new System.Drawing.Size(170, 39);
             this.materialButton3.TabIndex = 18;
             this.materialButton3.Text = "Guardar";
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -725,8 +711,8 @@
             // 
             this.DataGridEntradasDELeche.AllowUserToAddRows = false;
             this.DataGridEntradasDELeche.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle275.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle275;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridEntradasDELeche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -734,23 +720,23 @@
             this.DataGridEntradasDELeche.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DataGridEntradasDELeche.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridEntradasDELeche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle276.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle276.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle276.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle276.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle276.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle276.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle276.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle276;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridEntradasDELeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle277.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle277.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle277.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle277.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle277.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle277.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle277.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle277;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridEntradasDELeche.DoubleBuffered = true;
             this.DataGridEntradasDELeche.EnableHeadersVisualStyles = false;
             this.DataGridEntradasDELeche.HeaderBgColor = System.Drawing.Color.White;
@@ -762,11 +748,12 @@
             this.DataGridEntradasDELeche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridEntradasDELeche.RowHeadersVisible = false;
             this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1137, 232);
+            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1261, 219);
             this.DataGridEntradasDELeche.TabIndex = 8;
             // 
             // suplidor
             // 
+            this.suplidor.BackColor = System.Drawing.Color.White;
             this.suplidor.Controls.Add(this.btnEmpleadoEditar);
             this.suplidor.Controls.Add(this.btnEmpleadoEliminar);
             this.suplidor.Controls.Add(this.btnEmpleadoGuardar);
@@ -780,13 +767,12 @@
             this.suplidor.Controls.Add(this.materialLabel16);
             this.suplidor.Controls.Add(this.dataGridSuplidor);
             this.suplidor.Controls.Add(this.materialLabel13);
-            this.suplidor.ImageKey = "(ninguno)";
-            this.suplidor.Location = new System.Drawing.Point(4, 22);
+            this.suplidor.ImageKey = "Suplidor.png";
+            this.suplidor.Location = new System.Drawing.Point(4, 35);
             this.suplidor.Name = "suplidor";
-            this.suplidor.Size = new System.Drawing.Size(1137, 586);
+            this.suplidor.Size = new System.Drawing.Size(1261, 573);
             this.suplidor.TabIndex = 4;
             this.suplidor.Text = "Nuevo Suplidor";
-            this.suplidor.UseVisualStyleBackColor = true;
             // 
             // btnEmpleadoEditar
             // 
@@ -795,12 +781,12 @@
             this.btnEmpleadoEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEmpleadoEditar.Depth = 0;
             this.btnEmpleadoEditar.HighEmphasis = true;
-            this.btnEmpleadoEditar.Icon = null;
+            this.btnEmpleadoEditar.Icon = global::Presentacion.Properties.Resources.edit;
             this.btnEmpleadoEditar.Location = new System.Drawing.Point(742, 246);
             this.btnEmpleadoEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEmpleadoEditar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEmpleadoEditar.Name = "btnEmpleadoEditar";
-            this.btnEmpleadoEditar.Size = new System.Drawing.Size(181, 60);
+            this.btnEmpleadoEditar.Size = new System.Drawing.Size(170, 39);
             this.btnEmpleadoEditar.TabIndex = 15;
             this.btnEmpleadoEditar.Text = "Editar";
             this.btnEmpleadoEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -815,12 +801,12 @@
             this.btnEmpleadoEliminar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEmpleadoEliminar.Depth = 0;
             this.btnEmpleadoEliminar.HighEmphasis = true;
-            this.btnEmpleadoEliminar.Icon = null;
+            this.btnEmpleadoEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
             this.btnEmpleadoEliminar.Location = new System.Drawing.Point(493, 246);
             this.btnEmpleadoEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEmpleadoEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEmpleadoEliminar.Name = "btnEmpleadoEliminar";
-            this.btnEmpleadoEliminar.Size = new System.Drawing.Size(181, 60);
+            this.btnEmpleadoEliminar.Size = new System.Drawing.Size(170, 39);
             this.btnEmpleadoEliminar.TabIndex = 15;
             this.btnEmpleadoEliminar.Text = "Eliminar";
             this.btnEmpleadoEliminar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -835,12 +821,12 @@
             this.btnEmpleadoGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnEmpleadoGuardar.Depth = 0;
             this.btnEmpleadoGuardar.HighEmphasis = true;
-            this.btnEmpleadoGuardar.Icon = null;
+            this.btnEmpleadoGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
             this.btnEmpleadoGuardar.Location = new System.Drawing.Point(255, 246);
             this.btnEmpleadoGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEmpleadoGuardar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEmpleadoGuardar.Name = "btnEmpleadoGuardar";
-            this.btnEmpleadoGuardar.Size = new System.Drawing.Size(181, 60);
+            this.btnEmpleadoGuardar.Size = new System.Drawing.Size(170, 39);
             this.btnEmpleadoGuardar.TabIndex = 15;
             this.btnEmpleadoGuardar.Text = "Guardar";
             this.btnEmpleadoGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -853,12 +839,12 @@
             this.txtDireccionSupli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtDireccionSupli.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDireccionSupli.Depth = 0;
-            this.txtDireccionSupli.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDireccionSupli.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDireccionSupli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtDireccionSupli.Location = new System.Drawing.Point(588, 71);
+            this.txtDireccionSupli.Location = new System.Drawing.Point(599, 88);
             this.txtDireccionSupli.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDireccionSupli.Name = "txtDireccionSupli";
-            this.txtDireccionSupli.Size = new System.Drawing.Size(369, 86);
+            this.txtDireccionSupli.Size = new System.Drawing.Size(408, 123);
             this.txtDireccionSupli.TabIndex = 14;
             this.txtDireccionSupli.Text = "";
             // 
@@ -921,7 +907,7 @@
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(495, 85);
+            this.materialLabel14.Location = new System.Drawing.Point(490, 88);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(67, 19);
@@ -968,29 +954,29 @@
             // 
             this.dataGridSuplidor.AllowUserToAddRows = false;
             this.dataGridSuplidor.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle278.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle278;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridSuplidor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridSuplidor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridSuplidor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle279.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle279.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle279.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle279.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle279.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle279.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle279.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle279;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridSuplidor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle280.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle280.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle280.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle280.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle280.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle280.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle280.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle280;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridSuplidor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridSuplidor.DoubleBuffered = true;
             this.dataGridSuplidor.EnableHeadersVisualStyles = false;
@@ -1003,7 +989,7 @@
             this.dataGridSuplidor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridSuplidor.RowHeadersVisible = false;
             this.dataGridSuplidor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridSuplidor.Size = new System.Drawing.Size(1137, 235);
+            this.dataGridSuplidor.Size = new System.Drawing.Size(1261, 222);
             this.dataGridSuplidor.TabIndex = 8;
             // 
             // materialLabel13
@@ -1019,21 +1005,20 @@
             this.materialLabel13.TabIndex = 0;
             this.materialLabel13.Text = "Registro de nuevo suplidor";
             // 
-            // Creadores
+            // imageList1
             // 
-            this.Creadores.ImageKey = "(ninguno)";
-            this.Creadores.Location = new System.Drawing.Point(4, 22);
-            this.Creadores.Name = "Creadores";
-            this.Creadores.Size = new System.Drawing.Size(1137, 586);
-            this.Creadores.TabIndex = 3;
-            this.Creadores.Text = "Creadores";
-            this.Creadores.UseVisualStyleBackColor = true;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "entradaLeche.png");
+            this.imageList1.Images.SetKeyName(1, "home_24px.png");
+            this.imageList1.Images.SetKeyName(2, "new empleado.png");
+            this.imageList1.Images.SetKeyName(3, "Suplidor.png");
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 679);
+            this.ClientSize = new System.Drawing.Size(1275, 679);
             this.Controls.Add(this.TabsContent);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.TabsContent;
@@ -1042,8 +1027,6 @@
             this.Text = "Queso Camilo";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.TabsContent.ResumeLayout(false);
-            this.Inicio.ResumeLayout(false);
-            this.Inicio.PerformLayout();
             this.Empleado.ResumeLayout(false);
             this.Empleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
@@ -1063,7 +1046,6 @@
         private System.Windows.Forms.TabPage Empleado;
         private System.Windows.Forms.TabPage Entrada;
         private System.Windows.Forms.TabPage suplidor;
-        private System.Windows.Forms.TabPage Creadores;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
@@ -1109,7 +1091,7 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid;
         private MaterialSkin.Controls.MaterialButton btnEliminarEntradaDeLeche;
         private MaterialSkin.Controls.MaterialButton btnEditarEntrada;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

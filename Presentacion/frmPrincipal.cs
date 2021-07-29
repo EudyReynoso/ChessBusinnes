@@ -15,17 +15,13 @@ namespace Presentacion
         private bool Editar = false;
         private bool EditarSulidor = false;
         private bool EditarEntrada = false;
-        private readonly MaterialSkinManager materialSkinManager;
         public frmPrincipal()
         {
             InitializeComponent();
-            materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.EnforceBackcolorOnAllComponents = true;
+            var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme =
-                new ColorScheme(Primary.Blue500, Primary.Blue800,
-                Primary.Blue500, Accent.LightBlue200,
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500,Primary.LightBlue100, Accent.LightBlue200,
                 TextShade.WHITE);
         }
         #region Tab de Empleado
