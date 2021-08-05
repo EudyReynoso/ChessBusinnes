@@ -29,14 +29,12 @@ namespace Presentacion
         {
             N_Empleado NegocioEmpleado = new N_Empleado();
             DataGrid.DataSource = NegocioEmpleado.ListaEmpleados();
-
             ValoresCombosTabEntrada();
         }
         private void PuestosValues()
         {
             N_Puestos puestos = new N_Puestos();
             comboPuesto.DataSource = puestos.ListaPuestos();
-
             comboPuesto.DisplayMember = "nombrePuesto";
             comboPuesto.ValueMember = "IdPuestos";
         }
@@ -45,6 +43,7 @@ namespace Presentacion
             txtDepartamento.Clear();
             txtDireccion.Clear();
             txtNombre.Clear();
+            txtApellido.Clear();
             radioMasculino.Checked = false;
             radioFemenino.Checked = false;
         }
@@ -59,49 +58,18 @@ namespace Presentacion
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
+            if (Editar == false)
             {
-                if (Editar == false)
+                if (
+                    string.IsNullOrEmpty(txtNombre.Text) ||
+                    string.IsNullOrEmpty(txtDireccion.Text) ||
+                    string.IsNullOrEmpty(txtDepartamento.Text)||
+                    string.IsNullOrEmpty(txtApellido.Text))
                 {
-                    if (
-                        string.IsNullOrEmpty(txtNombre.Text) ||
-                        string.IsNullOrEmpty(txtDireccion.Text) ||
-                        string.IsNullOrEmpty(txtDepartamento.Text))
-                    {
-                        MaterialMessageBox.Show("Hay campos vacios debe llenarlos antes de guradar");
-                    }
-                    else
-                    {
-                        int sexo = 0;
-                        if (radioFemenino.Checked)
-                        {
-                            sexo = 2;
-                        }
-                        if (radioMasculino.Checked)
-                        {
-                            sexo = 1;
-                        }
-                        if (sexo == 0)
-                        {
-                            MaterialMessageBox.Show("Debe seleccionar un sexo");
-                        }
-                        else
-                        {
-                            E_Empleado empleado = new E_Empleado
-                            {
-                                Nombre = txtNombre.Text.Trim(),
-                                Direccion = txtDireccion.Text.Trim(),
-                                Departamento = txtDepartamento.Text.Trim(),
-                                Sexo = sexo,
-                                Puesto = Convert.ToInt32(comboPuesto.SelectedValue)
-                            };
-                            N_Empleado n_Empleado = new N_Empleado();
-                            n_Empleado.InsertarEmpleado(empleado);
-                            Refrescar();
-                            LimpiarCampos();
-                        }
-                    }
+                    MaterialMessageBox.Show("Hay campos vacios debe llenarlos antes de guradar");
                 }
-                if (Editar == true)
+                else
                 {
                     int sexo = 0;
                     if (radioFemenino.Checked)
@@ -120,20 +88,54 @@ namespace Presentacion
                     {
                         E_Empleado empleado = new E_Empleado
                         {
-                            Idempleado = int.Parse(DataGrid.Rows[DataGrid.CurrentRow.Index].Cells[0].Value.ToString()),
                             Nombre = txtNombre.Text.Trim(),
                             Direccion = txtDireccion.Text.Trim(),
                             Departamento = txtDepartamento.Text.Trim(),
                             Sexo = sexo,
-                            Puesto = Convert.ToInt32(comboPuesto.SelectedValue)
+                            Puesto = Convert.ToInt32(comboPuesto.SelectedValue),
+                            Apellido = txtApellido.Text.Trim()
+                         
                         };
                         N_Empleado n_Empleado = new N_Empleado();
-                        n_Empleado.ActualizarEmpleado(empleado);
+                        n_Empleado.InsertarEmpleado(empleado);
+                        Refrescar();
                         LimpiarCampos();
-
                     }
-                    Refrescar();
                 }
+            }
+            if (Editar == true)
+            {
+                int sexo = 0;
+                if (radioFemenino.Checked)
+                {
+                    sexo = 2;
+                }
+                if (radioMasculino.Checked)
+                {
+                    sexo = 1;
+                }
+                if (sexo == 0)
+                {
+                    MaterialMessageBox.Show("Debe seleccionar un sexo");
+                }
+                else
+                {
+                    E_Empleado empleado = new E_Empleado
+                    {
+                        Idempleado = int.Parse(DataGrid.Rows[DataGrid.CurrentRow.Index].Cells[0].Value.ToString()),
+                        Nombre = txtNombre.Text.Trim(),
+                        Direccion = txtDireccion.Text.Trim(),
+                        Departamento = txtDepartamento.Text.Trim(),
+                        Sexo = sexo,
+                        Puesto = Convert.ToInt32(comboPuesto.SelectedValue),
+                        Apellido = txtApellido.Text.Trim()
+                    };
+                    N_Empleado n_Empleado = new N_Empleado();
+                    n_Empleado.ActualizarEmpleado(empleado);
+                    LimpiarCampos();
+                    Editar = false;
+                }
+                Refrescar();
             }
         }
 
@@ -166,8 +168,20 @@ namespace Presentacion
             {
                 IdEmpleado = DataGrid.CurrentRow.Cells[0].Value.ToString();
                 txtNombre.Text = DataGrid.CurrentRow.Cells[1].Value.ToString();
-                txtDireccion.Text = DataGrid.CurrentRow.Cells[2].Value.ToString();
-                txtDepartamento.Text = DataGrid.CurrentRow.Cells[5].Value.ToString();
+                txtApellido.Text = DataGrid.CurrentRow.Cells[2].Value.ToString();
+                txtDireccion.Text = DataGrid.CurrentRow.Cells[3].Value.ToString();
+                txtDepartamento.Text = DataGrid.CurrentRow.Cells[6].Value.ToString();
+
+                string sexo = DataGrid.CurrentRow.Cells[4].Value.ToString();
+                if(sexo == "Femenino")
+                {
+                    radioFemenino.Checked = true;
+                }
+                else
+                {
+                    radioMasculino.Checked = true;
+                }
+                MaterialMessageBox.Show("Esta editando la fila seleccionada");
             }
         }
         #endregion
@@ -380,7 +394,6 @@ namespace Presentacion
             if (DataGridEntradasDELeche.SelectedRows.Count > 0)
             {
                 EditarEntrada = true;
-
                 IdEntradadeleche = DataGridEntradasDELeche.CurrentRow.Cells[0].Value.ToString();
                 ComboSuplodires.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[1].Value.ToString();
                 comboRecolector.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[2].Value.ToString();

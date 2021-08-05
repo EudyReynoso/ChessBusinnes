@@ -44,6 +44,7 @@ namespace CapaDatos
             command.Parameters.AddWithValue("@Sexo", empleado.Sexo);
             command.Parameters.AddWithValue("@Puesto", empleado.Puesto);
             command.Parameters.AddWithValue("@Departmento", empleado.Departamento);
+            command.Parameters.AddWithValue("@Apellido", empleado.Apellido);
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();
@@ -66,9 +67,7 @@ namespace CapaDatos
             }
             catch (Exception)
             {
-                MaterialMessageBox.Show("No se pueden eliminar porque " +
-                    "ya haces refrencia a este empleado en una entrada de leche, " +
-                    "se generan ecepciones en la relacion de los datos en SQL");
+                MaterialMessageBox.Show("Los datos de este Empleado entan relacionados a otros datos, no lo puede eliminar");
             }
             
         }
@@ -84,6 +83,7 @@ namespace CapaDatos
             command.Parameters.AddWithValue("@Sexo", empleado.Sexo);
             command.Parameters.AddWithValue("@Puesto", empleado.Puesto);
             command.Parameters.AddWithValue("@Departmento", empleado.Departamento);
+            command.Parameters.AddWithValue("@Apellido", empleado.Apellido);
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();

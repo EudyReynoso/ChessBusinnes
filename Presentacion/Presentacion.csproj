@@ -36,13 +36,36 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\..\..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="Calendario">
+      <HintPath>..\..\..\..\..\..\Calendario.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.2.2.2.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,25 +76,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="ChessDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChessDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChessDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChessDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddUsario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Forms\frmAddUsario.Designer.cs">
+      <DependentUpon>frmAddUsario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Forms\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Forms\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportEmpleados.Designer.cs">
+      <DependentUpon>frmReportEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportVentas.Designer.cs">
+      <DependentUpon>frmReportVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Forms\frmAddUsario.resx">
+      <DependentUpon>frmAddUsario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportEmpleados.resx">
+      <DependentUpon>frmReportEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportVentas.resx">
+      <DependentUpon>frmReportVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,7 +144,34 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ChessDBDataSet.xsc">
+      <DependentUpon>ChessDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChessDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChessDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChessDBDataSet.xss">
+      <DependentUpon>ChessDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChessDBDataSet1.xsc">
+      <DependentUpon>ChessDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ChessDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChessDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChessDBDataSet1.xss">
+      <DependentUpon>ChessDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.N_Empleado.datasource" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.N_EntradaDeLeche.datasource" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.N_EstadosDeLeche.datasource" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.N_Puestos.datasource" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.N_Suplidor.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +199,33 @@
     <Content Include="ImgReaadme\ImgEmpleado.PNG" />
     <Content Include="ImgReaadme\ImgEstadoDeLeche.PNG" />
     <Content Include="ImgReaadme\ImgNewSuplidor.PNG" />
+    <None Include="Resources\process_24px.png" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\print_24px.png" />
+    <None Include="Resources\createuser.png" />
+    <None Include="Resources\report.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\LogoBorder.png" />
+    <None Include="Resources\calendar_24px.png" />
+    <None Include="Resources\LogoBorder1.png" />
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\amazon_echo_24px.png" />
+    <None Include="Resources\fastReport.png" />
+    <None Include="Resources\empleaods.png" />
+    <None Include="Resources\wooden_beer_keg_24px.png" />
+    <None Include="Resources\Suplidor.png" />
     <None Include="Resources\user1.png" />
     <None Include="Resources\Entrar.png" />
     <None Include="Resources\save_24px.png" />
@@ -125,6 +240,8 @@
     <None Include="Resources\LogoY fondo.png" />
     <Content Include="Resources\undraw_secure_login_pdn4.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

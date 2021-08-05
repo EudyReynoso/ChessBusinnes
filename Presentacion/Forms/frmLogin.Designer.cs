@@ -36,13 +36,13 @@
             this.txtPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.CheckContra = new MaterialSkin.Controls.MaterialCheckbox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel3
@@ -75,7 +75,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
-            this.materialLabel1.Location = new System.Drawing.Point(621, 125);
+            this.materialLabel1.Location = new System.Drawing.Point(652, 158);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(286, 58);
@@ -111,10 +111,10 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.isPassword = true;
-            this.txtPassword.Location = new System.Drawing.Point(631, 373);
+            this.txtPassword.Location = new System.Drawing.Point(631, 365);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(358, 36);
+            this.txtPassword.Size = new System.Drawing.Size(381, 36);
             this.txtPassword.TabIndex = 20;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -132,16 +132,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(531, 550);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.forma;
-            this.pictureBox1.Location = new System.Drawing.Point(621, 362);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(404, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -189,6 +179,16 @@
             this.CheckContra.UseVisualStyleBackColor = true;
             this.CheckContra.CheckedChanged += new System.EventHandler(this.CheckContra_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.forma;
+            this.pictureBox1.Location = new System.Drawing.Point(621, 360);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(404, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,8 +211,8 @@
             this.Sizable = false;
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,8 +227,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPassword;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private MaterialSkin.Controls.MaterialCheckbox CheckContra;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
