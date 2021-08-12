@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using CapaModeloNegocio;
+using CapaEntidades;
 
 namespace Presentacion
 {
@@ -24,11 +26,6 @@ namespace Presentacion
                 TextShade.WHITE);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void frmLogin_Load(object sender, EventArgs e)
         {
         }
@@ -40,6 +37,44 @@ namespace Presentacion
             if(CheckContra.Checked is false)
             {
                 txtPassword.isPassword = true;
+            }
+        }
+        private void MessErr(string meessage)
+        {
+            LabelError.Text = "          " + meessage;
+            LabelError.Visible = true;
+        }
+        private void ClckBtnLogin(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUserName.Text))
+                MessErr("Ingrese el usuario");
+            if (string.IsNullOrEmpty(txtPassword.Text))
+                MessErr("Ingrese la contraseña");
+
+            else
+            {
+                N_Usuario usuario = new N_Usuario();
+                E_Usuario e_Usuario = new E_Usuario
+                {
+                    Loginname = txtUserName.Text,
+                    Password = txtPassword.Text
+                };
+
+                var ValidateUser = usuario.LoginVales(e_Usuario);
+
+                if(ValidateUser == true)
+                {
+                    frmPrincipal frmPrincipal = new frmPrincipal();
+                    frmPrincipal.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MaterialMessageBox.Show("Usuario o contraseña incorrectos \n Por favor intentalo de nuevo");
+                    txtPassword.Text = "";
+                    txtUserName.Text = "";
+                    txtUserName.Focus();
+                }
             }
         }
     }

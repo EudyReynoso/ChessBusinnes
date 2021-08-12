@@ -27,7 +27,6 @@ namespace Presentacion.Forms
         private void frmReportVentas_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
         }
     }
 }

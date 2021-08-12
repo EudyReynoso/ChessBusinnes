@@ -17,6 +17,10 @@ namespace CapaModeloNegocio
         {
             return Suplidor.ListaSuplidores();
         }
+        public DataTable ValoresComboboxSuplido()
+        {
+            return Suplidor.ValoreMienbrosComoSuplidores();
+        }
         public void InsertarSuplidor(E_Suplidor suplidor)
         {
             Suplidor.InsertarSuplidor(suplidor);

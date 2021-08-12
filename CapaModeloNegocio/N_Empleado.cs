@@ -17,7 +17,10 @@ namespace CapaModeloNegocio
         {
             return EmpleadosDB.ListaEmpleados();
         }
-
+        public DataTable ValoresComboRecolector()
+        {
+            return EmpleadosDB.ValoreMienbrosComboRecolector();
+        }
         public void InsertarEmpleado (E_Empleado empleado)
         {
             EmpleadosDB.InsertarEmpleados(empleado);

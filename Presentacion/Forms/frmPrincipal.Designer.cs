@@ -42,6 +42,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.TabsContent = new MaterialSkin.Controls.MaterialTabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
@@ -86,8 +89,56 @@
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.Ventas = new System.Windows.Forms.TabPage();
+            this.materialButton15 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
+            this.Productos = new System.Windows.Forms.TabPage();
+            this.DataGridProductos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.materialButton16 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
+            this.btnEliminarProducto = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel52 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtProductoDescripcion = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.txtProductoPrecio = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreProducto = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel53 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel54 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel55 = new MaterialSkin.Controls.MaterialLabel();
+            this.Entrada = new System.Windows.Forms.TabPage();
+            this.txtDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.DataGridEntradasDELeche = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.materialButton13 = new MaterialSkin.Controls.MaterialButton();
+            this.btnEditarEntrada = new MaterialSkin.Controls.MaterialButton();
+            this.btnEliminarEntradaDeLeche = new MaterialSkin.Controls.MaterialButton();
+            this.btnGuardarEmtrada = new MaterialSkin.Controls.MaterialButton();
+            this.txtCantidadEntrada = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.comboEstado = new MaterialSkin.Controls.MaterialComboBox();
+            this.comboRecolector = new MaterialSkin.Controls.MaterialComboBox();
+            this.ComboSuplodires = new MaterialSkin.Controls.MaterialComboBox();
+            this.suplidor = new System.Windows.Forms.TabPage();
+            this.dataGridSuplidor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
+            this.btnEmpleadoEditar = new MaterialSkin.Controls.MaterialButton();
+            this.btnEmpleadoEliminar = new MaterialSkin.Controls.MaterialButton();
+            this.btnEmpleadoGuardar = new MaterialSkin.Controls.MaterialButton();
+            this.txtDireccionSupli = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.txtTelSupli = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtApellidoSupli = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreSupli = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.Empleado = new System.Windows.Forms.TabPage();
             this.DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.comboPuesto = new MaterialSkin.Controls.MaterialComboBox();
@@ -108,71 +159,6 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel56 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.Entrada = new System.Windows.Forms.TabPage();
-            this.materialButton13 = new MaterialSkin.Controls.MaterialButton();
-            this.btnEditarEntrada = new MaterialSkin.Controls.MaterialButton();
-            this.btnEliminarEntradaDeLeche = new MaterialSkin.Controls.MaterialButton();
-            this.txtDate = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.txtCantidadEntrada = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
-            this.comboEstado = new MaterialSkin.Controls.MaterialComboBox();
-            this.comboRecolector = new MaterialSkin.Controls.MaterialComboBox();
-            this.ComboSuplodires = new MaterialSkin.Controls.MaterialComboBox();
-            this.DataGridEntradasDELeche = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.suplidor = new System.Windows.Forms.TabPage();
-            this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
-            this.btnEmpleadoEditar = new MaterialSkin.Controls.MaterialButton();
-            this.btnEmpleadoEliminar = new MaterialSkin.Controls.MaterialButton();
-            this.btnEmpleadoGuardar = new MaterialSkin.Controls.MaterialButton();
-            this.txtDireccionSupli = new MaterialSkin.Controls.MaterialMultiLineTextBox();
-            this.txtTelSupli = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtApellidoSupli = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNombreSupli = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.dataGridSuplidor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.Ventas = new System.Windows.Forms.TabPage();
-            this.materialButton15 = new MaterialSkin.Controls.MaterialButton();
-            this.materialMultiLineTextBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
-            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel41 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel42 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel43 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel44 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel48 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel49 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel50 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel51 = new MaterialSkin.Controls.MaterialLabel();
-            this.Productos = new System.Windows.Forms.TabPage();
-            this.materialButton16 = new MaterialSkin.Controls.MaterialButton();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton10 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel52 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialMultiLineTextBox2 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
-            this.materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel53 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel54 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel55 = new MaterialSkin.Controls.MaterialLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabsContent.SuspendLayout();
             this.Inicio.SuspendLayout();
@@ -184,25 +170,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.Empleado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            this.Ventas.SuspendLayout();
+            this.Productos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).BeginInit();
             this.Entrada.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEntradasDELeche)).BeginInit();
             this.suplidor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).BeginInit();
-            this.Ventas.SuspendLayout();
-            this.Productos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.Empleado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // TabsContent
             // 
             this.TabsContent.Controls.Add(this.Inicio);
-            this.TabsContent.Controls.Add(this.Empleado);
-            this.TabsContent.Controls.Add(this.Entrada);
-            this.TabsContent.Controls.Add(this.suplidor);
             this.TabsContent.Controls.Add(this.Ventas);
             this.TabsContent.Controls.Add(this.Productos);
+            this.TabsContent.Controls.Add(this.Entrada);
+            this.TabsContent.Controls.Add(this.suplidor);
+            this.TabsContent.Controls.Add(this.Empleado);
             this.TabsContent.Depth = 0;
             this.TabsContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabsContent.ImageList = this.imageList1;
@@ -211,7 +197,7 @@
             this.TabsContent.Multiline = true;
             this.TabsContent.Name = "TabsContent";
             this.TabsContent.SelectedIndex = 0;
-            this.TabsContent.Size = new System.Drawing.Size(1299, 657);
+            this.TabsContent.Size = new System.Drawing.Size(1362, 683);
             this.TabsContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabsContent.TabIndex = 0;
             // 
@@ -223,12 +209,10 @@
             this.Inicio.Controls.Add(this.materialCard3);
             this.Inicio.Controls.Add(this.materialCard2);
             this.Inicio.Controls.Add(this.materialCard1);
-            this.Inicio.Controls.Add(this.materialLabel7);
-            this.Inicio.Controls.Add(this.materialLabel6);
             this.Inicio.ImageKey = "home_24px.png";
             this.Inicio.Location = new System.Drawing.Point(4, 35);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1291, 618);
+            this.Inicio.Size = new System.Drawing.Size(1354, 644);
             this.Inicio.TabIndex = 5;
             this.Inicio.Text = "Inicio";
             // 
@@ -252,7 +236,7 @@
             this.uI_Calendario1.DayWeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.uI_Calendario1.ElipceSize = 5;
             this.uI_Calendario1.HourFont = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.Location = new System.Drawing.Point(825, 67);
+            this.uI_Calendario1.Location = new System.Drawing.Point(793, 67);
             this.uI_Calendario1.MonthFont = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.uI_Calendario1.MonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.uI_Calendario1.MoveCalendar = false;
@@ -263,7 +247,7 @@
             this.uI_Calendario1.PanelDayBackColor = System.Drawing.Color.White;
             this.uI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White;
             this.uI_Calendario1.SemanaFont = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.Size = new System.Drawing.Size(422, 536);
+            this.uI_Calendario1.Size = new System.Drawing.Size(461, 536);
             this.uI_Calendario1.TabIndex = 4;
             this.uI_Calendario1.Text = "uI_Calendario1";
             this.uI_Calendario1.TimeForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
@@ -817,75 +801,132 @@
             this.materialLabel8.TabIndex = 0;
             this.materialLabel8.Text = "Ventas";
             // 
-            // materialLabel7
+            // Ventas
             // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel7.Location = new System.Drawing.Point(138, 12);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(71, 41);
-            this.materialLabel7.TabIndex = 2;
-            this.materialLabel7.Text = "User";
+            this.Ventas.Controls.Add(this.materialButton15);
+            this.Ventas.Controls.Add(this.materialButton6);
+            this.Ventas.Controls.Add(this.materialButton7);
+            this.Ventas.Controls.Add(this.materialButton8);
+            this.Ventas.ImageKey = "sales.png";
+            this.Ventas.Location = new System.Drawing.Point(4, 35);
+            this.Ventas.Name = "Ventas";
+            this.Ventas.Size = new System.Drawing.Size(1354, 644);
+            this.Ventas.TabIndex = 6;
+            this.Ventas.Text = "Ventas";
+            this.Ventas.UseVisualStyleBackColor = true;
             // 
-            // materialLabel6
+            // materialButton15
             // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel6.Location = new System.Drawing.Point(46, 9);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(86, 41);
-            this.materialLabel6.TabIndex = 2;
-            this.materialLabel6.Text = "Hola, ";
+            this.materialButton15.AutoSize = false;
+            this.materialButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton15.BackColor = System.Drawing.Color.Yellow;
+            this.materialButton15.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton15.Depth = 0;
+            this.materialButton15.HighEmphasis = true;
+            this.materialButton15.Icon = global::Presentacion.Properties.Resources.report;
+            this.materialButton15.Location = new System.Drawing.Point(991, 245);
+            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton15.Name = "materialButton15";
+            this.materialButton15.Size = new System.Drawing.Size(170, 39);
+            this.materialButton15.TabIndex = 48;
+            this.materialButton15.Text = "Reporte";
+            this.materialButton15.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton15.UseAccentColor = false;
+            this.materialButton15.UseVisualStyleBackColor = false;
             // 
-            // Empleado
+            // materialButton6
             // 
-            this.Empleado.BackColor = System.Drawing.Color.White;
-            this.Empleado.Controls.Add(this.DataGrid);
-            this.Empleado.Controls.Add(this.comboPuesto);
-            this.Empleado.Controls.Add(this.radioFemenino);
-            this.Empleado.Controls.Add(this.radioMasculino);
-            this.Empleado.Controls.Add(this.btnReport);
-            this.Empleado.Controls.Add(this.btnEditar);
-            this.Empleado.Controls.Add(this.btnEliminar);
-            this.Empleado.Controls.Add(this.btnGuardar);
-            this.Empleado.Controls.Add(this.txtDepartamento);
-            this.Empleado.Controls.Add(this.txtDireccion);
-            this.Empleado.Controls.Add(this.txtApellido);
-            this.Empleado.Controls.Add(this.txtNombre);
-            this.Empleado.Controls.Add(this.materialLabel12);
-            this.Empleado.Controls.Add(this.materialLabel5);
-            this.Empleado.Controls.Add(this.materialLabel4);
-            this.Empleado.Controls.Add(this.materialLabel3);
-            this.Empleado.Controls.Add(this.materialLabel2);
-            this.Empleado.Controls.Add(this.materialLabel56);
-            this.Empleado.Controls.Add(this.materialLabel1);
-            this.Empleado.ImageKey = "new empleado.png";
-            this.Empleado.Location = new System.Drawing.Point(4, 35);
-            this.Empleado.Name = "Empleado";
-            this.Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleado.Size = new System.Drawing.Size(1291, 618);
-            this.Empleado.TabIndex = 1;
-            this.Empleado.Text = "Nuevo Empleado";
+            this.materialButton6.AutoSize = false;
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = global::Presentacion.Properties.Resources.print_24px;
+            this.materialButton6.Location = new System.Drawing.Point(755, 245);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.Size = new System.Drawing.Size(170, 39);
+            this.materialButton6.TabIndex = 43;
+            this.materialButton6.Text = "Imprimir";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
             // 
-            // DataGrid
+            // materialButton7
             // 
-            this.DataGrid.AllowUserToAddRows = false;
-            this.DataGrid.AllowUserToDeleteRows = false;
-            this.DataGrid.AllowUserToResizeColumns = false;
-            this.DataGrid.AllowUserToResizeRows = false;
+            this.materialButton7.AutoSize = false;
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = global::Presentacion.Properties.Resources.clear;
+            this.materialButton7.Location = new System.Drawing.Point(506, 245);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.Size = new System.Drawing.Size(170, 39);
+            this.materialButton7.TabIndex = 44;
+            this.materialButton7.Text = "Limpiar";
+            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
+            // 
+            // materialButton8
+            // 
+            this.materialButton8.AutoSize = false;
+            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton8.Depth = 0;
+            this.materialButton8.HighEmphasis = true;
+            this.materialButton8.Icon = global::Presentacion.Properties.Resources.process_24px;
+            this.materialButton8.Location = new System.Drawing.Point(268, 245);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton8.Name = "materialButton8";
+            this.materialButton8.Size = new System.Drawing.Size(170, 39);
+            this.materialButton8.TabIndex = 45;
+            this.materialButton8.Text = "Procesar";
+            this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton8.UseAccentColor = false;
+            this.materialButton8.UseVisualStyleBackColor = true;
+            // 
+            // Productos
+            // 
+            this.Productos.Controls.Add(this.DataGridProductos);
+            this.Productos.Controls.Add(this.materialButton16);
+            this.Productos.Controls.Add(this.materialButton9);
+            this.Productos.Controls.Add(this.btnEliminarProducto);
+            this.Productos.Controls.Add(this.materialButton11);
+            this.Productos.Controls.Add(this.materialLabel52);
+            this.Productos.Controls.Add(this.txtProductoDescripcion);
+            this.Productos.Controls.Add(this.txtProductoPrecio);
+            this.Productos.Controls.Add(this.txtNombreProducto);
+            this.Productos.Controls.Add(this.materialLabel53);
+            this.Productos.Controls.Add(this.materialLabel54);
+            this.Productos.Controls.Add(this.materialLabel55);
+            this.Productos.ImageKey = "product_24px.png";
+            this.Productos.Location = new System.Drawing.Point(4, 35);
+            this.Productos.Name = "Productos";
+            this.Productos.Size = new System.Drawing.Size(1354, 644);
+            this.Productos.TabIndex = 7;
+            this.Productos.Text = "Productos";
+            this.Productos.UseVisualStyleBackColor = true;
+            // 
+            // DataGridProductos
+            // 
+            this.DataGridProductos.AllowUserToAddRows = false;
+            this.DataGridProductos.AllowUserToDeleteRows = false;
+            this.DataGridProductos.AllowUserToResizeColumns = false;
+            this.DataGridProductos.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGrid.CausesValidation = false;
-            this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DataGridProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGridProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridProductos.CausesValidation = false;
+            this.DataGridProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -893,9 +934,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DataGridProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -903,18 +944,18 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DataGrid.DoubleBuffered = false;
-            this.DataGrid.EnableHeadersVisualStyles = false;
-            this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.DataGrid.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.DataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGrid.Location = new System.Drawing.Point(3, 293);
-            this.DataGrid.MultiSelect = false;
-            this.DataGrid.Name = "DataGrid";
-            this.DataGrid.ReadOnly = true;
-            this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridProductos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridProductos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DataGridProductos.DoubleBuffered = false;
+            this.DataGridProductos.EnableHeadersVisualStyles = false;
+            this.DataGridProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGridProductos.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.DataGridProductos.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridProductos.Location = new System.Drawing.Point(0, 367);
+            this.DataGridProductos.MultiSelect = false;
+            this.DataGridProductos.Name = "DataGridProductos";
+            this.DataGridProductos.ReadOnly = true;
+            this.DataGridProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -922,316 +963,202 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DataGrid.RowHeadersVisible = false;
-            this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid.Size = new System.Drawing.Size(1285, 322);
-            this.DataGrid.TabIndex = 10;
+            this.DataGridProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataGridProductos.RowHeadersVisible = false;
+            this.DataGridProductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DataGridProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridProductos.Size = new System.Drawing.Size(1354, 277);
+            this.DataGridProductos.TabIndex = 48;
             // 
-            // comboPuesto
+            // materialButton16
             // 
-            this.comboPuesto.AutoResize = false;
-            this.comboPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.comboPuesto.Depth = 0;
-            this.comboPuesto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboPuesto.DropDownHeight = 174;
-            this.comboPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboPuesto.DropDownWidth = 121;
-            this.comboPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.comboPuesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.comboPuesto.FormattingEnabled = true;
-            this.comboPuesto.IntegralHeight = false;
-            this.comboPuesto.ItemHeight = 43;
-            this.comboPuesto.Location = new System.Drawing.Point(567, 116);
-            this.comboPuesto.MaxDropDownItems = 4;
-            this.comboPuesto.MouseState = MaterialSkin.MouseState.OUT;
-            this.comboPuesto.Name = "comboPuesto";
-            this.comboPuesto.Size = new System.Drawing.Size(274, 49);
-            this.comboPuesto.StartIndex = 0;
-            this.comboPuesto.TabIndex = 4;
+            this.materialButton16.AutoSize = false;
+            this.materialButton16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton16.BackColor = System.Drawing.Color.Yellow;
+            this.materialButton16.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton16.Depth = 0;
+            this.materialButton16.HighEmphasis = true;
+            this.materialButton16.Icon = global::Presentacion.Properties.Resources.report;
+            this.materialButton16.Location = new System.Drawing.Point(837, 253);
+            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton16.Name = "materialButton16";
+            this.materialButton16.Size = new System.Drawing.Size(170, 39);
+            this.materialButton16.TabIndex = 47;
+            this.materialButton16.Text = "Reporte";
+            this.materialButton16.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton16.UseAccentColor = false;
+            this.materialButton16.UseVisualStyleBackColor = false;
             // 
-            // radioFemenino
+            // materialButton9
             // 
-            this.radioFemenino.AutoSize = true;
-            this.radioFemenino.Depth = 0;
-            this.radioFemenino.Location = new System.Drawing.Point(1080, 128);
-            this.radioFemenino.Margin = new System.Windows.Forms.Padding(0);
-            this.radioFemenino.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioFemenino.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioFemenino.Name = "radioFemenino";
-            this.radioFemenino.Ripple = true;
-            this.radioFemenino.Size = new System.Drawing.Size(105, 37);
-            this.radioFemenino.TabIndex = 6;
-            this.radioFemenino.TabStop = true;
-            this.radioFemenino.Text = "Femenino";
-            this.radioFemenino.UseVisualStyleBackColor = true;
+            this.materialButton9.AutoSize = false;
+            this.materialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton9.Depth = 0;
+            this.materialButton9.HighEmphasis = true;
+            this.materialButton9.Icon = global::Presentacion.Properties.Resources.edit;
+            this.materialButton9.Location = new System.Drawing.Point(629, 253);
+            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton9.Name = "materialButton9";
+            this.materialButton9.Size = new System.Drawing.Size(170, 39);
+            this.materialButton9.TabIndex = 43;
+            this.materialButton9.Text = "Editar";
+            this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton9.UseAccentColor = false;
+            this.materialButton9.UseVisualStyleBackColor = true;
+            this.materialButton9.Click += new System.EventHandler(this.btnEditarProducto_Click);
             // 
-            // radioMasculino
+            // btnEliminarProducto
             // 
-            this.radioMasculino.AutoSize = true;
-            this.radioMasculino.Depth = 0;
-            this.radioMasculino.Location = new System.Drawing.Point(928, 128);
-            this.radioMasculino.Margin = new System.Windows.Forms.Padding(0);
-            this.radioMasculino.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioMasculino.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioMasculino.Name = "radioMasculino";
-            this.radioMasculino.Ripple = true;
-            this.radioMasculino.Size = new System.Drawing.Size(109, 37);
-            this.radioMasculino.TabIndex = 5;
-            this.radioMasculino.TabStop = true;
-            this.radioMasculino.Text = "Masculino";
-            this.radioMasculino.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.AutoSize = false;
+            this.btnEliminarProducto.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminarProducto.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEliminarProducto.Depth = 0;
+            this.btnEliminarProducto.HighEmphasis = true;
+            this.btnEliminarProducto.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
+            this.btnEliminarProducto.Location = new System.Drawing.Point(380, 253);
+            this.btnEliminarProducto.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEliminarProducto.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEliminarProducto.Name = "btnEliminarProducto";
+            this.btnEliminarProducto.Size = new System.Drawing.Size(170, 39);
+            this.btnEliminarProducto.TabIndex = 44;
+            this.btnEliminarProducto.Text = "Eliminar";
+            this.btnEliminarProducto.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEliminarProducto.UseAccentColor = false;
+            this.btnEliminarProducto.UseVisualStyleBackColor = true;
+            this.btnEliminarProducto.Click += new System.EventHandler(this.BtnELiminarProducto_Click);
             // 
-            // btnReport
+            // materialButton11
             // 
-            this.btnReport.AutoSize = false;
-            this.btnReport.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnReport.BackColor = System.Drawing.Color.Yellow;
-            this.btnReport.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnReport.Depth = 0;
-            this.btnReport.HighEmphasis = true;
-            this.btnReport.Icon = global::Presentacion.Properties.Resources.report;
-            this.btnReport.Location = new System.Drawing.Point(893, 211);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnReport.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(170, 39);
-            this.btnReport.TabIndex = 4;
-            this.btnReport.Text = "Reporte";
-            this.btnReport.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnReport.UseAccentColor = false;
-            this.btnReport.UseVisualStyleBackColor = false;
+            this.materialButton11.AutoSize = false;
+            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton11.Depth = 0;
+            this.materialButton11.HighEmphasis = true;
+            this.materialButton11.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.materialButton11.Location = new System.Drawing.Point(142, 253);
+            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton11.Name = "materialButton11";
+            this.materialButton11.Size = new System.Drawing.Size(170, 39);
+            this.materialButton11.TabIndex = 45;
+            this.materialButton11.Text = "Guardar";
+            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton11.UseAccentColor = false;
+            this.materialButton11.UseVisualStyleBackColor = true;
+            this.materialButton11.Click += new System.EventHandler(this.materialButton11_Click);
             // 
-            // btnEditar
+            // materialLabel52
             // 
-            this.btnEditar.AutoSize = false;
-            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEditar.BackColor = System.Drawing.Color.Yellow;
-            this.btnEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnEditar.Depth = 0;
-            this.btnEditar.HighEmphasis = true;
-            this.btnEditar.Icon = global::Presentacion.Properties.Resources.edit;
-            this.btnEditar.Location = new System.Drawing.Point(680, 211);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(170, 39);
-            this.btnEditar.TabIndex = 4;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnEditar.UseAccentColor = false;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.materialLabel52.AutoSize = true;
+            this.materialLabel52.Depth = 0;
+            this.materialLabel52.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel52.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel52.Location = new System.Drawing.Point(125, 40);
+            this.materialLabel52.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel52.Name = "materialLabel52";
+            this.materialLabel52.Size = new System.Drawing.Size(112, 29);
+            this.materialLabel52.TabIndex = 42;
+            this.materialLabel52.Text = "Productos";
             // 
-            // btnEliminar
+            // txtProductoDescripcion
             // 
-            this.btnEliminar.AutoSize = false;
-            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEliminar.BackColor = System.Drawing.Color.Yellow;
-            this.btnEliminar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnEliminar.Depth = 0;
-            this.btnEliminar.HighEmphasis = true;
-            this.btnEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
-            this.btnEliminar.Location = new System.Drawing.Point(415, 211);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(170, 39);
-            this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnEliminar.UseAccentColor = false;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.txtProductoDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtProductoDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProductoDescripcion.Depth = 0;
+            this.txtProductoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtProductoDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtProductoDescripcion.Location = new System.Drawing.Point(606, 100);
+            this.txtProductoDescripcion.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtProductoDescripcion.Name = "txtProductoDescripcion";
+            this.txtProductoDescripcion.Size = new System.Drawing.Size(408, 89);
+            this.txtProductoDescripcion.TabIndex = 41;
+            this.txtProductoDescripcion.Text = "";
             // 
-            // btnGuardar
+            // txtProductoPrecio
             // 
-            this.btnGuardar.AutoSize = false;
-            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGuardar.BackColor = System.Drawing.Color.Yellow;
-            this.btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGuardar.Depth = 0;
-            this.btnGuardar.DrawShadows = false;
-            this.btnGuardar.HighEmphasis = true;
-            this.btnGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
-            this.btnGuardar.Location = new System.Drawing.Point(169, 211);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(170, 39);
-            this.btnGuardar.TabIndex = 4;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGuardar.UseAccentColor = false;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.txtProductoPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProductoPrecio.Depth = 0;
+            this.txtProductoPrecio.DetectUrls = false;
+            this.txtProductoPrecio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtProductoPrecio.LeadingIcon = null;
+            this.txtProductoPrecio.Location = new System.Drawing.Point(130, 153);
+            this.txtProductoPrecio.MaxLength = 60;
+            this.txtProductoPrecio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtProductoPrecio.Multiline = false;
+            this.txtProductoPrecio.Name = "txtProductoPrecio";
+            this.txtProductoPrecio.Size = new System.Drawing.Size(301, 36);
+            this.txtProductoPrecio.TabIndex = 39;
+            this.txtProductoPrecio.Text = "";
+            this.txtProductoPrecio.TrailingIcon = null;
+            this.txtProductoPrecio.UseTallSize = false;
+            this.txtProductoPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.materialTextBox1_KeyPress);
             // 
-            // txtDepartamento
+            // txtNombreProducto
             // 
-            this.txtDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDepartamento.Depth = 0;
-            this.txtDepartamento.DetectUrls = false;
-            this.txtDepartamento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDepartamento.LeadingIcon = null;
-            this.txtDepartamento.Location = new System.Drawing.Point(567, 63);
-            this.txtDepartamento.MaxLength = 60;
-            this.txtDepartamento.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDepartamento.Multiline = false;
-            this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(274, 36);
-            this.txtDepartamento.TabIndex = 3;
-            this.txtDepartamento.Text = "";
-            this.txtDepartamento.TrailingIcon = null;
-            this.txtDepartamento.UseTallSize = false;
+            this.txtNombreProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreProducto.Depth = 0;
+            this.txtNombreProducto.DetectUrls = false;
+            this.txtNombreProducto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreProducto.LeadingIcon = null;
+            this.txtNombreProducto.Location = new System.Drawing.Point(130, 100);
+            this.txtNombreProducto.MaxLength = 60;
+            this.txtNombreProducto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreProducto.Multiline = false;
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(301, 36);
+            this.txtNombreProducto.TabIndex = 40;
+            this.txtNombreProducto.Text = "";
+            this.txtNombreProducto.TrailingIcon = null;
+            this.txtNombreProducto.UseTallSize = false;
             // 
-            // txtDireccion
+            // materialLabel53
             // 
-            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDireccion.Depth = 0;
-            this.txtDireccion.DetectUrls = false;
-            this.txtDireccion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDireccion.LeadingIcon = null;
-            this.txtDireccion.Location = new System.Drawing.Point(949, 63);
-            this.txtDireccion.MaxLength = 60;
-            this.txtDireccion.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDireccion.Multiline = false;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(274, 36);
-            this.txtDireccion.TabIndex = 2;
-            this.txtDireccion.Text = "";
-            this.txtDireccion.TrailingIcon = null;
-            this.txtDireccion.UseTallSize = false;
+            this.materialLabel53.AutoSize = true;
+            this.materialLabel53.Depth = 0;
+            this.materialLabel53.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel53.Location = new System.Drawing.Point(487, 117);
+            this.materialLabel53.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel53.Name = "materialLabel53";
+            this.materialLabel53.Size = new System.Drawing.Size(84, 19);
+            this.materialLabel53.TabIndex = 36;
+            this.materialLabel53.Text = "Descripcion";
             // 
-            // txtApellido
+            // materialLabel54
             // 
-            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellido.Depth = 0;
-            this.txtApellido.DetectUrls = false;
-            this.txtApellido.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtApellido.LeadingIcon = null;
-            this.txtApellido.Location = new System.Drawing.Point(118, 129);
-            this.txtApellido.MaxLength = 60;
-            this.txtApellido.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtApellido.Multiline = false;
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(274, 36);
-            this.txtApellido.TabIndex = 1;
-            this.txtApellido.Text = "";
-            this.txtApellido.TrailingIcon = null;
-            this.txtApellido.UseTallSize = false;
+            this.materialLabel54.AutoSize = true;
+            this.materialLabel54.Depth = 0;
+            this.materialLabel54.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel54.Location = new System.Drawing.Point(43, 170);
+            this.materialLabel54.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel54.Name = "materialLabel54";
+            this.materialLabel54.Size = new System.Drawing.Size(45, 19);
+            this.materialLabel54.TabIndex = 37;
+            this.materialLabel54.Text = "Precio";
             // 
-            // txtNombre
+            // materialLabel55
             // 
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Depth = 0;
-            this.txtNombre.DetectUrls = false;
-            this.txtNombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNombre.LeadingIcon = null;
-            this.txtNombre.Location = new System.Drawing.Point(118, 63);
-            this.txtNombre.MaxLength = 60;
-            this.txtNombre.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNombre.Multiline = false;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(274, 36);
-            this.txtNombre.TabIndex = 1;
-            this.txtNombre.Text = "";
-            this.txtNombre.TrailingIcon = null;
-            this.txtNombre.UseTallSize = false;
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel12.Location = new System.Drawing.Point(113, 15);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(248, 29);
-            this.materialLabel12.TabIndex = 1;
-            this.materialLabel12.Text = "Registro de empleados";
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(435, 80);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(102, 19);
-            this.materialLabel5.TabIndex = 1;
-            this.materialLabel5.Text = "Departamento";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(487, 146);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(50, 19);
-            this.materialLabel4.TabIndex = 1;
-            this.materialLabel4.Text = "Puesto";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(878, 138);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(36, 19);
-            this.materialLabel3.TabIndex = 1;
-            this.materialLabel3.Text = "Sexo";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(853, 80);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(67, 19);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Direccion";
-            // 
-            // materialLabel56
-            // 
-            this.materialLabel56.AutoSize = true;
-            this.materialLabel56.Depth = 0;
-            this.materialLabel56.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel56.Location = new System.Drawing.Point(32, 146);
-            this.materialLabel56.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel56.Name = "materialLabel56";
-            this.materialLabel56.Size = new System.Drawing.Size(58, 19);
-            this.materialLabel56.TabIndex = 1;
-            this.materialLabel56.Text = "Apellido";
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(32, 80);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(57, 19);
-            this.materialLabel1.TabIndex = 1;
-            this.materialLabel1.Text = "Nombre";
+            this.materialLabel55.AutoSize = true;
+            this.materialLabel55.Depth = 0;
+            this.materialLabel55.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel55.Location = new System.Drawing.Point(44, 117);
+            this.materialLabel55.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel55.Name = "materialLabel55";
+            this.materialLabel55.Size = new System.Drawing.Size(57, 19);
+            this.materialLabel55.TabIndex = 38;
+            this.materialLabel55.Text = "Nombre";
             // 
             // Entrada
             // 
             this.Entrada.BackColor = System.Drawing.Color.White;
+            this.Entrada.Controls.Add(this.txtDate);
+            this.Entrada.Controls.Add(this.DataGridEntradasDELeche);
             this.Entrada.Controls.Add(this.materialButton13);
             this.Entrada.Controls.Add(this.btnEditarEntrada);
             this.Entrada.Controls.Add(this.btnEliminarEntradaDeLeche);
-            this.Entrada.Controls.Add(this.txtDate);
-            this.Entrada.Controls.Add(this.materialButton3);
+            this.Entrada.Controls.Add(this.btnGuardarEmtrada);
             this.Entrada.Controls.Add(this.txtCantidadEntrada);
             this.Entrada.Controls.Add(this.materialLabel22);
             this.Entrada.Controls.Add(this.materialLabel21);
@@ -1242,13 +1169,82 @@
             this.Entrada.Controls.Add(this.comboEstado);
             this.Entrada.Controls.Add(this.comboRecolector);
             this.Entrada.Controls.Add(this.ComboSuplodires);
-            this.Entrada.Controls.Add(this.DataGridEntradasDELeche);
             this.Entrada.ImageKey = "entradaLeche.png";
             this.Entrada.Location = new System.Drawing.Point(4, 35);
             this.Entrada.Name = "Entrada";
-            this.Entrada.Size = new System.Drawing.Size(1291, 618);
+            this.Entrada.Size = new System.Drawing.Size(1354, 644);
             this.Entrada.TabIndex = 2;
             this.Entrada.Text = "Entrada de Leche";
+            // 
+            // txtDate
+            // 
+            this.txtDate.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtDate.BorderRadius = 0;
+            this.txtDate.ForeColor = System.Drawing.Color.White;
+            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtDate.FormatCustom = null;
+            this.txtDate.Location = new System.Drawing.Point(707, 132);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(307, 36);
+            this.txtDate.TabIndex = 26;
+            this.txtDate.Value = new System.DateTime(2021, 8, 10, 18, 34, 53, 366);
+            // 
+            // DataGridEntradasDELeche
+            // 
+            this.DataGridEntradasDELeche.AllowUserToAddRows = false;
+            this.DataGridEntradasDELeche.AllowUserToDeleteRows = false;
+            this.DataGridEntradasDELeche.AllowUserToResizeColumns = false;
+            this.DataGridEntradasDELeche.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridEntradasDELeche.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridEntradasDELeche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridEntradasDELeche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGridEntradasDELeche.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridEntradasDELeche.CausesValidation = false;
+            this.DataGridEntradasDELeche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridEntradasDELeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridEntradasDELeche.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridEntradasDELeche.DoubleBuffered = false;
+            this.DataGridEntradasDELeche.EnableHeadersVisualStyles = false;
+            this.DataGridEntradasDELeche.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGridEntradasDELeche.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.DataGridEntradasDELeche.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridEntradasDELeche.Location = new System.Drawing.Point(0, 335);
+            this.DataGridEntradasDELeche.MultiSelect = false;
+            this.DataGridEntradasDELeche.Name = "DataGridEntradasDELeche";
+            this.DataGridEntradasDELeche.ReadOnly = true;
+            this.DataGridEntradasDELeche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEntradasDELeche.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.DataGridEntradasDELeche.RowHeadersVisible = false;
+            this.DataGridEntradasDELeche.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1354, 309);
+            this.DataGridEntradasDELeche.TabIndex = 25;
             // 
             // materialButton13
             // 
@@ -1310,40 +1306,25 @@
             this.btnEliminarEntradaDeLeche.UseVisualStyleBackColor = true;
             this.btnEliminarEntradaDeLeche.Click += new System.EventHandler(this.btnEliminarEntradaDeLeche_Click);
             // 
-            // txtDate
+            // btnGuardarEmtrada
             // 
-            this.txtDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.txtDate.BorderRadius = 0;
-            this.txtDate.ForeColor = System.Drawing.Color.White;
-            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.txtDate.FormatCustom = null;
-            this.txtDate.Location = new System.Drawing.Point(1012, 149);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(7);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Padding = new System.Windows.Forms.Padding(5);
-            this.txtDate.Size = new System.Drawing.Size(303, 36);
-            this.txtDate.TabIndex = 5;
-            this.txtDate.Value = new System.DateTime(2021, 6, 24, 17, 15, 11, 351);
-            // 
-            // materialButton3
-            // 
-            this.materialButton3.AutoSize = false;
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = global::Presentacion.Properties.Resources.save_24px;
-            this.materialButton3.Location = new System.Drawing.Point(132, 265);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.Size = new System.Drawing.Size(170, 39);
-            this.materialButton3.TabIndex = 18;
-            this.materialButton3.Text = "Guardar";
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton3.UseAccentColor = false;
-            this.materialButton3.UseVisualStyleBackColor = true;
-            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
+            this.btnGuardarEmtrada.AutoSize = false;
+            this.btnGuardarEmtrada.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardarEmtrada.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGuardarEmtrada.Depth = 0;
+            this.btnGuardarEmtrada.HighEmphasis = true;
+            this.btnGuardarEmtrada.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.btnGuardarEmtrada.Location = new System.Drawing.Point(132, 265);
+            this.btnGuardarEmtrada.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGuardarEmtrada.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGuardarEmtrada.Name = "btnGuardarEmtrada";
+            this.btnGuardarEmtrada.Size = new System.Drawing.Size(170, 39);
+            this.btnGuardarEmtrada.TabIndex = 18;
+            this.btnGuardarEmtrada.Text = "Guardar";
+            this.btnGuardarEmtrada.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGuardarEmtrada.UseAccentColor = false;
+            this.btnGuardarEmtrada.UseVisualStyleBackColor = true;
+            this.btnGuardarEmtrada.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // txtCantidadEntrada
             // 
@@ -1501,53 +1482,10 @@
             this.ComboSuplodires.StartIndex = 0;
             this.ComboSuplodires.TabIndex = 1;
             // 
-            // DataGridEntradasDELeche
-            // 
-            this.DataGridEntradasDELeche.AllowUserToAddRows = false;
-            this.DataGridEntradasDELeche.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DataGridEntradasDELeche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DataGridEntradasDELeche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridEntradasDELeche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.DataGridEntradasDELeche.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridEntradasDELeche.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridEntradasDELeche.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.DataGridEntradasDELeche.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DataGridEntradasDELeche.DoubleBuffered = true;
-            this.DataGridEntradasDELeche.EnableHeadersVisualStyles = false;
-            this.DataGridEntradasDELeche.HeaderBgColor = System.Drawing.Color.White;
-            this.DataGridEntradasDELeche.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.DataGridEntradasDELeche.Location = new System.Drawing.Point(0, 328);
-            this.DataGridEntradasDELeche.MultiSelect = false;
-            this.DataGridEntradasDELeche.Name = "DataGridEntradasDELeche";
-            this.DataGridEntradasDELeche.ReadOnly = true;
-            this.DataGridEntradasDELeche.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridEntradasDELeche.RowHeadersVisible = false;
-            this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1291, 290);
-            this.DataGridEntradasDELeche.TabIndex = 8;
-            // 
             // suplidor
             // 
             this.suplidor.BackColor = System.Drawing.Color.White;
+            this.suplidor.Controls.Add(this.dataGridSuplidor);
             this.suplidor.Controls.Add(this.materialButton14);
             this.suplidor.Controls.Add(this.btnEmpleadoEditar);
             this.suplidor.Controls.Add(this.btnEmpleadoEliminar);
@@ -1560,14 +1498,70 @@
             this.suplidor.Controls.Add(this.materialLabel17);
             this.suplidor.Controls.Add(this.materialLabel15);
             this.suplidor.Controls.Add(this.materialLabel16);
-            this.suplidor.Controls.Add(this.dataGridSuplidor);
             this.suplidor.Controls.Add(this.materialLabel13);
             this.suplidor.ImageKey = "Suplidor.png";
             this.suplidor.Location = new System.Drawing.Point(4, 35);
             this.suplidor.Name = "suplidor";
-            this.suplidor.Size = new System.Drawing.Size(1291, 618);
+            this.suplidor.Size = new System.Drawing.Size(1354, 644);
             this.suplidor.TabIndex = 4;
             this.suplidor.Text = "Nuevo Suplidor";
+            // 
+            // dataGridSuplidor
+            // 
+            this.dataGridSuplidor.AllowUserToAddRows = false;
+            this.dataGridSuplidor.AllowUserToDeleteRows = false;
+            this.dataGridSuplidor.AllowUserToResizeColumns = false;
+            this.dataGridSuplidor.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridSuplidor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridSuplidor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.dataGridSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridSuplidor.CausesValidation = false;
+            this.dataGridSuplidor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridSuplidor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridSuplidor.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridSuplidor.DoubleBuffered = false;
+            this.dataGridSuplidor.EnableHeadersVisualStyles = false;
+            this.dataGridSuplidor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.dataGridSuplidor.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.dataGridSuplidor.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 326);
+            this.dataGridSuplidor.MultiSelect = false;
+            this.dataGridSuplidor.Name = "dataGridSuplidor";
+            this.dataGridSuplidor.ReadOnly = true;
+            this.dataGridSuplidor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridSuplidor.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridSuplidor.RowHeadersVisible = false;
+            this.dataGridSuplidor.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridSuplidor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridSuplidor.Size = new System.Drawing.Size(1354, 292);
+            this.dataGridSuplidor.TabIndex = 24;
             // 
             // materialButton14
             // 
@@ -1765,48 +1759,6 @@
             this.materialLabel16.TabIndex = 11;
             this.materialLabel16.Text = "Nombre";
             // 
-            // dataGridSuplidor
-            // 
-            this.dataGridSuplidor.AllowUserToAddRows = false;
-            this.dataGridSuplidor.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridSuplidor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridSuplidor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.dataGridSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridSuplidor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridSuplidor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridSuplidor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridSuplidor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridSuplidor.DoubleBuffered = true;
-            this.dataGridSuplidor.EnableHeadersVisualStyles = false;
-            this.dataGridSuplidor.HeaderBgColor = System.Drawing.Color.White;
-            this.dataGridSuplidor.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 313);
-            this.dataGridSuplidor.MultiSelect = false;
-            this.dataGridSuplidor.Name = "dataGridSuplidor";
-            this.dataGridSuplidor.ReadOnly = true;
-            this.dataGridSuplidor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridSuplidor.RowHeadersVisible = false;
-            this.dataGridSuplidor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridSuplidor.Size = new System.Drawing.Size(1291, 305);
-            this.dataGridSuplidor.TabIndex = 8;
-            // 
             // materialLabel13
             // 
             this.materialLabel13.AutoSize = true;
@@ -1820,574 +1772,391 @@
             this.materialLabel13.TabIndex = 0;
             this.materialLabel13.Text = "Registro de nuevo suplidor";
             // 
-            // Ventas
-            // 
-            this.Ventas.Controls.Add(this.materialButton15);
-            this.Ventas.Controls.Add(this.materialMultiLineTextBox1);
-            this.Ventas.Controls.Add(this.materialComboBox1);
-            this.Ventas.Controls.Add(this.materialButton6);
-            this.Ventas.Controls.Add(this.materialButton7);
-            this.Ventas.Controls.Add(this.materialButton8);
-            this.Ventas.Controls.Add(this.materialTextBox4);
-            this.Ventas.Controls.Add(this.materialTextBox3);
-            this.Ventas.Controls.Add(this.materialTextBox2);
-            this.Ventas.Controls.Add(this.materialTextBox1);
-            this.Ventas.Controls.Add(this.materialLabel41);
-            this.Ventas.Controls.Add(this.materialTextBox5);
-            this.Ventas.Controls.Add(this.materialLabel42);
-            this.Ventas.Controls.Add(this.materialLabel43);
-            this.Ventas.Controls.Add(this.materialLabel44);
-            this.Ventas.Controls.Add(this.materialLabel48);
-            this.Ventas.Controls.Add(this.materialLabel49);
-            this.Ventas.Controls.Add(this.materialLabel50);
-            this.Ventas.Controls.Add(this.materialLabel51);
-            this.Ventas.ImageKey = "sales.png";
-            this.Ventas.Location = new System.Drawing.Point(4, 35);
-            this.Ventas.Name = "Ventas";
-            this.Ventas.Size = new System.Drawing.Size(1291, 618);
-            this.Ventas.TabIndex = 6;
-            this.Ventas.Text = "Ventas";
-            this.Ventas.UseVisualStyleBackColor = true;
-            // 
-            // materialButton15
-            // 
-            this.materialButton15.AutoSize = false;
-            this.materialButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton15.BackColor = System.Drawing.Color.Yellow;
-            this.materialButton15.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton15.Depth = 0;
-            this.materialButton15.HighEmphasis = true;
-            this.materialButton15.Icon = global::Presentacion.Properties.Resources.report;
-            this.materialButton15.Location = new System.Drawing.Point(991, 245);
-            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton15.Name = "materialButton15";
-            this.materialButton15.Size = new System.Drawing.Size(170, 39);
-            this.materialButton15.TabIndex = 48;
-            this.materialButton15.Text = "Reporte";
-            this.materialButton15.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton15.UseAccentColor = false;
-            this.materialButton15.UseVisualStyleBackColor = false;
-            // 
-            // materialMultiLineTextBox1
-            // 
-            this.materialMultiLineTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialMultiLineTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialMultiLineTextBox1.Depth = 0;
-            this.materialMultiLineTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMultiLineTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialMultiLineTextBox1.Location = new System.Drawing.Point(585, 68);
-            this.materialMultiLineTextBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialMultiLineTextBox1.Name = "materialMultiLineTextBox1";
-            this.materialMultiLineTextBox1.Size = new System.Drawing.Size(298, 72);
-            this.materialMultiLineTextBox1.TabIndex = 47;
-            this.materialMultiLineTextBox1.Text = "";
-            // 
-            // materialComboBox1
-            // 
-            this.materialComboBox1.AutoResize = false;
-            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox1.Depth = 0;
-            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox1.DropDownHeight = 174;
-            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox1.DropDownWidth = 121;
-            this.materialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.IntegralHeight = false;
-            this.materialComboBox1.ItemHeight = 43;
-            this.materialComboBox1.Location = new System.Drawing.Point(129, 68);
-            this.materialComboBox1.MaxDropDownItems = 4;
-            this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(332, 49);
-            this.materialComboBox1.StartIndex = 0;
-            this.materialComboBox1.TabIndex = 46;
-            // 
-            // materialButton6
-            // 
-            this.materialButton6.AutoSize = false;
-            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton6.Depth = 0;
-            this.materialButton6.HighEmphasis = true;
-            this.materialButton6.Icon = global::Presentacion.Properties.Resources.print_24px;
-            this.materialButton6.Location = new System.Drawing.Point(755, 245);
-            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton6.Name = "materialButton6";
-            this.materialButton6.Size = new System.Drawing.Size(170, 39);
-            this.materialButton6.TabIndex = 43;
-            this.materialButton6.Text = "Imprimir";
-            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton6.UseAccentColor = false;
-            this.materialButton6.UseVisualStyleBackColor = true;
-            // 
-            // materialButton7
-            // 
-            this.materialButton7.AutoSize = false;
-            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton7.Depth = 0;
-            this.materialButton7.HighEmphasis = true;
-            this.materialButton7.Icon = global::Presentacion.Properties.Resources.clear;
-            this.materialButton7.Location = new System.Drawing.Point(506, 245);
-            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton7.Name = "materialButton7";
-            this.materialButton7.Size = new System.Drawing.Size(170, 39);
-            this.materialButton7.TabIndex = 44;
-            this.materialButton7.Text = "Limpiar";
-            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton7.UseAccentColor = false;
-            this.materialButton7.UseVisualStyleBackColor = true;
-            // 
-            // materialButton8
-            // 
-            this.materialButton8.AutoSize = false;
-            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton8.Depth = 0;
-            this.materialButton8.HighEmphasis = true;
-            this.materialButton8.Icon = global::Presentacion.Properties.Resources.process_24px;
-            this.materialButton8.Location = new System.Drawing.Point(268, 245);
-            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton8.Name = "materialButton8";
-            this.materialButton8.Size = new System.Drawing.Size(170, 39);
-            this.materialButton8.TabIndex = 45;
-            this.materialButton8.Text = "Procesar";
-            this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton8.UseAccentColor = false;
-            this.materialButton8.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox4
-            // 
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.DetectUrls = false;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(1014, 165);
-            this.materialTextBox4.MaxLength = 60;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(181, 36);
-            this.materialTextBox4.TabIndex = 38;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
-            this.materialTextBox4.UseTallSize = false;
-            // 
-            // materialTextBox3
-            // 
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.DetectUrls = false;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(1014, 70);
-            this.materialTextBox3.MaxLength = 60;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(181, 36);
-            this.materialTextBox3.TabIndex = 39;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
-            this.materialTextBox3.UseTallSize = false;
-            // 
-            // materialTextBox2
-            // 
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.DetectUrls = false;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(585, 165);
-            this.materialTextBox2.MaxLength = 60;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(298, 36);
-            this.materialTextBox2.TabIndex = 40;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
-            this.materialTextBox2.UseTallSize = false;
-            // 
-            // materialTextBox1
-            // 
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.DetectUrls = false;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(129, 165);
-            this.materialTextBox1.MaxLength = 60;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(332, 36);
-            this.materialTextBox1.TabIndex = 41;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
-            this.materialTextBox1.UseTallSize = false;
-            // 
-            // materialLabel41
-            // 
-            this.materialLabel41.AutoSize = true;
-            this.materialLabel41.Depth = 0;
-            this.materialLabel41.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel41.Location = new System.Drawing.Point(920, 182);
-            this.materialLabel41.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel41.Name = "materialLabel41";
-            this.materialLabel41.Size = new System.Drawing.Size(71, 19);
-            this.materialLabel41.TabIndex = 33;
-            this.materialLabel41.Text = "Efectivo $";
-            // 
-            // materialTextBox5
-            // 
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.DetectUrls = false;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(129, 123);
-            this.materialTextBox5.MaxLength = 60;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(332, 36);
-            this.materialTextBox5.TabIndex = 42;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
-            this.materialTextBox5.UseTallSize = false;
-            // 
-            // materialLabel42
-            // 
-            this.materialLabel42.AutoSize = true;
-            this.materialLabel42.Depth = 0;
-            this.materialLabel42.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel42.Location = new System.Drawing.Point(908, 87);
-            this.materialLabel42.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel42.Name = "materialLabel42";
-            this.materialLabel42.Size = new System.Drawing.Size(100, 19);
-            this.materialLabel42.TabIndex = 34;
-            this.materialLabel42.Text = "Total al pagar";
-            // 
-            // materialLabel43
-            // 
-            this.materialLabel43.AutoSize = true;
-            this.materialLabel43.Depth = 0;
-            this.materialLabel43.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel43.Location = new System.Drawing.Point(487, 182);
-            this.materialLabel43.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel43.Name = "materialLabel43";
-            this.materialLabel43.Size = new System.Drawing.Size(76, 19);
-            this.materialLabel43.TabIndex = 32;
-            this.materialLabel43.Text = "Descuento";
-            // 
-            // materialLabel44
-            // 
-            this.materialLabel44.AutoSize = true;
-            this.materialLabel44.Depth = 0;
-            this.materialLabel44.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel44.Location = new System.Drawing.Point(42, 182);
-            this.materialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel44.Name = "materialLabel44";
-            this.materialLabel44.Size = new System.Drawing.Size(65, 19);
-            this.materialLabel44.TabIndex = 36;
-            this.materialLabel44.Text = "Cantidad";
-            // 
-            // materialLabel48
-            // 
-            this.materialLabel48.AutoSize = true;
-            this.materialLabel48.Depth = 0;
-            this.materialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel48.Location = new System.Drawing.Point(485, 98);
-            this.materialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel48.Name = "materialLabel48";
-            this.materialLabel48.Size = new System.Drawing.Size(84, 19);
-            this.materialLabel48.TabIndex = 31;
-            this.materialLabel48.Text = "Descripcion";
-            // 
-            // materialLabel49
-            // 
-            this.materialLabel49.AutoSize = true;
-            this.materialLabel49.Depth = 0;
-            this.materialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel49.Location = new System.Drawing.Point(42, 140);
-            this.materialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel49.Name = "materialLabel49";
-            this.materialLabel49.Size = new System.Drawing.Size(51, 19);
-            this.materialLabel49.TabIndex = 35;
-            this.materialLabel49.Text = "Codigo";
-            // 
-            // materialLabel50
-            // 
-            this.materialLabel50.AutoSize = true;
-            this.materialLabel50.Depth = 0;
-            this.materialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel50.Location = new System.Drawing.Point(43, 87);
-            this.materialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel50.Name = "materialLabel50";
-            this.materialLabel50.Size = new System.Drawing.Size(65, 19);
-            this.materialLabel50.TabIndex = 37;
-            this.materialLabel50.Text = "Producto";
-            // 
-            // materialLabel51
-            // 
-            this.materialLabel51.AutoSize = true;
-            this.materialLabel51.Depth = 0;
-            this.materialLabel51.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel51.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel51.Location = new System.Drawing.Point(46, 17);
-            this.materialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel51.Name = "materialLabel51";
-            this.materialLabel51.Size = new System.Drawing.Size(211, 29);
-            this.materialLabel51.TabIndex = 30;
-            this.materialLabel51.Text = "Venta de productos";
-            // 
-            // Productos
-            // 
-            this.Productos.Controls.Add(this.materialButton16);
-            this.Productos.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Productos.Controls.Add(this.materialButton9);
-            this.Productos.Controls.Add(this.materialButton10);
-            this.Productos.Controls.Add(this.materialButton11);
-            this.Productos.Controls.Add(this.materialLabel52);
-            this.Productos.Controls.Add(this.materialMultiLineTextBox2);
-            this.Productos.Controls.Add(this.materialTextBox6);
-            this.Productos.Controls.Add(this.materialTextBox7);
-            this.Productos.Controls.Add(this.materialLabel53);
-            this.Productos.Controls.Add(this.materialLabel54);
-            this.Productos.Controls.Add(this.materialLabel55);
-            this.Productos.ImageKey = "product_24px.png";
-            this.Productos.Location = new System.Drawing.Point(4, 35);
-            this.Productos.Name = "Productos";
-            this.Productos.Size = new System.Drawing.Size(1291, 618);
-            this.Productos.TabIndex = 7;
-            this.Productos.Text = "Productos";
-            this.Productos.UseVisualStyleBackColor = true;
-            // 
-            // materialButton16
-            // 
-            this.materialButton16.AutoSize = false;
-            this.materialButton16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton16.BackColor = System.Drawing.Color.Yellow;
-            this.materialButton16.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton16.Depth = 0;
-            this.materialButton16.HighEmphasis = true;
-            this.materialButton16.Icon = global::Presentacion.Properties.Resources.report;
-            this.materialButton16.Location = new System.Drawing.Point(837, 253);
-            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton16.Name = "materialButton16";
-            this.materialButton16.Size = new System.Drawing.Size(170, 39);
-            this.materialButton16.TabIndex = 47;
-            this.materialButton16.Text = "Reporte";
-            this.materialButton16.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton16.UseAccentColor = false;
-            this.materialButton16.UseVisualStyleBackColor = false;
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
-            this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
-            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuCustomDataGrid1.DefaultCellStyle = dataGridViewCellStyle13;
-            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 313);
-            this.bunifuCustomDataGrid1.MultiSelect = false;
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.ReadOnly = true;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersVisible = false;
-            this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1291, 305);
-            this.bunifuCustomDataGrid1.TabIndex = 46;
-            // 
-            // materialButton9
-            // 
-            this.materialButton9.AutoSize = false;
-            this.materialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton9.Depth = 0;
-            this.materialButton9.HighEmphasis = true;
-            this.materialButton9.Icon = global::Presentacion.Properties.Resources.edit;
-            this.materialButton9.Location = new System.Drawing.Point(629, 253);
-            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton9.Name = "materialButton9";
-            this.materialButton9.Size = new System.Drawing.Size(170, 39);
-            this.materialButton9.TabIndex = 43;
-            this.materialButton9.Text = "Editar";
-            this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton9.UseAccentColor = false;
-            this.materialButton9.UseVisualStyleBackColor = true;
-            // 
-            // materialButton10
-            // 
-            this.materialButton10.AutoSize = false;
-            this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton10.Depth = 0;
-            this.materialButton10.HighEmphasis = true;
-            this.materialButton10.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
-            this.materialButton10.Location = new System.Drawing.Point(380, 253);
-            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton10.Name = "materialButton10";
-            this.materialButton10.Size = new System.Drawing.Size(170, 39);
-            this.materialButton10.TabIndex = 44;
-            this.materialButton10.Text = "Eliminar";
-            this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton10.UseAccentColor = false;
-            this.materialButton10.UseVisualStyleBackColor = true;
-            // 
-            // materialButton11
-            // 
-            this.materialButton11.AutoSize = false;
-            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton11.Depth = 0;
-            this.materialButton11.HighEmphasis = true;
-            this.materialButton11.Icon = global::Presentacion.Properties.Resources.save_24px;
-            this.materialButton11.Location = new System.Drawing.Point(142, 253);
-            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton11.Name = "materialButton11";
-            this.materialButton11.Size = new System.Drawing.Size(170, 39);
-            this.materialButton11.TabIndex = 45;
-            this.materialButton11.Text = "Guardar";
-            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton11.UseAccentColor = false;
-            this.materialButton11.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel52
-            // 
-            this.materialLabel52.AutoSize = true;
-            this.materialLabel52.Depth = 0;
-            this.materialLabel52.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel52.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel52.Location = new System.Drawing.Point(125, 40);
-            this.materialLabel52.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel52.Name = "materialLabel52";
-            this.materialLabel52.Size = new System.Drawing.Size(112, 29);
-            this.materialLabel52.TabIndex = 42;
-            this.materialLabel52.Text = "Productos";
-            // 
-            // materialMultiLineTextBox2
-            // 
-            this.materialMultiLineTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialMultiLineTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialMultiLineTextBox2.Depth = 0;
-            this.materialMultiLineTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMultiLineTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialMultiLineTextBox2.Location = new System.Drawing.Point(606, 100);
-            this.materialMultiLineTextBox2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialMultiLineTextBox2.Name = "materialMultiLineTextBox2";
-            this.materialMultiLineTextBox2.Size = new System.Drawing.Size(408, 89);
-            this.materialMultiLineTextBox2.TabIndex = 41;
-            this.materialMultiLineTextBox2.Text = "";
-            // 
-            // materialTextBox6
-            // 
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.DetectUrls = false;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(130, 153);
-            this.materialTextBox6.MaxLength = 60;
-            this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(301, 36);
-            this.materialTextBox6.TabIndex = 39;
-            this.materialTextBox6.Text = "";
-            this.materialTextBox6.TrailingIcon = null;
-            this.materialTextBox6.UseTallSize = false;
-            // 
-            // materialTextBox7
-            // 
-            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.DetectUrls = false;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox7.LeadingIcon = null;
-            this.materialTextBox7.Location = new System.Drawing.Point(130, 100);
-            this.materialTextBox7.MaxLength = 60;
-            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox7.Multiline = false;
-            this.materialTextBox7.Name = "materialTextBox7";
-            this.materialTextBox7.Size = new System.Drawing.Size(301, 36);
-            this.materialTextBox7.TabIndex = 40;
-            this.materialTextBox7.Text = "";
-            this.materialTextBox7.TrailingIcon = null;
-            this.materialTextBox7.UseTallSize = false;
-            // 
-            // materialLabel53
-            // 
-            this.materialLabel53.AutoSize = true;
-            this.materialLabel53.Depth = 0;
-            this.materialLabel53.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel53.Location = new System.Drawing.Point(487, 117);
-            this.materialLabel53.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel53.Name = "materialLabel53";
-            this.materialLabel53.Size = new System.Drawing.Size(84, 19);
-            this.materialLabel53.TabIndex = 36;
-            this.materialLabel53.Text = "Descripcion";
-            // 
-            // materialLabel54
-            // 
-            this.materialLabel54.AutoSize = true;
-            this.materialLabel54.Depth = 0;
-            this.materialLabel54.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel54.Location = new System.Drawing.Point(43, 170);
-            this.materialLabel54.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel54.Name = "materialLabel54";
-            this.materialLabel54.Size = new System.Drawing.Size(45, 19);
-            this.materialLabel54.TabIndex = 37;
-            this.materialLabel54.Text = "Precio";
-            // 
-            // materialLabel55
-            // 
-            this.materialLabel55.AutoSize = true;
-            this.materialLabel55.Depth = 0;
-            this.materialLabel55.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel55.Location = new System.Drawing.Point(44, 117);
-            this.materialLabel55.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel55.Name = "materialLabel55";
-            this.materialLabel55.Size = new System.Drawing.Size(57, 19);
-            this.materialLabel55.TabIndex = 38;
-            this.materialLabel55.Text = "Nombre";
+            // Empleado
+            // 
+            this.Empleado.BackColor = System.Drawing.Color.White;
+            this.Empleado.Controls.Add(this.DataGrid);
+            this.Empleado.Controls.Add(this.comboPuesto);
+            this.Empleado.Controls.Add(this.radioFemenino);
+            this.Empleado.Controls.Add(this.radioMasculino);
+            this.Empleado.Controls.Add(this.btnReport);
+            this.Empleado.Controls.Add(this.btnEditar);
+            this.Empleado.Controls.Add(this.btnEliminar);
+            this.Empleado.Controls.Add(this.btnGuardar);
+            this.Empleado.Controls.Add(this.txtDepartamento);
+            this.Empleado.Controls.Add(this.txtDireccion);
+            this.Empleado.Controls.Add(this.txtApellido);
+            this.Empleado.Controls.Add(this.txtNombre);
+            this.Empleado.Controls.Add(this.materialLabel12);
+            this.Empleado.Controls.Add(this.materialLabel5);
+            this.Empleado.Controls.Add(this.materialLabel4);
+            this.Empleado.Controls.Add(this.materialLabel3);
+            this.Empleado.Controls.Add(this.materialLabel2);
+            this.Empleado.Controls.Add(this.materialLabel56);
+            this.Empleado.Controls.Add(this.materialLabel1);
+            this.Empleado.ImageKey = "new empleado.png";
+            this.Empleado.Location = new System.Drawing.Point(4, 35);
+            this.Empleado.Name = "Empleado";
+            this.Empleado.Padding = new System.Windows.Forms.Padding(3);
+            this.Empleado.Size = new System.Drawing.Size(1354, 644);
+            this.Empleado.TabIndex = 1;
+            this.Empleado.Text = "Nuevo Empleado";
+            // 
+            // DataGrid
+            // 
+            this.DataGrid.AllowUserToAddRows = false;
+            this.DataGrid.AllowUserToDeleteRows = false;
+            this.DataGrid.AllowUserToResizeColumns = false;
+            this.DataGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.DataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGrid.CausesValidation = false;
+            this.DataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGrid.DefaultCellStyle = dataGridViewCellStyle15;
+            this.DataGrid.DoubleBuffered = false;
+            this.DataGrid.EnableHeadersVisualStyles = false;
+            this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DataGrid.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.DataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGrid.Location = new System.Drawing.Point(3, 293);
+            this.DataGrid.MultiSelect = false;
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.ReadOnly = true;
+            this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.DataGrid.RowHeadersVisible = false;
+            this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGrid.Size = new System.Drawing.Size(1348, 322);
+            this.DataGrid.TabIndex = 10;
+            // 
+            // comboPuesto
+            // 
+            this.comboPuesto.AutoResize = false;
+            this.comboPuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.comboPuesto.Depth = 0;
+            this.comboPuesto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboPuesto.DropDownHeight = 174;
+            this.comboPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPuesto.DropDownWidth = 121;
+            this.comboPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.comboPuesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.comboPuesto.FormattingEnabled = true;
+            this.comboPuesto.IntegralHeight = false;
+            this.comboPuesto.ItemHeight = 43;
+            this.comboPuesto.Location = new System.Drawing.Point(567, 116);
+            this.comboPuesto.MaxDropDownItems = 4;
+            this.comboPuesto.MouseState = MaterialSkin.MouseState.OUT;
+            this.comboPuesto.Name = "comboPuesto";
+            this.comboPuesto.Size = new System.Drawing.Size(274, 49);
+            this.comboPuesto.StartIndex = 0;
+            this.comboPuesto.TabIndex = 4;
+            // 
+            // radioFemenino
+            // 
+            this.radioFemenino.AutoSize = true;
+            this.radioFemenino.Depth = 0;
+            this.radioFemenino.Location = new System.Drawing.Point(1080, 128);
+            this.radioFemenino.Margin = new System.Windows.Forms.Padding(0);
+            this.radioFemenino.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.radioFemenino.MouseState = MaterialSkin.MouseState.HOVER;
+            this.radioFemenino.Name = "radioFemenino";
+            this.radioFemenino.Ripple = true;
+            this.radioFemenino.Size = new System.Drawing.Size(105, 37);
+            this.radioFemenino.TabIndex = 6;
+            this.radioFemenino.TabStop = true;
+            this.radioFemenino.Text = "Femenino";
+            this.radioFemenino.UseVisualStyleBackColor = true;
+            // 
+            // radioMasculino
+            // 
+            this.radioMasculino.AutoSize = true;
+            this.radioMasculino.Depth = 0;
+            this.radioMasculino.Location = new System.Drawing.Point(928, 128);
+            this.radioMasculino.Margin = new System.Windows.Forms.Padding(0);
+            this.radioMasculino.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.radioMasculino.MouseState = MaterialSkin.MouseState.HOVER;
+            this.radioMasculino.Name = "radioMasculino";
+            this.radioMasculino.Ripple = true;
+            this.radioMasculino.Size = new System.Drawing.Size(109, 37);
+            this.radioMasculino.TabIndex = 5;
+            this.radioMasculino.TabStop = true;
+            this.radioMasculino.Text = "Masculino";
+            this.radioMasculino.UseVisualStyleBackColor = true;
+            // 
+            // btnReport
+            // 
+            this.btnReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReport.AutoSize = false;
+            this.btnReport.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReport.BackColor = System.Drawing.Color.Yellow;
+            this.btnReport.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReport.Depth = 0;
+            this.btnReport.HighEmphasis = true;
+            this.btnReport.Icon = global::Presentacion.Properties.Resources.report;
+            this.btnReport.Location = new System.Drawing.Point(915, 212);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnReport.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(170, 39);
+            this.btnReport.TabIndex = 4;
+            this.btnReport.Text = "Reporte";
+            this.btnReport.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReport.UseAccentColor = false;
+            this.btnReport.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.AutoSize = false;
+            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditar.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEditar.Depth = 0;
+            this.btnEditar.HighEmphasis = true;
+            this.btnEditar.Icon = global::Presentacion.Properties.Resources.edit;
+            this.btnEditar.Location = new System.Drawing.Point(702, 212);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(170, 39);
+            this.btnEditar.TabIndex = 4;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEditar.UseAccentColor = false;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.AutoSize = false;
+            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminar.BackColor = System.Drawing.Color.Yellow;
+            this.btnEliminar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEliminar.Depth = 0;
+            this.btnEliminar.HighEmphasis = true;
+            this.btnEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
+            this.btnEliminar.Location = new System.Drawing.Point(437, 212);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(170, 39);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEliminar.UseAccentColor = false;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardar.AutoSize = false;
+            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardar.BackColor = System.Drawing.Color.Yellow;
+            this.btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGuardar.Depth = 0;
+            this.btnGuardar.DrawShadows = false;
+            this.btnGuardar.HighEmphasis = true;
+            this.btnGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.btnGuardar.Location = new System.Drawing.Point(191, 212);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(170, 39);
+            this.btnGuardar.TabIndex = 4;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGuardar.UseAccentColor = false;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // txtDepartamento
+            // 
+            this.txtDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDepartamento.Depth = 0;
+            this.txtDepartamento.DetectUrls = false;
+            this.txtDepartamento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDepartamento.LeadingIcon = null;
+            this.txtDepartamento.Location = new System.Drawing.Point(567, 63);
+            this.txtDepartamento.MaxLength = 60;
+            this.txtDepartamento.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDepartamento.Multiline = false;
+            this.txtDepartamento.Name = "txtDepartamento";
+            this.txtDepartamento.Size = new System.Drawing.Size(274, 36);
+            this.txtDepartamento.TabIndex = 3;
+            this.txtDepartamento.Text = "";
+            this.txtDepartamento.TrailingIcon = null;
+            this.txtDepartamento.UseTallSize = false;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.Depth = 0;
+            this.txtDireccion.DetectUrls = false;
+            this.txtDireccion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDireccion.LeadingIcon = null;
+            this.txtDireccion.Location = new System.Drawing.Point(949, 63);
+            this.txtDireccion.MaxLength = 60;
+            this.txtDireccion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDireccion.Multiline = false;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(274, 36);
+            this.txtDireccion.TabIndex = 2;
+            this.txtDireccion.Text = "";
+            this.txtDireccion.TrailingIcon = null;
+            this.txtDireccion.UseTallSize = false;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellido.Depth = 0;
+            this.txtApellido.DetectUrls = false;
+            this.txtApellido.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtApellido.LeadingIcon = null;
+            this.txtApellido.Location = new System.Drawing.Point(118, 129);
+            this.txtApellido.MaxLength = 60;
+            this.txtApellido.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtApellido.Multiline = false;
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(274, 36);
+            this.txtApellido.TabIndex = 1;
+            this.txtApellido.Text = "";
+            this.txtApellido.TrailingIcon = null;
+            this.txtApellido.UseTallSize = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Depth = 0;
+            this.txtNombre.DetectUrls = false;
+            this.txtNombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombre.LeadingIcon = null;
+            this.txtNombre.Location = new System.Drawing.Point(118, 63);
+            this.txtNombre.MaxLength = 60;
+            this.txtNombre.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombre.Multiline = false;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(274, 36);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "";
+            this.txtNombre.TrailingIcon = null;
+            this.txtNombre.UseTallSize = false;
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel12.Location = new System.Drawing.Point(113, 15);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(248, 29);
+            this.materialLabel12.TabIndex = 1;
+            this.materialLabel12.Text = "Registro de empleados";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(435, 80);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(102, 19);
+            this.materialLabel5.TabIndex = 1;
+            this.materialLabel5.Text = "Departamento";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(487, 146);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(50, 19);
+            this.materialLabel4.TabIndex = 1;
+            this.materialLabel4.Text = "Puesto";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(878, 138);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(36, 19);
+            this.materialLabel3.TabIndex = 1;
+            this.materialLabel3.Text = "Sexo";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(853, 80);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(67, 19);
+            this.materialLabel2.TabIndex = 1;
+            this.materialLabel2.Text = "Direccion";
+            // 
+            // materialLabel56
+            // 
+            this.materialLabel56.AutoSize = true;
+            this.materialLabel56.Depth = 0;
+            this.materialLabel56.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel56.Location = new System.Drawing.Point(32, 146);
+            this.materialLabel56.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel56.Name = "materialLabel56";
+            this.materialLabel56.Size = new System.Drawing.Size(58, 19);
+            this.materialLabel56.TabIndex = 1;
+            this.materialLabel56.Text = "Apellido";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(32, 80);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(57, 19);
+            this.materialLabel1.TabIndex = 1;
+            this.materialLabel1.Text = "Nombre";
             // 
             // imageList1
             // 
@@ -2404,7 +2173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1305, 724);
+            this.ClientSize = new System.Drawing.Size(1368, 750);
             this.Controls.Add(this.TabsContent);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.TabsContent;
@@ -2414,7 +2183,6 @@
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.TabsContent.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
-            this.Inicio.PerformLayout();
             this.materialCard4.ResumeLayout(false);
             this.materialCard4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -2427,20 +2195,19 @@
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.Empleado.ResumeLayout(false);
-            this.Empleado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            this.Ventas.ResumeLayout(false);
+            this.Productos.ResumeLayout(false);
+            this.Productos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).EndInit();
             this.Entrada.ResumeLayout(false);
             this.Entrada.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEntradasDELeche)).EndInit();
             this.suplidor.ResumeLayout(false);
             this.suplidor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).EndInit();
-            this.Ventas.ResumeLayout(false);
-            this.Ventas.PerformLayout();
-            this.Productos.ResumeLayout(false);
-            this.Productos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.Empleado.ResumeLayout(false);
+            this.Empleado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2472,14 +2239,12 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
         private MaterialSkin.Controls.MaterialLabel materialLabel15;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridSuplidor;
         private MaterialSkin.Controls.MaterialMultiLineTextBox txtDireccionSupli;
         private MaterialSkin.Controls.MaterialButton btnEmpleadoEditar;
         private MaterialSkin.Controls.MaterialButton btnEmpleadoEliminar;
         private MaterialSkin.Controls.MaterialButton btnEmpleadoGuardar;
         private MaterialSkin.Controls.MaterialTextBox txtTelSupli;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridEntradasDELeche;
         private MaterialSkin.Controls.MaterialTextBox txtCantidadEntrada;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
         private MaterialSkin.Controls.MaterialLabel materialLabel21;
@@ -2489,16 +2254,13 @@
         private MaterialSkin.Controls.MaterialComboBox comboEstado;
         private MaterialSkin.Controls.MaterialComboBox comboRecolector;
         private MaterialSkin.Controls.MaterialComboBox ComboSuplodires;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton btnGuardarEmtrada;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
-        private Bunifu.Framework.UI.BunifuDatepicker txtDate;
         private MaterialSkin.Controls.MaterialButton btnEliminarEntradaDeLeche;
         private MaterialSkin.Controls.MaterialButton btnEditarEntrada;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage Inicio;
         private System.Windows.Forms.TabPage Ventas;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -2540,33 +2302,17 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel39;
         private MaterialSkin.Controls.MaterialLabel materialLabel40;
         private Calendario.UI_Calendario uI_Calendario1;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox1;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
         private MaterialSkin.Controls.MaterialButton materialButton6;
         private MaterialSkin.Controls.MaterialButton materialButton7;
         private MaterialSkin.Controls.MaterialButton materialButton8;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel41;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel42;
-        private MaterialSkin.Controls.MaterialLabel materialLabel43;
-        private MaterialSkin.Controls.MaterialLabel materialLabel44;
-        private MaterialSkin.Controls.MaterialLabel materialLabel48;
-        private MaterialSkin.Controls.MaterialLabel materialLabel49;
-        private MaterialSkin.Controls.MaterialLabel materialLabel50;
-        private MaterialSkin.Controls.MaterialLabel materialLabel51;
         private System.Windows.Forms.TabPage Productos;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private MaterialSkin.Controls.MaterialButton materialButton9;
-        private MaterialSkin.Controls.MaterialButton materialButton10;
+        private MaterialSkin.Controls.MaterialButton btnEliminarProducto;
         private MaterialSkin.Controls.MaterialButton materialButton11;
         private MaterialSkin.Controls.MaterialLabel materialLabel52;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox7;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox txtProductoDescripcion;
+        private MaterialSkin.Controls.MaterialTextBox txtProductoPrecio;
+        private MaterialSkin.Controls.MaterialTextBox txtNombreProducto;
         private MaterialSkin.Controls.MaterialLabel materialLabel53;
         private MaterialSkin.Controls.MaterialLabel materialLabel54;
         private MaterialSkin.Controls.MaterialLabel materialLabel55;
@@ -2578,6 +2324,10 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid;
         private MaterialSkin.Controls.MaterialTextBox txtApellido;
         private MaterialSkin.Controls.MaterialLabel materialLabel56;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridSuplidor;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridProductos;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridEntradasDELeche;
+        private Bunifu.Framework.UI.BunifuDatepicker txtDate;
     }
 }
 

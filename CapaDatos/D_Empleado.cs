@@ -13,30 +13,44 @@ using MaterialSkin.Controls;
 
 namespace CapaDatos
 {
-   public class D_Empleado
+   public class D_Empleado: ConexionData
    {
-        private ConexionData conexion = new ConexionData();
-        
+
         #region Metodo Listar empleados
+
+        public DataTable ValoreMienbrosComboRecolector()
+        {
+            DataTable Valores = new DataTable();
+            SqlCommand command = new SqlCommand("SP_ValoresComboRecolectoresEmpleados", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            SqlDataReader dataReader = command.ExecuteReader();
+            Valores.Load(dataReader);
+            dataReader.Close();
+            CerrarConexion();
+
+            return Valores;
+        }
 
         public DataTable ListaEmpleados()  
         {
-             DataTable Listado = new DataTable();
-            SqlCommand SqlQuery = new SqlCommand("SP_SeleccionarTodosLosEmpleados", conexion.AbrirConexion());
+            DataTable Listado = new DataTable();
+            SqlCommand SqlQuery = new SqlCommand("SP_SeleccionarTodosLosEmpleados", AbrirConexion());
             SqlQuery.CommandType = CommandType.StoredProcedure;
            
             SqlDataReader dataReader = SqlQuery.ExecuteReader();
              Listado.Load(dataReader);
             
              dataReader.Close();
-             conexion.CerrarConexion();
+            CerrarConexion();
              return Listado;
         }
         #endregion
         #region Metodo insertar
         public void InsertarEmpleados(E_Empleado empleado)
         {
-            SqlCommand command = new SqlCommand("InsertEmpleado", conexion.AbrirConexion());
+            SqlCommand command = new SqlCommand("InsertEmpleado",AbrirConexion());
             command.CommandType = CommandType.StoredProcedure;
 
             command.Parameters.AddWithValue("@Nombre", empleado.Nombre);
@@ -48,7 +62,7 @@ namespace CapaDatos
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();
-            conexion.CerrarConexion();
+            CerrarConexion();
         }
         #endregion
         #region Metodo Eliminar 
@@ -56,14 +70,14 @@ namespace CapaDatos
         {
             try
             {
-                SqlCommand command = new SqlCommand("SP_EliminarEmpleado", conexion.AbrirConexion());
+                SqlCommand command = new SqlCommand("SP_EliminarEmpleado", AbrirConexion());
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.AddWithValue("@IdEmpleado", empleado.Idempleado);
                 command.ExecuteNonQuery();
                 command.Parameters.Clear(); 
 
-                conexion.CerrarConexion();
+                CerrarConexion();
             }
             catch (Exception)
             {
@@ -74,7 +88,7 @@ namespace CapaDatos
         #endregion
         public void ActualizarEmpleado(E_Empleado empleado)
         {
-            SqlCommand command = new SqlCommand("SP_ActualizarEmpleados", conexion.AbrirConexion());
+            SqlCommand command = new SqlCommand("SP_ActualizarEmpleados",AbrirConexion());
             command.CommandType = CommandType.StoredProcedure;
             
             command.Parameters.AddWithValue("@IdEmpleado", empleado.Idempleado);
@@ -87,7 +101,7 @@ namespace CapaDatos
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();
-            conexion.CerrarConexion();
+            CerrarConexion();
         }
    }
 }

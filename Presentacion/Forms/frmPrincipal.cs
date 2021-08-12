@@ -12,9 +12,11 @@ namespace Presentacion
         private string IdEmpleado;
         private string Idsuplidor;
         private string IdEntradadeleche;
+        private string IdProducto;
         private bool Editar = false;
         private bool EditarSulidor = false;
         private bool EditarEntrada = false;
+        private bool EditarProducto = false;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -54,11 +56,11 @@ namespace Presentacion
             RefrescarSuplidor();
             RefrescarEntrdas();
             ValoresCombosTabEntrada();
+            RefreshValoresTabProducto();
             txtNombre.Focus();
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
             if (Editar == false)
             {
                 if (
@@ -133,6 +135,7 @@ namespace Presentacion
                     N_Empleado n_Empleado = new N_Empleado();
                     n_Empleado.ActualizarEmpleado(empleado);
                     LimpiarCampos();
+                    RefrescarEntrdas();
                     Editar = false;
                 }
                 Refrescar();
@@ -219,6 +222,7 @@ namespace Presentacion
                     suplidor1.InsertarSuplidor(suplidor);
                     RefrescarSuplidor();
                     RefrescarEntrdas();
+                    ValoresCombosTabEntrada();
                 }
                 
             }
@@ -243,8 +247,9 @@ namespace Presentacion
                     };
                     N_Suplidor suplidor1 = new N_Suplidor();
                     suplidor1.ActualizarSuplidor(suplidor);
+                    RefrescarSuplidor();
+                    RefrescarEntrdas();
                 }
-                RefrescarSuplidor();
             }
         }
 
@@ -295,13 +300,13 @@ namespace Presentacion
             N_Suplidor suplidor = new N_Suplidor();
             N_EstadosDeLeche estadosDeLeche = new N_EstadosDeLeche();
             
-            ComboSuplodires.DataSource = suplidor.ListaSuplidores();
-            comboRecolector.DataSource = empleado.ListaEmpleados();
+            ComboSuplodires.DataSource = suplidor.ValoresComboboxSuplido();
+            comboRecolector.DataSource = empleado.ValoresComboRecolector();
             comboEstado.DataSource = estadosDeLeche.ListaEstados();
             
-            ComboSuplodires.DisplayMember = "Nombre";
+            ComboSuplodires.DisplayMember = "Nombres";
             ComboSuplodires.ValueMember = "IdSuplidor";
-            comboRecolector.DisplayMember = "nombre";
+            comboRecolector.DisplayMember = "Nombre";
             comboRecolector.ValueMember = "IdEmpleado";
             comboEstado.DisplayMember = "Descripcion";
             comboEstado.ValueMember = "IdEstado";
@@ -368,8 +373,6 @@ namespace Presentacion
             }
         }
 
-        #endregion
-
         private void btnEliminarEntradaDeLeche_Click(object sender, EventArgs e)
         {
             if(DataGridEntradasDELeche.SelectedRows.Count > 0)
@@ -384,7 +387,6 @@ namespace Presentacion
                 Refrescar();
             }
         }
-
         private void btnEditarEntrada_Click(object sender, EventArgs e)
         {
             if(DataGridEntradasDELeche.SelectedRows.Count == 0)
@@ -402,5 +404,102 @@ namespace Presentacion
                 MaterialMessageBox.Show("Esta en modo editar de la fila selecionada");
             }
         }
+        #endregion
+
+        #region TabProducto
+
+        private void RefreshValoresTabProducto()
+        {
+            N_Producto producto = new N_Producto();
+
+            DataGridProductos.DataSource = producto.ListadoProductos();
+        }
+
+        private void materialButton11_Click(object sender, EventArgs e)
+        {
+            if (EditarProducto == false)
+            {
+                if (string.IsNullOrEmpty(txtProductoDescripcion.Text)
+                    || string.IsNullOrEmpty(txtNombreProducto.Text)
+                    || string.IsNullOrEmpty(txtProductoPrecio.Text))
+                {
+                    MaterialMessageBox.Show("Hay campos vacios debe llenarlos todos");
+                }
+                else
+                {
+                    N_Producto n_Producto = new N_Producto();
+                    E_Producto Eproducto = new E_Producto
+                    {
+                        Nombre = txtNombreProducto.Text.Trim(),
+                        Descipcion = txtProductoDescripcion.Text.Trim(),
+                        Precio = decimal.Parse(txtProductoPrecio.Text.Trim())
+                    };
+                    n_Producto.InsertarPorducto(Eproducto);
+
+                    RefreshValoresTabProducto();
+                    
+                }
+            }
+            if(EditarProducto == true)
+            {
+                if (string.IsNullOrEmpty(txtProductoDescripcion.Text)
+                   || string.IsNullOrEmpty(txtNombreProducto.Text)
+                   || string.IsNullOrEmpty(txtProductoPrecio.Text))
+                {
+                    MaterialMessageBox.Show("Hay campos vacios debe llenarlos todos");
+                }
+                else
+                {
+                    N_Producto Producto = new N_Producto();
+                    E_Producto Eproducto = new E_Producto
+                    {
+                        IdProducto = int.Parse(DataGridProductos.CurrentRow.Cells[0].Value.ToString()),
+                        Nombre = txtNombreProducto.Text.Trim(),
+                        Descipcion = txtProductoDescripcion.Text.Trim(),
+                        Precio = decimal.Parse(txtProductoPrecio.Text.Trim())
+                    };
+                    Producto.ActualizarProducto(Eproducto);
+                    RefreshValoresTabProducto();
+                    EditarProducto = false;
+                    MaterialMessageBox.Show("Editado correctamente");
+                }
+            }
+        }
+
+
+        private void BtnELiminarProducto_Click(object sender, EventArgs e)
+        {
+            if (DataGridProductos.SelectedRows.Count > 0)
+            {
+                E_Producto producto = new E_Producto()
+                {
+                    IdProducto = Convert.ToInt32(DataGridProductos.CurrentRow.Cells[0].Value.ToString())
+                };
+                N_Producto n_Producto = new N_Producto();
+                n_Producto.EliminarProducto(producto);
+                RefreshValoresTabProducto();
+                Refrescar();
+            }
+        }
+
+
+        private void btnEditarProducto_Click(object sender, EventArgs e)
+        {
+            EditarProducto = true;
+
+            if (DataGridProductos.Rows.Count == 0)
+            {
+                MaterialMessageBox.Show("No hay datos por lo que no puedes editar nada");
+            }
+            if (DataGridProductos.SelectedRows.Count > 0)
+            {
+                IdProducto = DataGridProductos.CurrentRow.Cells[0].Value.ToString();
+                txtNombreProducto.Text = DataGridProductos.CurrentRow.Cells[1].Value.ToString();
+                txtProductoDescripcion.Text = DataGridProductos.CurrentRow.Cells[2].Value.ToString();
+                txtProductoPrecio.Text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
+                MaterialMessageBox.Show("Esta editando la fila seleccionada");
+            }
+        }
+       #endregion
     }
 }

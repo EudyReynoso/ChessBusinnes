@@ -11,25 +11,38 @@ using MaterialSkin.Controls;
 
 namespace CapaDatos
 {
-    public class D_Suplidor
+    public class D_Suplidor: ConexionData
     {
-        private ConexionData Conexion = new ConexionData();
         public DataTable ListaSuplidores()
         {
             DataTable Listado = new DataTable();
-            SqlCommand SqlQuery = new SqlCommand("SP_SeleccionarTodosLosSuplidores", Conexion.AbrirConexion())
+            SqlCommand SqlQuery = new SqlCommand("SP_SeleccionarTodosLosSuplidores", AbrirConexion())
             {
                 CommandType = CommandType.StoredProcedure
             };
             SqlDataReader dataReader = SqlQuery.ExecuteReader();
             Listado.Load(dataReader);
             dataReader.Close();
-            Conexion.CerrarConexion();
+            CerrarConexion();
             return Listado;
+        }
+        public DataTable ValoreMienbrosComoSuplidores()
+        {
+            DataTable Valores = new DataTable();
+            SqlCommand command = new SqlCommand("SP_ValoreMienbrosComoSuplidores", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            SqlDataReader dataReader = command.ExecuteReader();
+            Valores.Load(dataReader);
+            dataReader.Close();
+            CerrarConexion();
+
+            return Valores;
         }
         public void InsertarSuplidor(E_Suplidor suplidor)
         {
-            SqlCommand command = new SqlCommand("InsertarSuplidor", Conexion.AbrirConexion());
+            SqlCommand command = new SqlCommand("InsertarSuplidor", AbrirConexion());
             command.CommandType = CommandType.StoredProcedure;
 
             command.Parameters.AddWithValue("@Nombre", suplidor.Nombre);
@@ -40,11 +53,11 @@ namespace CapaDatos
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();
-            Conexion.CerrarConexion();
+            CerrarConexion();
         }
         public void ActualizarSuplidor(E_Suplidor suplidor)
         {
-            SqlCommand command = new SqlCommand("ActualizarSuplidor", Conexion.AbrirConexion());
+            SqlCommand command = new SqlCommand("ActualizarSuplidor", AbrirConexion());
             command.CommandType = CommandType.StoredProcedure;
 
             command.Parameters.AddWithValue("@IdSuplidor", suplidor.Idsuplidor);
@@ -55,26 +68,24 @@ namespace CapaDatos
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();
-            Conexion.CerrarConexion();
+            CerrarConexion();
         }
         public void ElimininarSuplidor( E_Suplidor suplidor)
         {
             try
             {
-                SqlCommand command = new SqlCommand("SP_EliminarSuplidor", Conexion.AbrirConexion());
+                SqlCommand command = new SqlCommand("SP_EliminarSuplidor", AbrirConexion());
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.AddWithValue("@IdSuplidor", suplidor.Idsuplidor);
                 command.ExecuteNonQuery();
                 command.Parameters.Clear();
 
-                Conexion.CerrarConexion();
+                CerrarConexion();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                MaterialMessageBox.Show("No se pueden eliminar porque " +
-                    "ya haces refrencia a este suplidor en una entrada de leche, " +
-                    "se generan ecepciones en la relacion de los datos en SQL");
+                MaterialMessageBox.Show("No se pueden eliminar porque este suplidor, hay entradas de leche con sus datos");
             }
         }
     }

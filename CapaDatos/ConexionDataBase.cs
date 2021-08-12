@@ -9,12 +9,12 @@ using System.Configuration;
 
 namespace CapaDatos
 {
-    public class ConexionData
+    public abstract class ConexionData
     {
         private SqlConnection ConexionDB =
             new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringChessDB"].ConnectionString);
         
-        public SqlConnection AbrirConexion()
+        protected SqlConnection AbrirConexion()
         {
             if(ConexionDB.State == ConnectionState.Closed)
             {
@@ -23,7 +23,7 @@ namespace CapaDatos
             return ConexionDB;
         }
 
-        public SqlConnection CerrarConexion()
+        protected SqlConnection CerrarConexion()
         {
             if (ConexionDB.State == ConnectionState.Open)
             {

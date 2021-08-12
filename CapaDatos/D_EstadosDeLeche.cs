@@ -9,22 +9,20 @@ using CapaDatos;
 
 namespace CapaDatos
 {
-    public class D_EstadosDeLeche
+    public class D_EstadosDeLeche: ConexionData
     {
-        ConexionData Conexion = new ConexionData();
-
         public DataTable ListaDeEstados()
         {
             DataTable listado = new DataTable();
 
-            SqlCommand SqlQuery = new SqlCommand("SP_ListaEstados", Conexion.AbrirConexion())
+            SqlCommand SqlQuery = new SqlCommand("SP_ListaEstados", AbrirConexion())
             {
                 CommandType = CommandType.StoredProcedure
             };
             SqlDataReader dataReader = SqlQuery.ExecuteReader();
             listado.Load(dataReader);
             dataReader.Close();
-            Conexion.CerrarConexion();
+            CerrarConexion();
             return listado;
         }
     }
