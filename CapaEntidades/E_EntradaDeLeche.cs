@@ -14,6 +14,7 @@ namespace CapaEntidades
         private decimal _cantidadbotellas;
         private int _idestado;
         private string _fechaentrada;
+        private decimal _precioPorbotella;
 
         public int Identrada { get => _identrada; set => _identrada = value; }
         public int Idsuplidor { get => _idsuplidor; set => _idsuplidor = value; }
@@ -21,5 +22,6 @@ namespace CapaEntidades
         public decimal Cantidadbotellas { get => _cantidadbotellas; set => _cantidadbotellas = value; }
         public int Idestado { get => _idestado; set => _idestado = value; }
         public string Fechaentrada { get => _fechaentrada; set => _fechaentrada = value; }
+        public decimal PrecioPorbotella { get => _precioPorbotella; set => _precioPorbotella = value; }
     }
 }

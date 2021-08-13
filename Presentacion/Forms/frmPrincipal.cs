@@ -4,6 +4,7 @@ using CapaModeloNegocio;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using CapaEntidades;
+using CapaEntidades.Cannom;
 
 namespace Presentacion
 {
@@ -13,10 +14,14 @@ namespace Presentacion
         private string Idsuplidor;
         private string IdEntradadeleche;
         private string IdProducto;
+        private string IdUsuario;
+
         private bool Editar = false;
         private bool EditarSulidor = false;
         private bool EditarEntrada = false;
         private bool EditarProducto = false;
+
+        private bool EditarUsuario = false;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -25,6 +30,55 @@ namespace Presentacion
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500,Primary.LightBlue100, Accent.LightBlue200,
                 TextShade.WHITE);
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MaterialMessageBox.Show("Esta seguro que quiere cerrar sesion", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+        private void UserNameLogin()
+        {
+            lblNombre.Text = UserLoginChache.Nombre;
+            lblApelldio.Text = UserLoginChache.Apellido;
+        }
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            UserNameLogin();
+            Refrescar();
+            PuestosValues();
+            RefrescarSuplidor();
+            RefrescarEntrdas();
+            ValoresCombosTabEntrada();
+            RefreshValoresTabProducto();
+            ValueComboRoles();
+            RefrescarUsuarios();
+            txtNombre.Focus();
+
+            if(UserLoginChache.Role == RolesUsers.Comprador)
+            {
+                TabsContent.TabPages.Remove(Usuarios);
+                TabsContent.TabPages.Remove(Inicio);
+                TabsContent.TabPages.Remove(Empleado);
+                TabsContent.TabPages.Remove(Ventas);
+                TabsContent.TabPages.Remove(Productos);
+
+            }
+            if(UserLoginChache.Role == RolesUsers.Administrador)
+            {
+                MaterialMessageBox.Show("Usuario Admininitrador", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            if(UserLoginChache.Role == RolesUsers.Vendedor)
+            {
+                TabsContent.TabPages.Remove(Usuarios);
+                TabsContent.TabPages.Remove(Inicio);
+                TabsContent.TabPages.Remove(Empleado);
+                TabsContent.TabPages.Remove(Entrada);
+                TabsContent.TabPages.Remove(suplidor);
+            }
         }
         #region Tab de Empleado
         private void Refrescar()
@@ -49,16 +103,7 @@ namespace Presentacion
             radioMasculino.Checked = false;
             radioFemenino.Checked = false;
         }
-        private void frmPrincipal_Load(object sender, EventArgs e)
-        {
-            Refrescar();
-            PuestosValues();
-            RefrescarSuplidor();
-            RefrescarEntrdas();
-            ValoresCombosTabEntrada();
-            RefreshValoresTabProducto();
-            txtNombre.Focus();
-        }
+       
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (Editar == false)
@@ -337,7 +382,8 @@ namespace Presentacion
                         Idestado = Convert.ToInt32(comboEstado.SelectedValue),
                         Fechaentrada = txtDate.Value.ToString("yyyy/MM/dd"),
                         Recolector = Convert.ToInt32(comboRecolector.SelectedValue),
-                        Cantidadbotellas = Convert.ToDecimal(txtCantidadEntrada.Text)
+                        Cantidadbotellas = Convert.ToDecimal(txtCantidadEntrada.Text),
+                        PrecioPorbotella = Convert.ToInt32(txtPrecioBotella.Text)
                     };
                     N_EntradaDeLeche entradaDeLeche = new N_EntradaDeLeche();
                     entradaDeLeche.InsertarEntrada(entradaDeLeche1);
@@ -361,7 +407,8 @@ namespace Presentacion
                         Idestado = Convert.ToInt32(comboEstado.SelectedValue),
                         Fechaentrada = txtDate.Value.ToString("yyyy/MM/dd"),
                         Recolector = Convert.ToInt32(comboRecolector.SelectedValue),
-                        Cantidadbotellas = Convert.ToDecimal(txtCantidadEntrada.Text)
+                        Cantidadbotellas = Convert.ToDecimal(txtCantidadEntrada.Text),
+                        PrecioPorbotella = Convert.ToDecimal(txtPrecioBotella.Text)
                     };
                     N_EntradaDeLeche entradaDeLeche = new N_EntradaDeLeche();
                     entradaDeLeche.EditarEntradaDeLeche(entradaDeLeche1);
@@ -400,7 +447,8 @@ namespace Presentacion
                 ComboSuplodires.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[1].Value.ToString();
                 comboRecolector.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[2].Value.ToString();
                 txtCantidadEntrada.Text = DataGridEntradasDELeche.CurrentRow.Cells[3].Value.ToString();
-                comboEstado.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[4].Value.ToString();
+                txtPrecioBotella.Text = DataGridEntradasDELeche.CurrentRow.Cells[4].Value.ToString();
+                comboEstado.DisplayMember = DataGridEntradasDELeche.CurrentRow.Cells[5].Value.ToString();
                 MaterialMessageBox.Show("Esta en modo editar de la fila selecionada");
             }
         }
@@ -500,6 +548,123 @@ namespace Presentacion
                 MaterialMessageBox.Show("Esta editando la fila seleccionada");
             }
         }
-       #endregion
+        #endregion
+
+        #region TabUsuarios
+
+
+        private void ValueComboRoles()
+        {
+            N_Usuario usuario = new N_Usuario();
+
+            txtComboRole.DataSource = usuario.ValoresComboRoles();
+
+            txtComboRole.DisplayMember = "RoleName";
+            txtComboRole.ValueMember = "RoleId";
+        }
+        private void RefrescarUsuarios()
+        {
+            N_Usuario usuario = new N_Usuario();
+            DatagridUsuarios.DataSource = usuario.ListaUsuario();
+        }
+
+
+        private void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            if(EditarUsuario == false) 
+            {
+                if (string.IsNullOrEmpty(txtUsuarioLogin.Text)
+                    || string.IsNullOrEmpty(txtNombreUsuario.Text)
+                    || string.IsNullOrEmpty(txtContrasenaUsuario.Text)
+                    || string.IsNullOrEmpty(txtApellidoUsuario.Text))
+                {
+                    MaterialMessageBox.Show("No debe dejar campos vacios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+
+                else
+                {
+                    E_Usuario usuario = new E_Usuario
+                    {
+                        Firstname = txtNombreUsuario.Text.Trim(),
+                        Lastname = txtApellidoUsuario.Text.Trim(),
+                        Password = txtContrasenaUsuario.Text.Trim(),
+                        RoleID = Convert.ToInt32(txtComboRole.SelectedValue),
+                        Loginname = txtUsuarioLogin.Text.Trim()
+                    };
+
+                    N_Usuario n_Usuario = new N_Usuario();
+
+                    n_Usuario.InsertarUsuario(usuario);
+
+                    RefrescarUsuarios();
+                    Refrescar();
+                }
+            }
+            if(EditarUsuario == true)
+            {
+                E_Usuario usuario = new E_Usuario
+                {
+                    //Idempleado = int.Parse(DataGrid.Rows[DataGrid.CurrentRow.Index].Cells[0].Value.ToString()),
+
+                    Iduruario = int.Parse(DatagridUsuarios.Rows[DatagridUsuarios.CurrentRow.Index].Cells[0].Value.ToString()),
+                    Firstname = txtNombreUsuario.Text.Trim(),
+                    Lastname = txtApellidoUsuario.Text.Trim(),
+                    Password = txtContrasenaUsuario.Text.Trim(),
+                    RoleID = Convert.ToInt32(txtComboRole.SelectedValue),
+                    Loginname = txtUsuarioLogin.Text.Trim()
+                };
+
+                N_Usuario Usuario = new N_Usuario();
+
+                Usuario.ActualizarUsuario(usuario);
+
+                RefrescarUsuarios();
+                EditarUsuario = false;
+                MaterialMessageBox.Show("Editado correctamente");
+            }
+        }
+
+        private void btnEditarUsuario_Click(object sender, EventArgs e)
+        {
+            EditarUsuario = true;
+            if (DatagridUsuarios.Rows.Count == 0)
+            {
+                MaterialMessageBox.Show("No hay datos por lo que no puedes editar nada");
+            }
+            if (DatagridUsuarios.SelectedRows.Count > 0)
+            {
+                IdUsuario = DatagridUsuarios.CurrentRow.Cells[0].Value.ToString();
+                txtNombreUsuario.Text = DatagridUsuarios.CurrentRow.Cells[3].Value.ToString();
+                txtUsuarioLogin.Text = DatagridUsuarios.CurrentRow.Cells[1].Value.ToString();
+                txtContrasenaUsuario.Text = DatagridUsuarios.CurrentRow.Cells[2].Value.ToString();
+                MaterialMessageBox.Show("Esta editando la fila seleccionada");
+
+            }
+        }
+        #endregion
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            if (DatagridUsuarios.SelectedRows.Count > 0)
+            {
+                if (MaterialMessageBox.Show("Esta seguro que quiere Eliminar este Usuario ", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    E_Usuario usuario = new E_Usuario
+                    {
+                        Iduruario = Convert.ToInt32(DatagridUsuarios.Rows[DatagridUsuarios.CurrentRow.Index].Cells[0].Value.ToString())
+                    };
+                    N_Usuario n_Usuario = new N_Usuario();
+                    n_Usuario.EliminarUsuario(usuario);
+                    RefrescarUsuarios();
+                }
+                RefrescarUsuarios();
+            }
+            if (DataGrid.Rows.Count == 0)
+            {
+                MaterialMessageBox.Show("No hay campos para eliminar");
+            }
+            RefrescarUsuarios();
+        }
     }
 }

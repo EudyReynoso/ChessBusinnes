@@ -193,6 +193,9 @@
     <None Include="Resources\Logo Redondeado.png" />
     <None Include="Resources\LogoY fondo.png" />
     <None Include="Resources\error_24px.png" />
+    <None Include="Resources\LogoOne.png" />
+    <None Include="Resources\male_user_48px.png" />
+    <None Include="Resources\LogOutW.png" />
     <Content Include="Resources\undraw_secure_login_pdn4.png" />
   </ItemGroup>
   <ItemGroup>

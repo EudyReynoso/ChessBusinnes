@@ -45,9 +45,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.TabsContent = new MaterialSkin.Controls.MaterialTabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblApelldio = new MaterialSkin.Controls.MaterialLabel();
+            this.lblNombre = new MaterialSkin.Controls.MaterialLabel();
             this.uI_Calendario1 = new Calendario.UI_Calendario();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
@@ -114,7 +121,9 @@
             this.btnEditarEntrada = new MaterialSkin.Controls.MaterialButton();
             this.btnEliminarEntradaDeLeche = new MaterialSkin.Controls.MaterialButton();
             this.btnGuardarEmtrada = new MaterialSkin.Controls.MaterialButton();
+            this.txtPrecioBotella = new MaterialSkin.Controls.MaterialTextBox();
             this.txtCantidadEntrada = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtPrecioLeche = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
@@ -159,9 +168,28 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel56 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.Usuarios = new System.Windows.Forms.TabPage();
+            this.materialLabel44 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnEditarUsuario = new MaterialSkin.Controls.MaterialButton();
+            this.btnEliminarUsuario = new MaterialSkin.Controls.MaterialButton();
+            this.btnGuardarUsuario = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel42 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel41 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel43 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtComboRole = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtContrasenaUsuario = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtUsuarioLogin = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtApellidoUsuario = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreUsuario = new MaterialSkin.Controls.MaterialTextBox();
+            this.DatagridUsuarios = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnCerrarSesion = new MaterialSkin.Controls.MaterialButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.materialLabel48 = new MaterialSkin.Controls.MaterialLabel();
             this.TabsContent.SuspendLayout();
             this.Inicio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.materialCard3.SuspendLayout();
@@ -179,6 +207,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).BeginInit();
             this.Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            this.Usuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DatagridUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // TabsContent
@@ -189,6 +219,7 @@
             this.TabsContent.Controls.Add(this.Entrada);
             this.TabsContent.Controls.Add(this.suplidor);
             this.TabsContent.Controls.Add(this.Empleado);
+            this.TabsContent.Controls.Add(this.Usuarios);
             this.TabsContent.Depth = 0;
             this.TabsContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabsContent.ImageList = this.imageList1;
@@ -197,13 +228,16 @@
             this.TabsContent.Multiline = true;
             this.TabsContent.Name = "TabsContent";
             this.TabsContent.SelectedIndex = 0;
-            this.TabsContent.Size = new System.Drawing.Size(1362, 683);
+            this.TabsContent.Size = new System.Drawing.Size(1437, 759);
             this.TabsContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabsContent.TabIndex = 0;
             // 
             // Inicio
             // 
             this.Inicio.BackColor = System.Drawing.Color.White;
+            this.Inicio.Controls.Add(this.pictureBox1);
+            this.Inicio.Controls.Add(this.lblApelldio);
+            this.Inicio.Controls.Add(this.lblNombre);
             this.Inicio.Controls.Add(this.uI_Calendario1);
             this.Inicio.Controls.Add(this.materialCard4);
             this.Inicio.Controls.Add(this.materialCard3);
@@ -212,9 +246,43 @@
             this.Inicio.ImageKey = "home_24px.png";
             this.Inicio.Location = new System.Drawing.Point(4, 35);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1354, 644);
+            this.Inicio.Size = new System.Drawing.Size(1429, 720);
             this.Inicio.TabIndex = 5;
             this.Inicio.Text = "Inicio";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.male_user_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(153, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(119, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblApelldio
+            // 
+            this.lblApelldio.AutoSize = true;
+            this.lblApelldio.Depth = 0;
+            this.lblApelldio.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblApelldio.Location = new System.Drawing.Point(214, 90);
+            this.lblApelldio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblApelldio.Name = "lblApelldio";
+            this.lblApelldio.Size = new System.Drawing.Size(58, 19);
+            this.lblApelldio.TabIndex = 5;
+            this.lblApelldio.Text = "Apellido";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Depth = 0;
+            this.lblNombre.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.lblNombre.Location = new System.Drawing.Point(137, 90);
+            this.lblNombre.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(57, 19);
+            this.lblNombre.TabIndex = 5;
+            this.lblNombre.Text = "Nombre";
             // 
             // uI_Calendario1
             // 
@@ -236,7 +304,7 @@
             this.uI_Calendario1.DayWeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.uI_Calendario1.ElipceSize = 5;
             this.uI_Calendario1.HourFont = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.Location = new System.Drawing.Point(793, 67);
+            this.uI_Calendario1.Location = new System.Drawing.Point(793, 123);
             this.uI_Calendario1.MonthFont = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.uI_Calendario1.MonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.uI_Calendario1.MoveCalendar = false;
@@ -272,7 +340,7 @@
             this.materialCard4.Controls.Add(this.materialLabel47);
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(428, 349);
+            this.materialCard4.Location = new System.Drawing.Point(428, 405);
             this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
@@ -372,7 +440,7 @@
             this.materialCard3.Controls.Add(this.materialLabel40);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(56, 350);
+            this.materialCard3.Location = new System.Drawing.Point(56, 406);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
@@ -520,7 +588,7 @@
             this.materialCard2.Controls.Add(this.materialLabel33);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(428, 67);
+            this.materialCard2.Location = new System.Drawing.Point(428, 123);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
@@ -668,7 +736,7 @@
             this.materialCard1.Controls.Add(this.materialLabel8);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(56, 67);
+            this.materialCard1.Location = new System.Drawing.Point(56, 123);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
@@ -803,6 +871,7 @@
             // 
             // Ventas
             // 
+            this.Ventas.Controls.Add(this.materialLabel48);
             this.Ventas.Controls.Add(this.materialButton15);
             this.Ventas.Controls.Add(this.materialButton6);
             this.Ventas.Controls.Add(this.materialButton7);
@@ -810,7 +879,7 @@
             this.Ventas.ImageKey = "sales.png";
             this.Ventas.Location = new System.Drawing.Point(4, 35);
             this.Ventas.Name = "Ventas";
-            this.Ventas.Size = new System.Drawing.Size(1354, 644);
+            this.Ventas.Size = new System.Drawing.Size(1429, 720);
             this.Ventas.TabIndex = 6;
             this.Ventas.Text = "Ventas";
             this.Ventas.UseVisualStyleBackColor = true;
@@ -909,7 +978,7 @@
             this.Productos.ImageKey = "product_24px.png";
             this.Productos.Location = new System.Drawing.Point(4, 35);
             this.Productos.Name = "Productos";
-            this.Productos.Size = new System.Drawing.Size(1354, 644);
+            this.Productos.Size = new System.Drawing.Size(1429, 720);
             this.Productos.TabIndex = 7;
             this.Productos.Text = "Productos";
             this.Productos.UseVisualStyleBackColor = true;
@@ -951,7 +1020,7 @@
             this.DataGridProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.DataGridProductos.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.DataGridProductos.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridProductos.Location = new System.Drawing.Point(0, 367);
+            this.DataGridProductos.Location = new System.Drawing.Point(0, 443);
             this.DataGridProductos.MultiSelect = false;
             this.DataGridProductos.Name = "DataGridProductos";
             this.DataGridProductos.ReadOnly = true;
@@ -967,7 +1036,7 @@
             this.DataGridProductos.RowHeadersVisible = false;
             this.DataGridProductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGridProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridProductos.Size = new System.Drawing.Size(1354, 277);
+            this.DataGridProductos.Size = new System.Drawing.Size(1429, 277);
             this.DataGridProductos.TabIndex = 48;
             // 
             // materialButton16
@@ -1159,7 +1228,9 @@
             this.Entrada.Controls.Add(this.btnEditarEntrada);
             this.Entrada.Controls.Add(this.btnEliminarEntradaDeLeche);
             this.Entrada.Controls.Add(this.btnGuardarEmtrada);
+            this.Entrada.Controls.Add(this.txtPrecioBotella);
             this.Entrada.Controls.Add(this.txtCantidadEntrada);
+            this.Entrada.Controls.Add(this.txtPrecioLeche);
             this.Entrada.Controls.Add(this.materialLabel22);
             this.Entrada.Controls.Add(this.materialLabel21);
             this.Entrada.Controls.Add(this.materialLabel23);
@@ -1172,9 +1243,9 @@
             this.Entrada.ImageKey = "entradaLeche.png";
             this.Entrada.Location = new System.Drawing.Point(4, 35);
             this.Entrada.Name = "Entrada";
-            this.Entrada.Size = new System.Drawing.Size(1354, 644);
+            this.Entrada.Size = new System.Drawing.Size(1429, 720);
             this.Entrada.TabIndex = 2;
-            this.Entrada.Text = "Entrada de Leche";
+            this.Entrada.Text = "Registro Entrada";
             // 
             // txtDate
             // 
@@ -1243,7 +1314,7 @@
             this.DataGridEntradasDELeche.RowHeadersVisible = false;
             this.DataGridEntradasDELeche.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1354, 309);
+            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1429, 309);
             this.DataGridEntradasDELeche.TabIndex = 25;
             // 
             // materialButton13
@@ -1326,6 +1397,23 @@
             this.btnGuardarEmtrada.UseVisualStyleBackColor = true;
             this.btnGuardarEmtrada.Click += new System.EventHandler(this.materialButton3_Click);
             // 
+            // txtPrecioBotella
+            // 
+            this.txtPrecioBotella.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrecioBotella.Depth = 0;
+            this.txtPrecioBotella.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPrecioBotella.LeadingIcon = null;
+            this.txtPrecioBotella.Location = new System.Drawing.Point(707, 176);
+            this.txtPrecioBotella.MaxLength = 50;
+            this.txtPrecioBotella.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPrecioBotella.Multiline = false;
+            this.txtPrecioBotella.Name = "txtPrecioBotella";
+            this.txtPrecioBotella.Size = new System.Drawing.Size(307, 50);
+            this.txtPrecioBotella.TabIndex = 3;
+            this.txtPrecioBotella.Text = "";
+            this.txtPrecioBotella.TrailingIcon = null;
+            this.txtPrecioBotella.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.materialTextBox1_KeyPress);
+            // 
             // txtCantidadEntrada
             // 
             this.txtCantidadEntrada.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1342,6 +1430,18 @@
             this.txtCantidadEntrada.Text = "";
             this.txtCantidadEntrada.TrailingIcon = null;
             this.txtCantidadEntrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.materialTextBox1_KeyPress);
+            // 
+            // txtPrecioLeche
+            // 
+            this.txtPrecioLeche.AutoSize = true;
+            this.txtPrecioLeche.Depth = 0;
+            this.txtPrecioLeche.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPrecioLeche.Location = new System.Drawing.Point(558, 207);
+            this.txtPrecioLeche.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPrecioLeche.Name = "txtPrecioLeche";
+            this.txtPrecioLeche.Size = new System.Drawing.Size(124, 19);
+            this.txtPrecioLeche.TabIndex = 11;
+            this.txtPrecioLeche.Text = "Precio por botella";
             // 
             // materialLabel22
             // 
@@ -1502,9 +1602,9 @@
             this.suplidor.ImageKey = "Suplidor.png";
             this.suplidor.Location = new System.Drawing.Point(4, 35);
             this.suplidor.Name = "suplidor";
-            this.suplidor.Size = new System.Drawing.Size(1354, 644);
+            this.suplidor.Size = new System.Drawing.Size(1429, 720);
             this.suplidor.TabIndex = 4;
-            this.suplidor.Text = "Nuevo Suplidor";
+            this.suplidor.Text = "Suplidor";
             // 
             // dataGridSuplidor
             // 
@@ -1560,7 +1660,7 @@
             this.dataGridSuplidor.RowHeadersVisible = false;
             this.dataGridSuplidor.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridSuplidor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridSuplidor.Size = new System.Drawing.Size(1354, 292);
+            this.dataGridSuplidor.Size = new System.Drawing.Size(1429, 292);
             this.dataGridSuplidor.TabIndex = 24;
             // 
             // materialButton14
@@ -1798,9 +1898,9 @@
             this.Empleado.Location = new System.Drawing.Point(4, 35);
             this.Empleado.Name = "Empleado";
             this.Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleado.Size = new System.Drawing.Size(1354, 644);
+            this.Empleado.Size = new System.Drawing.Size(1429, 720);
             this.Empleado.TabIndex = 1;
-            this.Empleado.Text = "Nuevo Empleado";
+            this.Empleado.Text = "Empleados";
             // 
             // DataGrid
             // 
@@ -1856,7 +1956,7 @@
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid.Size = new System.Drawing.Size(1348, 322);
+            this.DataGrid.Size = new System.Drawing.Size(1423, 322);
             this.DataGrid.TabIndex = 10;
             // 
             // comboPuesto
@@ -1923,7 +2023,7 @@
             this.btnReport.Depth = 0;
             this.btnReport.HighEmphasis = true;
             this.btnReport.Icon = global::Presentacion.Properties.Resources.report;
-            this.btnReport.Location = new System.Drawing.Point(915, 212);
+            this.btnReport.Location = new System.Drawing.Point(990, 212);
             this.btnReport.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnReport.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnReport.Name = "btnReport";
@@ -1944,7 +2044,7 @@
             this.btnEditar.Depth = 0;
             this.btnEditar.HighEmphasis = true;
             this.btnEditar.Icon = global::Presentacion.Properties.Resources.edit;
-            this.btnEditar.Location = new System.Drawing.Point(702, 212);
+            this.btnEditar.Location = new System.Drawing.Point(777, 212);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEditar.Name = "btnEditar";
@@ -1966,7 +2066,7 @@
             this.btnEliminar.Depth = 0;
             this.btnEliminar.HighEmphasis = true;
             this.btnEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
-            this.btnEliminar.Location = new System.Drawing.Point(437, 212);
+            this.btnEliminar.Location = new System.Drawing.Point(512, 212);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
@@ -1989,7 +2089,7 @@
             this.btnGuardar.DrawShadows = false;
             this.btnGuardar.HighEmphasis = true;
             this.btnGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
-            this.btnGuardar.Location = new System.Drawing.Point(191, 212);
+            this.btnGuardar.Location = new System.Drawing.Point(266, 212);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGuardar.Name = "btnGuardar";
@@ -2158,6 +2258,327 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Nombre";
             // 
+            // Usuarios
+            // 
+            this.Usuarios.Controls.Add(this.materialLabel44);
+            this.Usuarios.Controls.Add(this.btnEditarUsuario);
+            this.Usuarios.Controls.Add(this.btnEliminarUsuario);
+            this.Usuarios.Controls.Add(this.btnGuardarUsuario);
+            this.Usuarios.Controls.Add(this.materialLabel42);
+            this.Usuarios.Controls.Add(this.materialLabel41);
+            this.Usuarios.Controls.Add(this.materialLabel7);
+            this.Usuarios.Controls.Add(this.materialLabel43);
+            this.Usuarios.Controls.Add(this.materialLabel6);
+            this.Usuarios.Controls.Add(this.txtComboRole);
+            this.Usuarios.Controls.Add(this.txtContrasenaUsuario);
+            this.Usuarios.Controls.Add(this.txtUsuarioLogin);
+            this.Usuarios.Controls.Add(this.txtApellidoUsuario);
+            this.Usuarios.Controls.Add(this.txtNombreUsuario);
+            this.Usuarios.Controls.Add(this.DatagridUsuarios);
+            this.Usuarios.Controls.Add(this.btnCerrarSesion);
+            this.Usuarios.ImageKey = "UsuariosAcnutn.png";
+            this.Usuarios.Location = new System.Drawing.Point(4, 35);
+            this.Usuarios.Name = "Usuarios";
+            this.Usuarios.Size = new System.Drawing.Size(1429, 720);
+            this.Usuarios.TabIndex = 8;
+            this.Usuarios.Text = "Usuarios";
+            this.Usuarios.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel44
+            // 
+            this.materialLabel44.AutoSize = true;
+            this.materialLabel44.Depth = 0;
+            this.materialLabel44.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel44.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel44.Location = new System.Drawing.Point(195, 21);
+            this.materialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel44.Name = "materialLabel44";
+            this.materialLabel44.Size = new System.Drawing.Size(284, 29);
+            this.materialLabel44.TabIndex = 25;
+            this.materialLabel44.Text = "Administrador de usuarios";
+            // 
+            // btnEditarUsuario
+            // 
+            this.btnEditarUsuario.AutoSize = false;
+            this.btnEditarUsuario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditarUsuario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEditarUsuario.Depth = 0;
+            this.btnEditarUsuario.HighEmphasis = true;
+            this.btnEditarUsuario.Icon = global::Presentacion.Properties.Resources.edit;
+            this.btnEditarUsuario.Location = new System.Drawing.Point(658, 341);
+            this.btnEditarUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEditarUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditarUsuario.Name = "btnEditarUsuario";
+            this.btnEditarUsuario.Size = new System.Drawing.Size(170, 39);
+            this.btnEditarUsuario.TabIndex = 24;
+            this.btnEditarUsuario.Text = "Editar";
+            this.btnEditarUsuario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEditarUsuario.UseAccentColor = false;
+            this.btnEditarUsuario.UseVisualStyleBackColor = true;
+            this.btnEditarUsuario.Click += new System.EventHandler(this.btnEditarUsuario_Click);
+            // 
+            // btnEliminarUsuario
+            // 
+            this.btnEliminarUsuario.AutoSize = false;
+            this.btnEliminarUsuario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminarUsuario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEliminarUsuario.Depth = 0;
+            this.btnEliminarUsuario.HighEmphasis = true;
+            this.btnEliminarUsuario.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(369, 341);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEliminarUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(170, 39);
+            this.btnEliminarUsuario.TabIndex = 23;
+            this.btnEliminarUsuario.Text = "eliminar";
+            this.btnEliminarUsuario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEliminarUsuario.UseAccentColor = false;
+            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
+            // 
+            // btnGuardarUsuario
+            // 
+            this.btnGuardarUsuario.AutoSize = false;
+            this.btnGuardarUsuario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardarUsuario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGuardarUsuario.Depth = 0;
+            this.btnGuardarUsuario.HighEmphasis = true;
+            this.btnGuardarUsuario.Icon = global::Presentacion.Properties.Resources.save_24px;
+            this.btnGuardarUsuario.Location = new System.Drawing.Point(83, 341);
+            this.btnGuardarUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGuardarUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGuardarUsuario.Name = "btnGuardarUsuario";
+            this.btnGuardarUsuario.Size = new System.Drawing.Size(170, 39);
+            this.btnGuardarUsuario.TabIndex = 22;
+            this.btnGuardarUsuario.Text = "Guardar";
+            this.btnGuardarUsuario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGuardarUsuario.UseAccentColor = false;
+            this.btnGuardarUsuario.UseVisualStyleBackColor = true;
+            this.btnGuardarUsuario.Click += new System.EventHandler(this.btnGuardarUsuario_Click);
+            // 
+            // materialLabel42
+            // 
+            this.materialLabel42.AutoSize = true;
+            this.materialLabel42.Depth = 0;
+            this.materialLabel42.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel42.Location = new System.Drawing.Point(655, 197);
+            this.materialLabel42.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel42.Name = "materialLabel42";
+            this.materialLabel42.Size = new System.Drawing.Size(82, 19);
+            this.materialLabel42.TabIndex = 14;
+            this.materialLabel42.Text = "Contraseña";
+            // 
+            // materialLabel41
+            // 
+            this.materialLabel41.AutoSize = true;
+            this.materialLabel41.Depth = 0;
+            this.materialLabel41.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel41.Location = new System.Drawing.Point(601, 121);
+            this.materialLabel41.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel41.Name = "materialLabel41";
+            this.materialLabel41.Size = new System.Drawing.Size(136, 19);
+            this.materialLabel41.TabIndex = 14;
+            this.materialLabel41.Text = "Nombre de Usuario";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.Location = new System.Drawing.Point(109, 203);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(58, 19);
+            this.materialLabel7.TabIndex = 14;
+            this.materialLabel7.Text = "Apellido";
+            // 
+            // materialLabel43
+            // 
+            this.materialLabel43.AutoSize = true;
+            this.materialLabel43.Depth = 0;
+            this.materialLabel43.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel43.Location = new System.Drawing.Point(644, 286);
+            this.materialLabel43.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel43.Name = "materialLabel43";
+            this.materialLabel43.Size = new System.Drawing.Size(100, 19);
+            this.materialLabel43.TabIndex = 14;
+            this.materialLabel43.Text = "Rol de Acceso";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(110, 111);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(57, 19);
+            this.materialLabel6.TabIndex = 14;
+            this.materialLabel6.Text = "Nombre";
+            // 
+            // txtComboRole
+            // 
+            this.txtComboRole.AutoResize = false;
+            this.txtComboRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtComboRole.Depth = 0;
+            this.txtComboRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.txtComboRole.DropDownHeight = 174;
+            this.txtComboRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtComboRole.DropDownWidth = 121;
+            this.txtComboRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.txtComboRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtComboRole.FormattingEnabled = true;
+            this.txtComboRole.IntegralHeight = false;
+            this.txtComboRole.ItemHeight = 43;
+            this.txtComboRole.Location = new System.Drawing.Point(765, 254);
+            this.txtComboRole.MaxDropDownItems = 4;
+            this.txtComboRole.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtComboRole.Name = "txtComboRole";
+            this.txtComboRole.Size = new System.Drawing.Size(364, 49);
+            this.txtComboRole.StartIndex = 0;
+            this.txtComboRole.TabIndex = 13;
+            // 
+            // txtContrasenaUsuario
+            // 
+            this.txtContrasenaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContrasenaUsuario.Depth = 0;
+            this.txtContrasenaUsuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtContrasenaUsuario.LeadingIcon = null;
+            this.txtContrasenaUsuario.Location = new System.Drawing.Point(765, 168);
+            this.txtContrasenaUsuario.MaxLength = 50;
+            this.txtContrasenaUsuario.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtContrasenaUsuario.Multiline = false;
+            this.txtContrasenaUsuario.Name = "txtContrasenaUsuario";
+            this.txtContrasenaUsuario.Size = new System.Drawing.Size(364, 50);
+            this.txtContrasenaUsuario.TabIndex = 12;
+            this.txtContrasenaUsuario.Text = "";
+            this.txtContrasenaUsuario.TrailingIcon = null;
+            // 
+            // txtUsuarioLogin
+            // 
+            this.txtUsuarioLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuarioLogin.Depth = 0;
+            this.txtUsuarioLogin.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUsuarioLogin.LeadingIcon = null;
+            this.txtUsuarioLogin.Location = new System.Drawing.Point(765, 92);
+            this.txtUsuarioLogin.MaxLength = 50;
+            this.txtUsuarioLogin.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtUsuarioLogin.Multiline = false;
+            this.txtUsuarioLogin.Name = "txtUsuarioLogin";
+            this.txtUsuarioLogin.Size = new System.Drawing.Size(364, 50);
+            this.txtUsuarioLogin.TabIndex = 12;
+            this.txtUsuarioLogin.Text = "";
+            this.txtUsuarioLogin.TrailingIcon = null;
+            // 
+            // txtApellidoUsuario
+            // 
+            this.txtApellidoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellidoUsuario.Depth = 0;
+            this.txtApellidoUsuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtApellidoUsuario.LeadingIcon = null;
+            this.txtApellidoUsuario.Location = new System.Drawing.Point(195, 174);
+            this.txtApellidoUsuario.MaxLength = 50;
+            this.txtApellidoUsuario.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtApellidoUsuario.Multiline = false;
+            this.txtApellidoUsuario.Name = "txtApellidoUsuario";
+            this.txtApellidoUsuario.Size = new System.Drawing.Size(364, 50);
+            this.txtApellidoUsuario.TabIndex = 12;
+            this.txtApellidoUsuario.Text = "";
+            this.txtApellidoUsuario.TrailingIcon = null;
+            // 
+            // txtNombreUsuario
+            // 
+            this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreUsuario.Depth = 0;
+            this.txtNombreUsuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreUsuario.LeadingIcon = null;
+            this.txtNombreUsuario.Location = new System.Drawing.Point(195, 93);
+            this.txtNombreUsuario.MaxLength = 50;
+            this.txtNombreUsuario.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreUsuario.Multiline = false;
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(364, 50);
+            this.txtNombreUsuario.TabIndex = 12;
+            this.txtNombreUsuario.Text = "";
+            this.txtNombreUsuario.TrailingIcon = null;
+            // 
+            // DatagridUsuarios
+            // 
+            this.DatagridUsuarios.AllowUserToAddRows = false;
+            this.DatagridUsuarios.AllowUserToDeleteRows = false;
+            this.DatagridUsuarios.AllowUserToResizeColumns = false;
+            this.DatagridUsuarios.AllowUserToResizeRows = false;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DatagridUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.DatagridUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DatagridUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DatagridUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DatagridUsuarios.CausesValidation = false;
+            this.DatagridUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DatagridUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.DatagridUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DatagridUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DatagridUsuarios.DefaultCellStyle = dataGridViewCellStyle19;
+            this.DatagridUsuarios.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DatagridUsuarios.DoubleBuffered = false;
+            this.DatagridUsuarios.EnableHeadersVisualStyles = false;
+            this.DatagridUsuarios.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.DatagridUsuarios.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.DatagridUsuarios.HeaderForeColor = System.Drawing.Color.White;
+            this.DatagridUsuarios.Location = new System.Drawing.Point(0, 410);
+            this.DatagridUsuarios.MultiSelect = false;
+            this.DatagridUsuarios.Name = "DatagridUsuarios";
+            this.DatagridUsuarios.ReadOnly = true;
+            this.DatagridUsuarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DatagridUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.DatagridUsuarios.RowHeadersVisible = false;
+            this.DatagridUsuarios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DatagridUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DatagridUsuarios.Size = new System.Drawing.Size(1429, 310);
+            this.DatagridUsuarios.TabIndex = 11;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.AutoSize = false;
+            this.btnCerrarSesion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCerrarSesion.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCerrarSesion.Depth = 0;
+            this.btnCerrarSesion.HighEmphasis = true;
+            this.btnCerrarSesion.Icon = global::Presentacion.Properties.Resources.LogOutW;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(922, 341);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCerrarSesion.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(179, 38);
+            this.btnCerrarSesion.TabIndex = 0;
+            this.btnCerrarSesion.Text = "Cerrar sesion";
+            this.btnCerrarSesion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCerrarSesion.UseAccentColor = false;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -2168,12 +2589,26 @@
             this.imageList1.Images.SetKeyName(3, "Suplidor.png");
             this.imageList1.Images.SetKeyName(4, "sales.png");
             this.imageList1.Images.SetKeyName(5, "product_24px.png");
+            this.imageList1.Images.SetKeyName(6, "UsuariosAcnutn.png");
+            // 
+            // materialLabel48
+            // 
+            this.materialLabel48.AutoSize = true;
+            this.materialLabel48.Depth = 0;
+            this.materialLabel48.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel48.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel48.Location = new System.Drawing.Point(93, 29);
+            this.materialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel48.Name = "materialLabel48";
+            this.materialLabel48.Size = new System.Drawing.Size(414, 29);
+            this.materialLabel48.TabIndex = 49;
+            this.materialLabel48.Text = "Administrador y Procesador de Ventas";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 750);
+            this.ClientSize = new System.Drawing.Size(1443, 826);
             this.Controls.Add(this.TabsContent);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.TabsContent;
@@ -2183,6 +2618,8 @@
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.TabsContent.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
+            this.Inicio.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.materialCard4.ResumeLayout(false);
             this.materialCard4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -2196,6 +2633,7 @@
             this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Ventas.ResumeLayout(false);
+            this.Ventas.PerformLayout();
             this.Productos.ResumeLayout(false);
             this.Productos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).EndInit();
@@ -2208,6 +2646,9 @@
             this.Empleado.ResumeLayout(false);
             this.Empleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            this.Usuarios.ResumeLayout(false);
+            this.Usuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DatagridUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2328,6 +2769,29 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridProductos;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridEntradasDELeche;
         private Bunifu.Framework.UI.BunifuDatepicker txtDate;
+        private System.Windows.Forms.TabPage Usuarios;
+        private MaterialSkin.Controls.MaterialButton btnCerrarSesion;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialLabel lblApelldio;
+        private MaterialSkin.Controls.MaterialLabel lblNombre;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DatagridUsuarios;
+        private MaterialSkin.Controls.MaterialLabel materialLabel42;
+        private MaterialSkin.Controls.MaterialLabel materialLabel41;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialLabel materialLabel43;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialComboBox txtComboRole;
+        private MaterialSkin.Controls.MaterialTextBox txtContrasenaUsuario;
+        private MaterialSkin.Controls.MaterialTextBox txtUsuarioLogin;
+        private MaterialSkin.Controls.MaterialTextBox txtApellidoUsuario;
+        private MaterialSkin.Controls.MaterialTextBox txtNombreUsuario;
+        private MaterialSkin.Controls.MaterialButton btnEditarUsuario;
+        private MaterialSkin.Controls.MaterialButton btnEliminarUsuario;
+        private MaterialSkin.Controls.MaterialButton btnGuardarUsuario;
+        private MaterialSkin.Controls.MaterialLabel materialLabel44;
+        private MaterialSkin.Controls.MaterialTextBox txtPrecioBotella;
+        private MaterialSkin.Controls.MaterialLabel txtPrecioLeche;
+        private MaterialSkin.Controls.MaterialLabel materialLabel48;
     }
 }
 

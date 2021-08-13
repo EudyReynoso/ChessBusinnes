@@ -16,6 +16,7 @@ namespace Presentacion
 {
     public partial class frmLogin : MaterialForm
     {
+
         public frmLogin()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace Presentacion
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
         }
 
         private void CheckContra_CheckedChanged(object sender, EventArgs e)
@@ -46,11 +48,10 @@ namespace Presentacion
         }
         private void ClckBtnLogin(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUserName.Text))
-                MessErr("Ingrese el usuario");
-            if (string.IsNullOrEmpty(txtPassword.Text))
-                MessErr("Ingrese la contraseña");
-
+            if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessErr("Hay campos vacios");
+            }
             else
             {
                 N_Usuario usuario = new N_Usuario();
@@ -62,10 +63,11 @@ namespace Presentacion
 
                 var ValidateUser = usuario.LoginVales(e_Usuario);
 
-                if(ValidateUser == true)
+                if (ValidateUser == true)
                 {
-                    frmPrincipal frmPrincipal = new frmPrincipal();
-                    frmPrincipal.Show();
+                    frmPrincipal mainPrincipal = new frmPrincipal();
+                    mainPrincipal.Show();
+                    mainPrincipal.FormClosed += Logout;
                     this.Hide();
                 }
                 else
@@ -76,6 +78,15 @@ namespace Presentacion
                     txtUserName.Focus();
                 }
             }
+        }
+
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtUserName.Text = "";
+            txtPassword.Text = "";
+            LabelError.Visible = false;
+            this.Show();
+            txtUserName.Focus();
         }
     }
 }

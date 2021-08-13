@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cannom\RolesUsers.cs" />
+    <Compile Include="Cannom\UserLoginChache.cs" />
     <Compile Include="E_Empleado.cs" />
     <Compile Include="E_EntradaDeLeche.cs" />
     <Compile Include="E_OrdenElementos.cs" />
@@ -49,5 +51,6 @@
     <Compile Include="E_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

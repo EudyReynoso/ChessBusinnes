@@ -34,6 +34,7 @@ namespace CapaDatos
             command.Parameters.AddWithValue("@IdSuplidor", entrada.Idsuplidor);
             command.Parameters.AddWithValue("@IdRecolector", entrada.Recolector);
             command.Parameters.AddWithValue("@Cantidad", entrada.Cantidadbotellas);
+            command.Parameters.AddWithValue("@PrecioBotella", entrada.PrecioPorbotella);
             command.Parameters.AddWithValue("@IdEstado", entrada.Idestado);
             command.Parameters.AddWithValue("@Fecha", entrada.Fechaentrada);
 
@@ -51,6 +52,7 @@ namespace CapaDatos
             command.Parameters.AddWithValue("@IdSuplidor", entrada.Idsuplidor);
             command.Parameters.AddWithValue("@IdRcolector", entrada.Recolector);
             command.Parameters.AddWithValue("@CantidadEnBotellas", entrada.Cantidadbotellas);
+            command.Parameters.AddWithValue("@PrecioBotella", entrada.PrecioPorbotella);
             command.Parameters.AddWithValue("@IdEstado", entrada.Idestado);
             command.Parameters.AddWithValue("@Fecha", entrada.Fechaentrada);
 
