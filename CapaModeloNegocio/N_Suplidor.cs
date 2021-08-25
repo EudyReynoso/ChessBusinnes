@@ -33,5 +33,9 @@ namespace CapaModeloNegocio
         {
             Suplidor.ElimininarSuplidor(suplidor);
         }
+        public DataTable BuscarSuplidor(string valor)
+        {
+            return Suplidor.BuscarSuplidorPorNombres(valor);
+        }
     }
 }

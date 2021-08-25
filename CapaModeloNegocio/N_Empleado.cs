@@ -33,5 +33,9 @@ namespace CapaModeloNegocio
         {
             EmpleadosDB.ActualizarEmpleado(empleado);
         }
+        public DataTable BuscarempeladosPorNombre( string valor)
+        {
+            return EmpleadosDB.BuscarEmpleadosPorNombres(valor);
+        }
     }
 }

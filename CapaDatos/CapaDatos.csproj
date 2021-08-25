@@ -47,14 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionDataBase.cs" />
+    <Compile Include="DataAccesReports\EntradaDeLecheData.cs" />
     <Compile Include="D_Empleado.cs" />
     <Compile Include="D_EntradaDeLeche.cs" />
     <Compile Include="D_EstadosDeLeche.cs" />
-    <Compile Include="D_OrdenElementos.cs" />
     <Compile Include="D_Producto.cs" />
     <Compile Include="D_Puestos.cs" />
     <Compile Include="D_Suplidor.cs" />
     <Compile Include="D_Usuario.cs" />
+    <Compile Include="D_Ordenes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

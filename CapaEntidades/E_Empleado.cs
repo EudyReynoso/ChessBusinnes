@@ -15,7 +15,7 @@ namespace CapaEntidades
         private int _puesto;
         private string _departamento;
         private string _apellido;
-
+        
         public int Idempleado { get => _idempleado; set => _idempleado = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
         public string Direccion { get => _direccion; set => _direccion = value; }

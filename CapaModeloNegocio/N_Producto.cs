@@ -31,5 +31,9 @@ namespace CapaModeloNegocio
         {
             Producto.EliminarProducto(producto);
         }
+        public DataTable BuscarProductoPorNombre(string producto)
+        {
+            return Producto.BuscarProductosPorNombres(producto);
+        }
     }
 }

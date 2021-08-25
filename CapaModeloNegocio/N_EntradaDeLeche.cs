@@ -31,5 +31,9 @@ namespace CapaModeloNegocio
         {
             D_EntradaDeLeche.ActualizarEntrada(EntradaDeLeche);
         }
+        public DataTable BuscarEntradasPorSuplidor(string valor)
+        {
+            return D_EntradaDeLeche.BuscarEntradasDeLeche(valor);
+        }
     }
 }

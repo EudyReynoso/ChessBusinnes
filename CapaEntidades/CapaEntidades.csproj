@@ -45,6 +45,7 @@
     <Compile Include="Cannom\UserLoginChache.cs" />
     <Compile Include="E_Empleado.cs" />
     <Compile Include="E_EntradaDeLeche.cs" />
+    <Compile Include="E_Orden.cs" />
     <Compile Include="E_OrdenElementos.cs" />
     <Compile Include="E_Producto.cs" />
     <Compile Include="E_Suplidor.cs" />

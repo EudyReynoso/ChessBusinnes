@@ -76,7 +76,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
-            this.materialLabel1.Location = new System.Drawing.Point(652, 158);
+            this.materialLabel1.Location = new System.Drawing.Point(666, 126);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(286, 58);
@@ -128,7 +128,7 @@
             // 
             this.CheckContra.AutoSize = true;
             this.CheckContra.Depth = 0;
-            this.CheckContra.Location = new System.Drawing.Point(621, 472);
+            this.CheckContra.Location = new System.Drawing.Point(852, 433);
             this.CheckContra.Margin = new System.Windows.Forms.Padding(0);
             this.CheckContra.MouseLocation = new System.Drawing.Point(-1, -1);
             this.CheckContra.MouseState = MaterialSkin.MouseState.HOVER;
@@ -147,7 +147,7 @@
             this.LabelError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.LabelError.Image = global::Presentacion.Properties.Resources.error_24px;
             this.LabelError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelError.Location = new System.Drawing.Point(631, 433);
+            this.LabelError.Location = new System.Drawing.Point(626, 438);
             this.LabelError.Margin = new System.Windows.Forms.Padding(10);
             this.LabelError.Name = "LabelError";
             this.LabelError.Size = new System.Drawing.Size(159, 26);
@@ -194,7 +194,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = global::Presentacion.Properties.Resources.Entrar;
-            this.materialButton2.Location = new System.Drawing.Point(631, 515);
+            this.materialButton2.Location = new System.Drawing.Point(631, 496);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";

@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 using CapaEntidades;
-using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 using MaterialSkin.Controls;
 
 namespace CapaDatos
@@ -103,5 +96,23 @@ namespace CapaDatos
             command.Parameters.Clear();
             CerrarConexion();
         }
-   }
+        public DataTable BuscarEmpleadosPorNombres(string valor)
+        {
+
+            SqlCommand query = new SqlCommand("SP_GetEmpleadosByName", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            query.Parameters.AddWithValue("@Nombre", valor);
+            SqlDataReader dataReader = query.ExecuteReader();
+
+            DataTable lista = new DataTable();
+
+            lista.Load(dataReader);
+            dataReader.Close();
+            CerrarConexion();
+
+            return lista;
+        }
+    }
 }

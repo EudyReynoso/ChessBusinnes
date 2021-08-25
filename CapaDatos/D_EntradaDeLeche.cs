@@ -72,5 +72,23 @@ namespace CapaDatos
 
             CerrarConexion();
         }
+        public DataTable BuscarEntradasDeLeche(string valor)
+        {
+
+            SqlCommand query = new SqlCommand("SP_BuscarEntradasDeLechebySuplidor", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            query.Parameters.AddWithValue("@Suplidor", valor);
+            SqlDataReader dataReader = query.ExecuteReader();
+
+            DataTable lista = new DataTable();
+
+            lista.Load(dataReader);
+            dataReader.Close();
+            CerrarConexion();
+
+            return lista;
+        }
     }
 }

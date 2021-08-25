@@ -52,10 +52,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.TabsContent = new MaterialSkin.Controls.MaterialTabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
+            this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.materialLabel49 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.lblRole = new MaterialSkin.Controls.MaterialLabel();
+            this.lblNombreUser = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblApelldio = new MaterialSkin.Controls.MaterialLabel();
-            this.lblNombre = new MaterialSkin.Controls.MaterialLabel();
-            this.uI_Calendario1 = new Calendario.UI_Calendario();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             this.materialDivider4 = new MaterialSkin.Controls.MaterialDivider();
@@ -97,11 +100,13 @@
             this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.Ventas = new System.Windows.Forms.TabPage();
+            this.materialLabel48 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton15 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
             this.Productos = new System.Windows.Forms.TabPage();
+            this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.DataGridProductos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.materialButton16 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
@@ -113,8 +118,13 @@
             this.txtNombreProducto = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel53 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel54 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel50 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel55 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.Entrada = new System.Windows.Forms.TabPage();
+            this.tetBuscarEntrada = new System.Windows.Forms.TextBox();
+            this.materialLabel51 = new MaterialSkin.Controls.MaterialLabel();
             this.txtDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.DataGridEntradasDELeche = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.materialButton13 = new MaterialSkin.Controls.MaterialButton();
@@ -133,7 +143,10 @@
             this.comboEstado = new MaterialSkin.Controls.MaterialComboBox();
             this.comboRecolector = new MaterialSkin.Controls.MaterialComboBox();
             this.ComboSuplodires = new MaterialSkin.Controls.MaterialComboBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.suplidor = new System.Windows.Forms.TabPage();
+            this.tetBuscarSuplidor = new System.Windows.Forms.TextBox();
             this.dataGridSuplidor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
             this.btnEmpleadoEditar = new MaterialSkin.Controls.MaterialButton();
@@ -148,7 +161,10 @@
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.Empleado = new System.Windows.Forms.TabPage();
+            this.txtBuscarEmpleado = new System.Windows.Forms.TextBox();
             this.DataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.comboPuesto = new MaterialSkin.Controls.MaterialComboBox();
             this.radioFemenino = new MaterialSkin.Controls.MaterialRadioButton();
@@ -168,6 +184,8 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel56 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.Usuarios = new System.Windows.Forms.TabPage();
             this.materialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.btnEditarUsuario = new MaterialSkin.Controls.MaterialButton();
@@ -186,9 +204,12 @@
             this.DatagridUsuarios = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnCerrarSesion = new MaterialSkin.Controls.MaterialButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.materialLabel48 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.TabsContent.SuspendLayout();
             this.Inicio.SuspendLayout();
+            this.materialCard6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.materialCard5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialCard4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -201,12 +222,20 @@
             this.Ventas.SuspendLayout();
             this.Productos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.Entrada.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEntradasDELeche)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.suplidor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.Empleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.Usuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DatagridUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -228,17 +257,15 @@
             this.TabsContent.Multiline = true;
             this.TabsContent.Name = "TabsContent";
             this.TabsContent.SelectedIndex = 0;
-            this.TabsContent.Size = new System.Drawing.Size(1437, 759);
+            this.TabsContent.Size = new System.Drawing.Size(1337, 759);
             this.TabsContent.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabsContent.TabIndex = 0;
             // 
             // Inicio
             // 
             this.Inicio.BackColor = System.Drawing.Color.White;
-            this.Inicio.Controls.Add(this.pictureBox1);
-            this.Inicio.Controls.Add(this.lblApelldio);
-            this.Inicio.Controls.Add(this.lblNombre);
-            this.Inicio.Controls.Add(this.uI_Calendario1);
+            this.Inicio.Controls.Add(this.materialCard6);
+            this.Inicio.Controls.Add(this.materialCard5);
             this.Inicio.Controls.Add(this.materialCard4);
             this.Inicio.Controls.Add(this.materialCard3);
             this.Inicio.Controls.Add(this.materialCard2);
@@ -246,88 +273,100 @@
             this.Inicio.ImageKey = "home_24px.png";
             this.Inicio.Location = new System.Drawing.Point(4, 35);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1429, 720);
+            this.Inicio.Size = new System.Drawing.Size(1329, 720);
             this.Inicio.TabIndex = 5;
             this.Inicio.Text = "Inicio";
             // 
+            // materialCard6
+            // 
+            this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard6.Controls.Add(this.pictureBox6);
+            this.materialCard6.Controls.Add(this.materialLabel49);
+            this.materialCard6.Depth = 0;
+            this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard6.Location = new System.Drawing.Point(56, 22);
+            this.materialCard6.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard6.Name = "materialCard6";
+            this.materialCard6.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard6.Size = new System.Drawing.Size(1116, 114);
+            this.materialCard6.TabIndex = 8;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Presentacion.Properties.Resources.LogoOne;
+            this.pictureBox6.Location = new System.Drawing.Point(-25, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(152, 119);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // materialLabel49
+            // 
+            this.materialLabel49.AutoSize = true;
+            this.materialLabel49.Depth = 0;
+            this.materialLabel49.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel49.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel49.Location = new System.Drawing.Point(133, 14);
+            this.materialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel49.Name = "materialLabel49";
+            this.materialLabel49.Size = new System.Drawing.Size(297, 41);
+            this.materialLabel49.TabIndex = 0;
+            this.materialLabel49.Text = "Queso Camilo Peña";
+            // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialButton3);
+            this.materialCard5.Controls.Add(this.lblRole);
+            this.materialCard5.Controls.Add(this.lblNombreUser);
+            this.materialCard5.Controls.Add(this.pictureBox1);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(814, 164);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard5.Size = new System.Drawing.Size(358, 536);
+            this.materialCard5.TabIndex = 7;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Depth = 0;
+            this.lblRole.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblRole.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblRole.Location = new System.Drawing.Point(117, 246);
+            this.lblRole.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(40, 24);
+            this.lblRole.TabIndex = 1;
+            this.lblRole.Text = "Role";
+            // 
+            // lblNombreUser
+            // 
+            this.lblNombreUser.AutoSize = true;
+            this.lblNombreUser.Depth = 0;
+            this.lblNombreUser.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblNombreUser.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lblNombreUser.Location = new System.Drawing.Point(92, 197);
+            this.lblNombreUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblNombreUser.Name = "lblNombreUser";
+            this.lblNombreUser.Size = new System.Drawing.Size(208, 29);
+            this.lblNombreUser.TabIndex = 1;
+            this.lblNombreUser.Text = "Nombre de Usuario";
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.male_user_48px;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 25);
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(110, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(119, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 137);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblApelldio
-            // 
-            this.lblApelldio.AutoSize = true;
-            this.lblApelldio.Depth = 0;
-            this.lblApelldio.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblApelldio.Location = new System.Drawing.Point(214, 90);
-            this.lblApelldio.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblApelldio.Name = "lblApelldio";
-            this.lblApelldio.Size = new System.Drawing.Size(58, 19);
-            this.lblApelldio.TabIndex = 5;
-            this.lblApelldio.Text = "Apellido";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Depth = 0;
-            this.lblNombre.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lblNombre.Location = new System.Drawing.Point(137, 90);
-            this.lblNombre.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(57, 19);
-            this.lblNombre.TabIndex = 5;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // uI_Calendario1
-            // 
-            this.uI_Calendario1.BackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.ButtonCollapse = true;
-            this.uI_Calendario1.ButtonDay = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
-            this.uI_Calendario1.ButtonDayFont = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.ButtonDownColor = System.Drawing.Color.WhiteSmoke;
-            this.uI_Calendario1.ButtonOverColor = System.Drawing.Color.WhiteSmoke;
-            this.uI_Calendario1.ButtonTextFormat = true;
-            this.uI_Calendario1.DayFont = new System.Drawing.Font("Arial Rounded MT Bold", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.DayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.uI_Calendario1.DayFormat = Calendario.UI_Calendario.DiaLetra.Abbreviation;
-            this.uI_Calendario1.DayMonthFollowForeColor = System.Drawing.Color.DimGray;
-            this.uI_Calendario1.DayMonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.uI_Calendario1.DayMonthPassedForeColor = System.Drawing.Color.DarkGray;
-            this.uI_Calendario1.DaySemanaFont = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.DaysForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
-            this.uI_Calendario1.DayWeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
-            this.uI_Calendario1.ElipceSize = 5;
-            this.uI_Calendario1.HourFont = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.Location = new System.Drawing.Point(793, 123);
-            this.uI_Calendario1.MonthFont = new System.Drawing.Font("Arial Rounded MT Bold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.MonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.uI_Calendario1.MoveCalendar = false;
-            this.uI_Calendario1.Name = "uI_Calendario1";
-            this.uI_Calendario1.PanelBottonBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelDateBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelDateHeight = 100;
-            this.uI_Calendario1.PanelDayBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.SemanaFont = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.Size = new System.Drawing.Size(461, 536);
-            this.uI_Calendario1.TabIndex = 4;
-            this.uI_Calendario1.Text = "uI_Calendario1";
-            this.uI_Calendario1.TimeForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.uI_Calendario1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.uI_Calendario1.TitleFont = new System.Drawing.Font("Arial Rounded MT Bold", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.TitleForeColor = System.Drawing.Color.White;
-            this.uI_Calendario1.TitleFormat = Calendario.UI_Calendario.TextHora.Text;
-            this.uI_Calendario1.TitleHeight = 35;
-            this.uI_Calendario1.TitleText = "Calendario";
-            this.uI_Calendario1.TitleVisible = true;
-            this.uI_Calendario1.YearFont = new System.Drawing.Font("Arial Rounded MT Bold", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.YearForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             // 
             // materialCard4
             // 
@@ -340,7 +379,7 @@
             this.materialCard4.Controls.Add(this.materialLabel47);
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(428, 405);
+            this.materialCard4.Location = new System.Drawing.Point(428, 445);
             this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
@@ -440,7 +479,7 @@
             this.materialCard3.Controls.Add(this.materialLabel40);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(56, 406);
+            this.materialCard3.Location = new System.Drawing.Point(56, 446);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
@@ -588,7 +627,7 @@
             this.materialCard2.Controls.Add(this.materialLabel33);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(428, 123);
+            this.materialCard2.Location = new System.Drawing.Point(428, 163);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
@@ -736,7 +775,7 @@
             this.materialCard1.Controls.Add(this.materialLabel8);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(56, 123);
+            this.materialCard1.Location = new System.Drawing.Point(56, 163);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
@@ -879,10 +918,23 @@
             this.Ventas.ImageKey = "sales.png";
             this.Ventas.Location = new System.Drawing.Point(4, 35);
             this.Ventas.Name = "Ventas";
-            this.Ventas.Size = new System.Drawing.Size(1429, 720);
+            this.Ventas.Size = new System.Drawing.Size(1329, 720);
             this.Ventas.TabIndex = 6;
             this.Ventas.Text = "Ventas";
             this.Ventas.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel48
+            // 
+            this.materialLabel48.AutoSize = true;
+            this.materialLabel48.Depth = 0;
+            this.materialLabel48.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel48.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel48.Location = new System.Drawing.Point(93, 29);
+            this.materialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel48.Name = "materialLabel48";
+            this.materialLabel48.Size = new System.Drawing.Size(414, 29);
+            this.materialLabel48.TabIndex = 49;
+            this.materialLabel48.Text = "Administrador y Procesador de Ventas";
             // 
             // materialButton15
             // 
@@ -893,7 +945,7 @@
             this.materialButton15.Depth = 0;
             this.materialButton15.HighEmphasis = true;
             this.materialButton15.Icon = global::Presentacion.Properties.Resources.report;
-            this.materialButton15.Location = new System.Drawing.Point(991, 245);
+            this.materialButton15.Location = new System.Drawing.Point(904, 321);
             this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton15.Name = "materialButton15";
@@ -912,7 +964,7 @@
             this.materialButton6.Depth = 0;
             this.materialButton6.HighEmphasis = true;
             this.materialButton6.Icon = global::Presentacion.Properties.Resources.print_24px;
-            this.materialButton6.Location = new System.Drawing.Point(755, 245);
+            this.materialButton6.Location = new System.Drawing.Point(668, 321);
             this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton6.Name = "materialButton6";
@@ -931,7 +983,7 @@
             this.materialButton7.Depth = 0;
             this.materialButton7.HighEmphasis = true;
             this.materialButton7.Icon = global::Presentacion.Properties.Resources.clear;
-            this.materialButton7.Location = new System.Drawing.Point(506, 245);
+            this.materialButton7.Location = new System.Drawing.Point(419, 321);
             this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton7.Name = "materialButton7";
@@ -950,19 +1002,21 @@
             this.materialButton8.Depth = 0;
             this.materialButton8.HighEmphasis = true;
             this.materialButton8.Icon = global::Presentacion.Properties.Resources.process_24px;
-            this.materialButton8.Location = new System.Drawing.Point(268, 245);
+            this.materialButton8.Location = new System.Drawing.Point(181, 321);
             this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton8.Name = "materialButton8";
             this.materialButton8.Size = new System.Drawing.Size(170, 39);
             this.materialButton8.TabIndex = 45;
-            this.materialButton8.Text = "Procesar";
+            this.materialButton8.Text = "Realizar Venta";
             this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton8.UseAccentColor = false;
             this.materialButton8.UseVisualStyleBackColor = true;
+            this.materialButton8.Click += new System.EventHandler(this.materialButton8_Click);
             // 
             // Productos
             // 
+            this.Productos.Controls.Add(this.txtBuscarProducto);
             this.Productos.Controls.Add(this.DataGridProductos);
             this.Productos.Controls.Add(this.materialButton16);
             this.Productos.Controls.Add(this.materialButton9);
@@ -974,14 +1028,28 @@
             this.Productos.Controls.Add(this.txtNombreProducto);
             this.Productos.Controls.Add(this.materialLabel53);
             this.Productos.Controls.Add(this.materialLabel54);
+            this.Productos.Controls.Add(this.materialLabel50);
             this.Productos.Controls.Add(this.materialLabel55);
+            this.Productos.Controls.Add(this.pictureBox8);
+            this.Productos.Controls.Add(this.pictureBox9);
             this.Productos.ImageKey = "product_24px.png";
             this.Productos.Location = new System.Drawing.Point(4, 35);
             this.Productos.Name = "Productos";
-            this.Productos.Size = new System.Drawing.Size(1429, 720);
+            this.Productos.Size = new System.Drawing.Size(1329, 720);
             this.Productos.TabIndex = 7;
             this.Productos.Text = "Productos";
             this.Productos.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscarProducto
+            // 
+            this.txtBuscarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.txtBuscarProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBuscarProducto.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarProducto.Location = new System.Drawing.Point(257, 392);
+            this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.Size = new System.Drawing.Size(381, 28);
+            this.txtBuscarProducto.TabIndex = 55;
+            this.txtBuscarProducto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // DataGridProductos
             // 
@@ -1020,7 +1088,7 @@
             this.DataGridProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.DataGridProductos.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.DataGridProductos.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridProductos.Location = new System.Drawing.Point(0, 443);
+            this.DataGridProductos.Location = new System.Drawing.Point(0, 486);
             this.DataGridProductos.MultiSelect = false;
             this.DataGridProductos.Name = "DataGridProductos";
             this.DataGridProductos.ReadOnly = true;
@@ -1036,7 +1104,7 @@
             this.DataGridProductos.RowHeadersVisible = false;
             this.DataGridProductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGridProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridProductos.Size = new System.Drawing.Size(1429, 277);
+            this.DataGridProductos.Size = new System.Drawing.Size(1329, 234);
             this.DataGridProductos.TabIndex = 48;
             // 
             // materialButton16
@@ -1207,6 +1275,18 @@
             this.materialLabel54.TabIndex = 37;
             this.materialLabel54.Text = "Precio";
             // 
+            // materialLabel50
+            // 
+            this.materialLabel50.AutoSize = true;
+            this.materialLabel50.Depth = 0;
+            this.materialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel50.Location = new System.Drawing.Point(43, 403);
+            this.materialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel50.Name = "materialLabel50";
+            this.materialLabel50.Size = new System.Drawing.Size(143, 19);
+            this.materialLabel50.TabIndex = 38;
+            this.materialLabel50.Text = "Buscar por nombres";
+            // 
             // materialLabel55
             // 
             this.materialLabel55.AutoSize = true;
@@ -1219,9 +1299,31 @@
             this.materialLabel55.TabIndex = 38;
             this.materialLabel55.Text = "Nombre";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Presentacion.Properties.Resources.Buscar;
+            this.pictureBox8.Location = new System.Drawing.Point(225, 386);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 36);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 51;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Presentacion.Properties.Resources.forma;
+            this.pictureBox9.Location = new System.Drawing.Point(207, 377);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(455, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 53;
+            this.pictureBox9.TabStop = false;
+            // 
             // Entrada
             // 
             this.Entrada.BackColor = System.Drawing.Color.White;
+            this.Entrada.Controls.Add(this.tetBuscarEntrada);
+            this.Entrada.Controls.Add(this.materialLabel51);
             this.Entrada.Controls.Add(this.txtDate);
             this.Entrada.Controls.Add(this.DataGridEntradasDELeche);
             this.Entrada.Controls.Add(this.materialButton13);
@@ -1240,12 +1342,37 @@
             this.Entrada.Controls.Add(this.comboEstado);
             this.Entrada.Controls.Add(this.comboRecolector);
             this.Entrada.Controls.Add(this.ComboSuplodires);
+            this.Entrada.Controls.Add(this.pictureBox11);
+            this.Entrada.Controls.Add(this.pictureBox12);
             this.Entrada.ImageKey = "entradaLeche.png";
             this.Entrada.Location = new System.Drawing.Point(4, 35);
             this.Entrada.Name = "Entrada";
-            this.Entrada.Size = new System.Drawing.Size(1429, 720);
+            this.Entrada.Size = new System.Drawing.Size(1329, 720);
             this.Entrada.TabIndex = 2;
             this.Entrada.Text = "Registro Entrada";
+            // 
+            // tetBuscarEntrada
+            // 
+            this.tetBuscarEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.tetBuscarEntrada.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tetBuscarEntrada.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tetBuscarEntrada.Location = new System.Drawing.Point(240, 376);
+            this.tetBuscarEntrada.Name = "tetBuscarEntrada";
+            this.tetBuscarEntrada.Size = new System.Drawing.Size(381, 28);
+            this.tetBuscarEntrada.TabIndex = 59;
+            this.tetBuscarEntrada.TextChanged += new System.EventHandler(this.tetBuscarEntrada_TextChanged);
+            // 
+            // materialLabel51
+            // 
+            this.materialLabel51.AutoSize = true;
+            this.materialLabel51.Depth = 0;
+            this.materialLabel51.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel51.Location = new System.Drawing.Point(26, 387);
+            this.materialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel51.Name = "materialLabel51";
+            this.materialLabel51.Size = new System.Drawing.Size(143, 19);
+            this.materialLabel51.TabIndex = 56;
+            this.materialLabel51.Text = "Buscar por nombres";
             // 
             // txtDate
             // 
@@ -1268,8 +1395,6 @@
             this.DataGridEntradasDELeche.AllowUserToResizeRows = false;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DataGridEntradasDELeche.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DataGridEntradasDELeche.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridEntradasDELeche.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridEntradasDELeche.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.DataGridEntradasDELeche.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1293,12 +1418,13 @@
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridEntradasDELeche.DefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridEntradasDELeche.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridEntradasDELeche.DoubleBuffered = false;
             this.DataGridEntradasDELeche.EnableHeadersVisualStyles = false;
             this.DataGridEntradasDELeche.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.DataGridEntradasDELeche.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.DataGridEntradasDELeche.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridEntradasDELeche.Location = new System.Drawing.Point(0, 335);
+            this.DataGridEntradasDELeche.Location = new System.Drawing.Point(0, 435);
             this.DataGridEntradasDELeche.MultiSelect = false;
             this.DataGridEntradasDELeche.Name = "DataGridEntradasDELeche";
             this.DataGridEntradasDELeche.ReadOnly = true;
@@ -1314,7 +1440,7 @@
             this.DataGridEntradasDELeche.RowHeadersVisible = false;
             this.DataGridEntradasDELeche.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGridEntradasDELeche.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1429, 309);
+            this.DataGridEntradasDELeche.Size = new System.Drawing.Size(1329, 285);
             this.DataGridEntradasDELeche.TabIndex = 25;
             // 
             // materialButton13
@@ -1336,6 +1462,7 @@
             this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton13.UseAccentColor = false;
             this.materialButton13.UseVisualStyleBackColor = false;
+            this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
             // 
             // btnEditarEntrada
             // 
@@ -1582,9 +1709,30 @@
             this.ComboSuplodires.StartIndex = 0;
             this.ComboSuplodires.TabIndex = 1;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Presentacion.Properties.Resources.Buscar;
+            this.pictureBox11.Location = new System.Drawing.Point(208, 370);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(26, 36);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 57;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Presentacion.Properties.Resources.forma;
+            this.pictureBox12.Location = new System.Drawing.Point(190, 361);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(455, 50);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 58;
+            this.pictureBox12.TabStop = false;
+            // 
             // suplidor
             // 
             this.suplidor.BackColor = System.Drawing.Color.White;
+            this.suplidor.Controls.Add(this.tetBuscarSuplidor);
             this.suplidor.Controls.Add(this.dataGridSuplidor);
             this.suplidor.Controls.Add(this.materialButton14);
             this.suplidor.Controls.Add(this.btnEmpleadoEditar);
@@ -1599,12 +1747,25 @@
             this.suplidor.Controls.Add(this.materialLabel15);
             this.suplidor.Controls.Add(this.materialLabel16);
             this.suplidor.Controls.Add(this.materialLabel13);
+            this.suplidor.Controls.Add(this.pictureBox13);
+            this.suplidor.Controls.Add(this.pictureBox14);
             this.suplidor.ImageKey = "Suplidor.png";
             this.suplidor.Location = new System.Drawing.Point(4, 35);
             this.suplidor.Name = "suplidor";
-            this.suplidor.Size = new System.Drawing.Size(1429, 720);
+            this.suplidor.Size = new System.Drawing.Size(1329, 720);
             this.suplidor.TabIndex = 4;
             this.suplidor.Text = "Suplidor";
+            // 
+            // tetBuscarSuplidor
+            // 
+            this.tetBuscarSuplidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.tetBuscarSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tetBuscarSuplidor.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tetBuscarSuplidor.Location = new System.Drawing.Point(100, 340);
+            this.tetBuscarSuplidor.Name = "tetBuscarSuplidor";
+            this.tetBuscarSuplidor.Size = new System.Drawing.Size(381, 28);
+            this.tetBuscarSuplidor.TabIndex = 58;
+            this.tetBuscarSuplidor.TextChanged += new System.EventHandler(this.tetBuscarSuplidor_TextChanged);
             // 
             // dataGridSuplidor
             // 
@@ -1614,8 +1775,6 @@
             this.dataGridSuplidor.AllowUserToResizeRows = false;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridSuplidor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridSuplidor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridSuplidor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridSuplidor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.dataGridSuplidor.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1639,12 +1798,13 @@
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridSuplidor.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridSuplidor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridSuplidor.DoubleBuffered = false;
             this.dataGridSuplidor.EnableHeadersVisualStyles = false;
             this.dataGridSuplidor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.dataGridSuplidor.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.dataGridSuplidor.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 326);
+            this.dataGridSuplidor.Location = new System.Drawing.Point(0, 423);
             this.dataGridSuplidor.MultiSelect = false;
             this.dataGridSuplidor.Name = "dataGridSuplidor";
             this.dataGridSuplidor.ReadOnly = true;
@@ -1660,7 +1820,7 @@
             this.dataGridSuplidor.RowHeadersVisible = false;
             this.dataGridSuplidor.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridSuplidor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridSuplidor.Size = new System.Drawing.Size(1429, 292);
+            this.dataGridSuplidor.Size = new System.Drawing.Size(1329, 297);
             this.dataGridSuplidor.TabIndex = 24;
             // 
             // materialButton14
@@ -1872,9 +2032,30 @@
             this.materialLabel13.TabIndex = 0;
             this.materialLabel13.Text = "Registro de nuevo suplidor";
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Presentacion.Properties.Resources.Buscar;
+            this.pictureBox13.Location = new System.Drawing.Point(68, 334);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(26, 36);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 56;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Presentacion.Properties.Resources.forma;
+            this.pictureBox14.Location = new System.Drawing.Point(50, 325);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(455, 50);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 57;
+            this.pictureBox14.TabStop = false;
+            // 
             // Empleado
             // 
             this.Empleado.BackColor = System.Drawing.Color.White;
+            this.Empleado.Controls.Add(this.txtBuscarEmpleado);
             this.Empleado.Controls.Add(this.DataGrid);
             this.Empleado.Controls.Add(this.comboPuesto);
             this.Empleado.Controls.Add(this.radioFemenino);
@@ -1894,13 +2075,26 @@
             this.Empleado.Controls.Add(this.materialLabel2);
             this.Empleado.Controls.Add(this.materialLabel56);
             this.Empleado.Controls.Add(this.materialLabel1);
+            this.Empleado.Controls.Add(this.pictureBox7);
+            this.Empleado.Controls.Add(this.pictureBox10);
             this.Empleado.ImageKey = "new empleado.png";
             this.Empleado.Location = new System.Drawing.Point(4, 35);
             this.Empleado.Name = "Empleado";
             this.Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleado.Size = new System.Drawing.Size(1429, 720);
+            this.Empleado.Size = new System.Drawing.Size(1329, 720);
             this.Empleado.TabIndex = 1;
             this.Empleado.Text = "Empleados";
+            // 
+            // txtBuscarEmpleado
+            // 
+            this.txtBuscarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.txtBuscarEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBuscarEmpleado.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarEmpleado.Location = new System.Drawing.Point(95, 314);
+            this.txtBuscarEmpleado.Name = "txtBuscarEmpleado";
+            this.txtBuscarEmpleado.Size = new System.Drawing.Size(381, 28);
+            this.txtBuscarEmpleado.TabIndex = 58;
+            this.txtBuscarEmpleado.TextChanged += new System.EventHandler(this.txtBuscarEmpleado_TextChanged);
             // 
             // DataGrid
             // 
@@ -1940,7 +2134,7 @@
             this.DataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.DataGrid.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.DataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGrid.Location = new System.Drawing.Point(3, 293);
+            this.DataGrid.Location = new System.Drawing.Point(3, 373);
             this.DataGrid.MultiSelect = false;
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.ReadOnly = true;
@@ -1956,7 +2150,7 @@
             this.DataGrid.RowHeadersVisible = false;
             this.DataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid.Size = new System.Drawing.Size(1423, 322);
+            this.DataGrid.Size = new System.Drawing.Size(1323, 242);
             this.DataGrid.TabIndex = 10;
             // 
             // comboPuesto
@@ -2023,7 +2217,7 @@
             this.btnReport.Depth = 0;
             this.btnReport.HighEmphasis = true;
             this.btnReport.Icon = global::Presentacion.Properties.Resources.report;
-            this.btnReport.Location = new System.Drawing.Point(990, 212);
+            this.btnReport.Location = new System.Drawing.Point(890, 212);
             this.btnReport.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnReport.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnReport.Name = "btnReport";
@@ -2044,7 +2238,7 @@
             this.btnEditar.Depth = 0;
             this.btnEditar.HighEmphasis = true;
             this.btnEditar.Icon = global::Presentacion.Properties.Resources.edit;
-            this.btnEditar.Location = new System.Drawing.Point(777, 212);
+            this.btnEditar.Location = new System.Drawing.Point(677, 212);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEditar.Name = "btnEditar";
@@ -2066,7 +2260,7 @@
             this.btnEliminar.Depth = 0;
             this.btnEliminar.HighEmphasis = true;
             this.btnEliminar.Icon = global::Presentacion.Properties.Resources.delete_bin_24px;
-            this.btnEliminar.Location = new System.Drawing.Point(512, 212);
+            this.btnEliminar.Location = new System.Drawing.Point(412, 212);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
@@ -2089,7 +2283,7 @@
             this.btnGuardar.DrawShadows = false;
             this.btnGuardar.HighEmphasis = true;
             this.btnGuardar.Icon = global::Presentacion.Properties.Resources.save_24px;
-            this.btnGuardar.Location = new System.Drawing.Point(266, 212);
+            this.btnGuardar.Location = new System.Drawing.Point(166, 212);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGuardar.Name = "btnGuardar";
@@ -2258,6 +2452,26 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Nombre";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Presentacion.Properties.Resources.Buscar;
+            this.pictureBox7.Location = new System.Drawing.Point(63, 308);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(26, 36);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 56;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Presentacion.Properties.Resources.forma;
+            this.pictureBox10.Location = new System.Drawing.Point(45, 299);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(455, 50);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 57;
+            this.pictureBox10.TabStop = false;
+            // 
             // Usuarios
             // 
             this.Usuarios.Controls.Add(this.materialLabel44);
@@ -2279,7 +2493,7 @@
             this.Usuarios.ImageKey = "UsuariosAcnutn.png";
             this.Usuarios.Location = new System.Drawing.Point(4, 35);
             this.Usuarios.Name = "Usuarios";
-            this.Usuarios.Size = new System.Drawing.Size(1429, 720);
+            this.Usuarios.Size = new System.Drawing.Size(1329, 720);
             this.Usuarios.TabIndex = 8;
             this.Usuarios.Text = "Usuarios";
             this.Usuarios.UseVisualStyleBackColor = true;
@@ -2556,7 +2770,7 @@
             this.DatagridUsuarios.RowHeadersVisible = false;
             this.DatagridUsuarios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DatagridUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DatagridUsuarios.Size = new System.Drawing.Size(1429, 310);
+            this.DatagridUsuarios.Size = new System.Drawing.Size(1329, 310);
             this.DatagridUsuarios.TabIndex = 11;
             // 
             // btnCerrarSesion
@@ -2591,24 +2805,30 @@
             this.imageList1.Images.SetKeyName(5, "product_24px.png");
             this.imageList1.Images.SetKeyName(6, "UsuariosAcnutn.png");
             // 
-            // materialLabel48
+            // materialButton3
             // 
-            this.materialLabel48.AutoSize = true;
-            this.materialLabel48.Depth = 0;
-            this.materialLabel48.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel48.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel48.Location = new System.Drawing.Point(93, 29);
-            this.materialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel48.Name = "materialLabel48";
-            this.materialLabel48.Size = new System.Drawing.Size(414, 29);
-            this.materialLabel48.TabIndex = 49;
-            this.materialLabel48.Text = "Administrador y Procesador de Ventas";
+            this.materialButton3.AutoSize = false;
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = global::Presentacion.Properties.Resources.LogOutW;
+            this.materialButton3.Location = new System.Drawing.Point(32, 420);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.Size = new System.Drawing.Size(308, 38);
+            this.materialButton3.TabIndex = 2;
+            this.materialButton3.Text = "Cerrar sesion";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton3.UseAccentColor = false;
+            this.materialButton3.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 826);
+            this.ClientSize = new System.Drawing.Size(1343, 826);
             this.Controls.Add(this.TabsContent);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.TabsContent;
@@ -2618,7 +2838,11 @@
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.TabsContent.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
-            this.Inicio.PerformLayout();
+            this.materialCard6.ResumeLayout(false);
+            this.materialCard6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.materialCard4.ResumeLayout(false);
             this.materialCard4.PerformLayout();
@@ -2637,15 +2861,23 @@
             this.Productos.ResumeLayout(false);
             this.Productos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.Entrada.ResumeLayout(false);
             this.Entrada.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridEntradasDELeche)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.suplidor.ResumeLayout(false);
             this.suplidor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSuplidor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.Empleado.ResumeLayout(false);
             this.Empleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.Usuarios.ResumeLayout(false);
             this.Usuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DatagridUsuarios)).EndInit();
@@ -2742,7 +2974,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel38;
         private MaterialSkin.Controls.MaterialLabel materialLabel39;
         private MaterialSkin.Controls.MaterialLabel materialLabel40;
-        private Calendario.UI_Calendario uI_Calendario1;
         private MaterialSkin.Controls.MaterialButton materialButton6;
         private MaterialSkin.Controls.MaterialButton materialButton7;
         private MaterialSkin.Controls.MaterialButton materialButton8;
@@ -2771,9 +3002,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker txtDate;
         private System.Windows.Forms.TabPage Usuarios;
         private MaterialSkin.Controls.MaterialButton btnCerrarSesion;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private MaterialSkin.Controls.MaterialLabel lblApelldio;
-        private MaterialSkin.Controls.MaterialLabel lblNombre;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DatagridUsuarios;
         private MaterialSkin.Controls.MaterialLabel materialLabel42;
         private MaterialSkin.Controls.MaterialLabel materialLabel41;
@@ -2792,6 +3020,28 @@
         private MaterialSkin.Controls.MaterialTextBox txtPrecioBotella;
         private MaterialSkin.Controls.MaterialLabel txtPrecioLeche;
         private MaterialSkin.Controls.MaterialLabel materialLabel48;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialCard materialCard6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialLabel lblNombreUser;
+        private MaterialSkin.Controls.MaterialLabel lblRole;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private MaterialSkin.Controls.MaterialLabel materialLabel49;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private MaterialSkin.Controls.MaterialLabel materialLabel50;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.TextBox txtBuscarProducto;
+        private System.Windows.Forms.TextBox txtBuscarEmpleado;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox tetBuscarEntrada;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private MaterialSkin.Controls.MaterialLabel materialLabel51;
+        private System.Windows.Forms.TextBox tetBuscarSuplidor;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
     }
 }
 

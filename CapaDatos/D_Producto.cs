@@ -74,5 +74,24 @@ namespace CapaDatos
             command.Parameters.Clear();
             CerrarConexion();
         }
+        public DataTable BuscarProductosPorNombres(string valor)
+        {
+
+            SqlCommand query = new SqlCommand("SP_GetProductoByName", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            query.Parameters.AddWithValue("@Buscar", valor);
+            SqlDataReader dataReader = query.ExecuteReader();
+
+            DataTable lista = new DataTable();
+
+            lista.Load(dataReader);
+           
+            dataReader.Close();
+            CerrarConexion();
+
+            return lista;
+        }
     }
 }

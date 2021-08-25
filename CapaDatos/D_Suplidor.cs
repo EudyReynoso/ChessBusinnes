@@ -88,5 +88,23 @@ namespace CapaDatos
                 MaterialMessageBox.Show("No se pueden eliminar porque este suplidor, hay entradas de leche con sus datos");
             }
         }
+        public DataTable BuscarSuplidorPorNombres(string valor)
+        {
+
+            SqlCommand query = new SqlCommand("SP_BuscarSuplidoresByNombre", AbrirConexion())
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            query.Parameters.AddWithValue("@Nombre", valor);
+            SqlDataReader dataReader = query.ExecuteReader();
+
+            DataTable lista = new DataTable();
+
+            lista.Load(dataReader);
+            dataReader.Close();
+            CerrarConexion();
+
+            return lista;
+        }
     }
 }

@@ -44,6 +44,7 @@
     <Compile Include="N_Empleado.cs" />
     <Compile Include="N_EntradaDeLeche.cs" />
     <Compile Include="N_EstadosDeLeche.cs" />
+    <Compile Include="N_InsertOrdenElementos.cs" />
     <Compile Include="N_Producto.cs" />
     <Compile Include="N_Puestos.cs" />
     <Compile Include="N_Suplidor.cs" />

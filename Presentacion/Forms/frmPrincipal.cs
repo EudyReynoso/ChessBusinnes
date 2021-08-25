@@ -5,6 +5,7 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using CapaEntidades;
 using CapaEntidades.Cannom;
+using Presentacion.Forms;
 
 namespace Presentacion
 {
@@ -28,37 +29,33 @@ namespace Presentacion
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500,Primary.LightBlue100, Accent.LightBlue200,
+            materialSkinManager.ColorScheme = new ColorScheme
+                (Primary.Blue400, Primary.Blue500,Primary.LightBlue100, Accent.LightBlue200,
                 TextShade.WHITE);
-        }
-
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            if (MaterialMessageBox.Show("Esta seguro que quiere cerrar sesion", "Advertencia",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-        private void UserNameLogin()
-        {
-            lblNombre.Text = UserLoginChache.Nombre;
-            lblApelldio.Text = UserLoginChache.Apellido;
         }
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            UserNameLogin();
             Refrescar();
             PuestosValues();
             RefrescarSuplidor();
+            GetombreUsuarioInicio();
             RefrescarEntrdas();
             ValoresCombosTabEntrada();
             RefreshValoresTabProducto();
             ValueComboRoles();
             RefrescarUsuarios();
-            txtNombre.Focus();
-
-            if(UserLoginChache.Role == RolesUsers.Comprador)
+            DetectedTypeUserByRole();
+        }
+        #region Login
+        private void GetombreUsuarioInicio()
+        {
+            lblNombreUser.Text = UserLoginChache.Nombre + " " + UserLoginChache.Apellido;
+            if (UserLoginChache.Role == 1)
+                lblRole.Text = "Administrador";
+        }
+        private void DetectedTypeUserByRole()
+        {
+            if (UserLoginChache.Role == RolesUsers.Comprador)
             {
                 TabsContent.TabPages.Remove(Usuarios);
                 TabsContent.TabPages.Remove(Inicio);
@@ -67,11 +64,11 @@ namespace Presentacion
                 TabsContent.TabPages.Remove(Productos);
 
             }
-            if(UserLoginChache.Role == RolesUsers.Administrador)
+            if (UserLoginChache.Role == RolesUsers.Administrador)
             {
                 MaterialMessageBox.Show("Usuario Admininitrador", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            if(UserLoginChache.Role == RolesUsers.Vendedor)
+            if (UserLoginChache.Role == RolesUsers.Vendedor)
             {
                 TabsContent.TabPages.Remove(Usuarios);
                 TabsContent.TabPages.Remove(Inicio);
@@ -80,6 +77,8 @@ namespace Presentacion
                 TabsContent.TabPages.Remove(suplidor);
             }
         }
+        #endregion
+
         #region Tab de Empleado
         private void Refrescar()
         {
@@ -103,7 +102,11 @@ namespace Presentacion
             radioMasculino.Checked = false;
             radioFemenino.Checked = false;
         }
-       
+        private void BuscarEmpleado(string valor)
+        {
+            N_Empleado n_Empleado = new N_Empleado();
+            DataGrid.DataSource = n_Empleado.BuscarempeladosPorNombre(valor);
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (Editar == false)
@@ -186,7 +189,12 @@ namespace Presentacion
                 Refrescar();
             }
         }
+        private void materialButton13_Click(object sender, EventArgs e)
+        {
+            frmReportEmpleados frmReportEmpleados = new frmReportEmpleados();
 
+            frmReportEmpleados.Show();
+        }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if(DataGrid.SelectedRows.Count > 0)
@@ -242,7 +250,16 @@ namespace Presentacion
 
             dataGridSuplidor.DataSource = suplidor.ListaSuplidores();
         }
+        private void BuscarSuplidor(string valor)
+        {
+            N_Suplidor suplidor = new N_Suplidor();
+            dataGridSuplidor.DataSource = dataGridSuplidor.DataSource = suplidor.BuscarSuplidor(valor);
 
+        }
+        private void tetBuscarSuplidor_TextChanged(object sender, EventArgs e)
+        {
+            BuscarSuplidor(tetBuscarSuplidor.Text);
+        }
         private void btnEmpleadoGuardar_Click(object sender, EventArgs e)
         {
             if (EditarSulidor == false)
@@ -339,16 +356,26 @@ namespace Presentacion
 
             DataGridEntradasDELeche.DataSource = entradaDeLeche.ListaEntradasDeLeche();
         }
+        private void BuscarEntradasDeLecheBySuplidor(string valor)
+        {
+            N_EntradaDeLeche entradaDeLeche = new N_EntradaDeLeche();
+            DataGridEntradasDELeche.DataSource = entradaDeLeche.BuscarEntradasPorSuplidor(valor);
+
+        }
+        private void tetBuscarEntrada_TextChanged(object sender, EventArgs e)
+        {
+            BuscarEntradasDeLecheBySuplidor(tetBuscarEntrada.Text);
+        }
         private void ValoresCombosTabEntrada()
         {
             N_Empleado empleado = new N_Empleado();
             N_Suplidor suplidor = new N_Suplidor();
             N_EstadosDeLeche estadosDeLeche = new N_EstadosDeLeche();
-            
+
             ComboSuplodires.DataSource = suplidor.ValoresComboboxSuplido();
             comboRecolector.DataSource = empleado.ValoresComboRecolector();
             comboEstado.DataSource = estadosDeLeche.ListaEstados();
-            
+
             ComboSuplodires.DisplayMember = "Nombres";
             ComboSuplodires.ValueMember = "IdSuplidor";
             comboRecolector.DisplayMember = "Nombre";
@@ -462,6 +489,11 @@ namespace Presentacion
 
             DataGridProductos.DataSource = producto.ListadoProductos();
         }
+        private void BuscarProducto(string producto)
+        {
+            N_Producto Nproducto = new N_Producto();
+            DataGridProductos.DataSource = Nproducto.BuscarProductoPorNombre(producto);
+        }
 
         private void materialButton11_Click(object sender, EventArgs e)
         {
@@ -547,6 +579,15 @@ namespace Presentacion
                 txtProductoPrecio.Text = DataGridProductos.CurrentRow.Cells[3].Value.ToString();
                 MaterialMessageBox.Show("Esta editando la fila seleccionada");
             }
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            BuscarProducto(txtBuscarProducto.Text);
+        }
+
+        private void txtBuscarEmpleado_TextChanged(object sender, EventArgs e)
+        {
+            BuscarEmpleado(txtBuscarEmpleado.Text);
         }
         #endregion
 
@@ -641,7 +682,6 @@ namespace Presentacion
 
             }
         }
-        #endregion
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
@@ -666,5 +706,25 @@ namespace Presentacion
             }
             RefrescarUsuarios();
         }
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MaterialMessageBox.Show("Esta seguro que quiere cerrar sesion", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        #endregion
+
+        #region TabVentas
+
+        private void materialButton8_Click(object sender, EventArgs e)
+        {
+            frmveentass frmVentas = new frmveentass();
+            frmVentas.Show();
+        }
+
+        #endregion
     }
 }
