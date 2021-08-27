@@ -9,7 +9,7 @@ namespace CapaModeloNegocio.ReportClass
 {
     public class ReportSuplidores
     {
-        public List<E_Suplidor> obtenerListadoProductos()
+        public List<E_Suplidor> obtenerListadoSuplidores()
         {
             D_Suplidor suplidor = new D_Suplidor();
             var data = suplidor.ListaSuplidores();

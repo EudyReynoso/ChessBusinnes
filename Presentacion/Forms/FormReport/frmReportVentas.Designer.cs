@@ -30,10 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportVentas));
             this.E_VentasReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.E_VentasReportBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // E_VentasReportBindingSource
+            // 
+            this.E_VentasReportBindingSource.DataSource = typeof(CapaEntidades.E_VentasReport);
             // 
             // reportViewer1
             // 
@@ -49,16 +54,13 @@
             this.reportViewer1.Size = new System.Drawing.Size(946, 722);
             this.reportViewer1.TabIndex = 0;
             // 
-            // E_VentasReportBindingSource
-            // 
-            this.E_VentasReportBindingSource.DataSource = typeof(CapaEntidades.E_VentasReport);
-            // 
             // frmReportVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 789);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmReportVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte De Ventas";

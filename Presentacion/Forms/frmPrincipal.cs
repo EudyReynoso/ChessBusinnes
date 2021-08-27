@@ -766,5 +766,11 @@ namespace Presentacion
 
             frmReportProducto.ShowDialog();
         }
+
+        private void materialButton14_Click(object sender, EventArgs e)
+        {
+            frmReportSuplidores frmReportSuplidores = new frmReportSuplidores();
+            frmReportSuplidores.ShowDialog();
+        }
     }
 }

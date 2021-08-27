@@ -138,6 +138,9 @@
     <EmbeddedResource Include="Forms\FormReport\frmReportProducto.resx">
       <DependentUpon>frmReportProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReport\frmReportSuplidores.resx">
+      <DependentUpon>frmReportSuplidores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormReport\frmReportVentas.resx">
       <DependentUpon>frmReportVentas.cs</DependentUpon>
     </EmbeddedResource>

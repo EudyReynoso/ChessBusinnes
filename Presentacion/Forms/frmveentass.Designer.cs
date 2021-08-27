@@ -36,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmveentass));
             this.dataGridPorductVentas = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.dataGridDetallaFactura = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -125,7 +126,7 @@
             this.dataGridPorductVentas.RowHeadersVisible = false;
             this.dataGridPorductVentas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridPorductVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridPorductVentas.Size = new System.Drawing.Size(647, 194);
+            this.dataGridPorductVentas.Size = new System.Drawing.Size(647, 271);
             this.dataGridPorductVentas.TabIndex = 51;
             // 
             // dataGridDetallaFactura
@@ -413,7 +414,7 @@
             this.btnAgregar.Depth = 0;
             this.btnAgregar.HighEmphasis = true;
             this.btnAgregar.Icon = global::Presentacion.Properties.Resources.add_24px;
-            this.btnAgregar.Location = new System.Drawing.Point(889, 381);
+            this.btnAgregar.Location = new System.Drawing.Point(363, 277);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAgregar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAgregar.Name = "btnAgregar";
@@ -509,12 +510,12 @@
             this.txtCantidadProducto.Depth = 0;
             this.txtCantidadProducto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCantidadProducto.LeadingIcon = null;
-            this.txtCantidadProducto.Location = new System.Drawing.Point(616, 371);
+            this.txtCantidadProducto.Location = new System.Drawing.Point(363, 184);
             this.txtCantidadProducto.MaxLength = 50;
             this.txtCantidadProducto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCantidadProducto.Multiline = false;
             this.txtCantidadProducto.Name = "txtCantidadProducto";
-            this.txtCantidadProducto.Size = new System.Drawing.Size(239, 50);
+            this.txtCantidadProducto.Size = new System.Drawing.Size(259, 50);
             this.txtCantidadProducto.TabIndex = 0;
             this.txtCantidadProducto.Text = "";
             this.txtCantidadProducto.TrailingIcon = null;
@@ -525,7 +526,7 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(525, 392);
+            this.materialLabel7.Location = new System.Drawing.Point(360, 126);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(65, 19);
@@ -579,6 +580,7 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dataGridDetallaFactura);
             this.Controls.Add(this.dataGridPorductVentas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmveentass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Procesador de ventas";
