@@ -6,6 +6,7 @@ using MaterialSkin.Controls;
 using CapaEntidades;
 using CapaEntidades.Cannom;
 using Presentacion.Forms;
+using Presentacion.Forms.FormReport;
 
 namespace Presentacion
 {
@@ -45,6 +46,7 @@ namespace Presentacion
             ValueComboRoles();
             RefrescarUsuarios();
             DetectedTypeUserByRole();
+            DatosVentas();
         }
         #region Login
         private void GetombreUsuarioInicio()
@@ -191,9 +193,9 @@ namespace Presentacion
         }
         private void materialButton13_Click(object sender, EventArgs e)
         {
-            frmReportEmpleados frmReportEmpleados = new frmReportEmpleados();
+            ReporteVEntas reporteVEntas = new ReporteVEntas();
 
-            frmReportEmpleados.Show();
+            reporteVEntas.Show();
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -365,6 +367,18 @@ namespace Presentacion
         private void tetBuscarEntrada_TextChanged(object sender, EventArgs e)
         {
             BuscarEntradasDeLecheBySuplidor(tetBuscarEntrada.Text);
+        }
+
+        private void BuscarFactura( string valor)
+        {
+            N_InsertOrdenElementos Orden = new N_InsertOrdenElementos();
+            DataGridListadoVentas.DataSource = Orden.BuscarVentasPorCodigo(valor);
+        }
+        public void DatosVentas()
+        {
+            N_InsertOrdenElementos Orden = new N_InsertOrdenElementos();
+
+            DataGridListadoVentas.DataSource = Orden.ListadoVentas();
         }
         private void ValoresCombosTabEntrada()
         {
@@ -722,9 +736,35 @@ namespace Presentacion
         private void materialButton8_Click(object sender, EventArgs e)
         {
             frmveentass frmVentas = new frmveentass();
-            frmVentas.Show();
+            frmVentas.ShowDialog();
         }
 
         #endregion
+
+        private void txtBuscarFactura_TextChanged(object sender, EventArgs e)
+        {
+            BuscarFactura(txtBuscarFactura.Text);
+        }
+
+        private void materialButton15_Click(object sender, EventArgs e)
+        {
+            frmReportVentas frmReportVentas = new frmReportVentas();
+
+            frmReportVentas.ShowDialog();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            frmReportEmpleados frmReportEmpleados = new frmReportEmpleados();
+
+            frmReportEmpleados.ShowDialog();
+        }
+
+        private void materialButton16_Click(object sender, EventArgs e)
+        {
+            frmReportProducto frmReportProducto = new frmReportProducto();
+
+            frmReportProducto.ShowDialog();
+        }
     }
 }

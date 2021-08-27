@@ -76,11 +76,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmAddUsario.cs">
+    <Compile Include="Forms\FormReport\frmFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAddUsario.Designer.cs">
-      <DependentUpon>frmAddUsario.cs</DependentUpon>
+    <Compile Include="Forms\FormReport\frmFactura.Designer.cs">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportProducto.Designer.cs">
+      <DependentUpon>frmReportProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportSuplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportSuplidores.Designer.cs">
+      <DependentUpon>frmReportSuplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport\frmReportVentas.Designer.cs">
+      <DependentUpon>frmReportVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmLogin.cs">
       <SubType>Form</SubType>
@@ -94,10 +112,10 @@
     <Compile Include="Forms\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmReportEmpleados.cs">
+    <Compile Include="Forms\FormReport\frmReportEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmReportEmpleados.Designer.cs">
+    <Compile Include="Forms\FormReport\frmReportEmpleados.Designer.cs">
       <DependentUpon>frmReportEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmveentass.cs">
@@ -106,10 +124,22 @@
     <Compile Include="Forms\frmveentass.Designer.cs">
       <DependentUpon>frmveentass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormReport\ReporteEntradaLeche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport\ReporteEntradaLeche.Designer.cs">
+      <DependentUpon>ReporteEntradaLeche.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frmAddUsario.resx">
-      <DependentUpon>frmAddUsario.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormReport\frmFactura.resx">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReport\frmReportProducto.resx">
+      <DependentUpon>frmReportProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReport\frmReportVentas.resx">
+      <DependentUpon>frmReportVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -117,11 +147,14 @@
     <EmbeddedResource Include="Forms\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmReportEmpleados.resx">
+    <EmbeddedResource Include="Forms\FormReport\frmReportEmpleados.resx">
       <DependentUpon>frmReportEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmveentass.resx">
       <DependentUpon>frmveentass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReport\ReporteEntradaLeche.resx">
+      <DependentUpon>ReporteEntradaLeche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,12 +166,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\Factura.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteEmpleados.rdlc" />
+    <EmbeddedResource Include="Reports\ReportEntradaLeche.rdlc" />
+    <EmbeddedResource Include="Reports\ReportProductos.rdlc" />
+    <EmbeddedResource Include="Reports\ReportSuplidores.rdlc" />
+    <EmbeddedResource Include="Reports\ReportVentas.rdlc" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaEntidades.E_Empleado.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_Factura.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_Orden.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_OrdenElementos.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_Producto.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_Suplidor.datasource" />
+    <None Include="Properties\DataSources\CapaEntidades.E_VentasReport.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.N_Empleado.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.N_EntradaDeLeche.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.N_EstadosDeLeche.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.N_Puestos.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.N_Suplidor.datasource" />
+    <None Include="Properties\DataSources\CapaModeloNegocio.ReportClass.ListaEntradas.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.ReportClses.ListaEntrada.datasource" />
     <None Include="Properties\DataSources\CapaModeloNegocio.ReportClses.N_EntradasReporte.datasource" />
     <None Include="Properties\Settings.settings">
@@ -204,8 +251,6 @@
     <None Include="Resources\add_24px.png" />
     <Content Include="Resources\undraw_secure_login_pdn4.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reports\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

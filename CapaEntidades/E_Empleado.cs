@@ -12,7 +12,9 @@ namespace CapaEntidades
         private string _nombre;
         private string _direccion;
         private int _sexo;
+        private string _sexoName;
         private int _puesto;
+        private string _puestoDescripcion;
         private string _departamento;
         private string _apellido;
         
@@ -23,5 +25,7 @@ namespace CapaEntidades
         public int Puesto { get => _puesto; set => _puesto = value; }
         public string Departamento { get => _departamento; set => _departamento = value; }
         public string Apellido { get => _apellido; set => _apellido = value; }
+        public string SexoName { get => _sexoName; set => _sexoName = value; }
+        public string PuestoDescripcion { get => _puestoDescripcion; set => _puestoDescripcion = value; }
     }
 }

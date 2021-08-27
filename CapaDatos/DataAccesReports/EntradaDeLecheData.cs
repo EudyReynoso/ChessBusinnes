@@ -26,7 +26,7 @@ namespace CapaDatos.DataAccesReports
 
             return dataTable;
         }
-        public DataTable EntradaDeleche()
+        public DataTable EntradaDelecheListado()
         {
 
             SqlCommand command = new SqlCommand("dbo.SP_GetALLEntradas", AbrirConexion())

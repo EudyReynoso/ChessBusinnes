@@ -1,12 +1,14 @@
 ﻿using System;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using CapaEntidades;
+using CapaModeloNegocio.ReportClass;
 
-namespace Presentacion.Forms
+namespace Presentacion.Forms.FormReport
 {
-    public partial class frmReportEmpleados : MaterialForm
+    public partial class frmReporteEmpleados : MaterialForm
     {
-        public frmReportEmpleados()
+        public frmReporteEmpleados()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -16,9 +18,10 @@ namespace Presentacion.Forms
                 TextShade.WHITE);
         }
 
-        private void frmReportEmpleados_Load(object sender, EventArgs e)
+        private void frmReporteEmpleados_Load(object sender, EventArgs e)
         {
-
+            ReportEmpleados reportEmpleados = new ReportEmpleados();
+            E_EmpleadoBindingSource.DataSource = reportEmpleados.obtenerListadoEmpleados();
             this.reportViewer1.RefreshReport();
         }
     }

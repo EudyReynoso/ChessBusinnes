@@ -13,11 +13,13 @@ namespace CapaEntidades
         private decimal _descuento;
         private int _ordenID;
         private string _fecha;
+        private string _codigoFactura;
 
         public decimal SubTotal { get => _subTotal; set => _subTotal = value; }
         public decimal Montototal { get => _montototal; set => _montototal = value; }
         public int OrdenID { get => _ordenID; set => _ordenID = value; }
         public string Fecha { get => _fecha; set => _fecha = value; }
         public decimal Descuento { get => _descuento; set => _descuento = value; }
+        public string CodigoFactura { get => _codigoFactura; set => _codigoFactura = value; }
     }
 }

@@ -59,15 +59,13 @@
             this.btnAgregar = new MaterialSkin.Controls.MaterialButton();
             this.btnImprimir = new MaterialSkin.Controls.MaterialButton();
             this.btnLimpiar = new MaterialSkin.Controls.MaterialButton();
-            this.btnRegrescar = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.txtDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.txtCantidadProducto = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.LabelPorducto = new MaterialSkin.Controls.MaterialLabel();
-            this.printDocumentFac = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPorductVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDetallaFactura)).BeginInit();
             this.materialCard1.SuspendLayout();
@@ -127,7 +125,7 @@
             this.dataGridPorductVentas.RowHeadersVisible = false;
             this.dataGridPorductVentas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridPorductVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridPorductVentas.Size = new System.Drawing.Size(647, 271);
+            this.dataGridPorductVentas.Size = new System.Drawing.Size(647, 194);
             this.dataGridPorductVentas.TabIndex = 51;
             // 
             // dataGridDetallaFactura
@@ -163,8 +161,8 @@
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridDetallaFactura.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridDetallaFactura.DoubleBuffered = false;
@@ -187,7 +185,7 @@
             this.dataGridDetallaFactura.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridDetallaFactura.RowHeadersVisible = false;
             this.dataGridDetallaFactura.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridDetallaFactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridDetallaFactura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridDetallaFactura.Size = new System.Drawing.Size(584, 250);
             this.dataGridDetallaFactura.TabIndex = 51;
             // 
@@ -235,7 +233,7 @@
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(816, 437);
+            this.materialCard1.Location = new System.Drawing.Point(628, 453);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
@@ -415,11 +413,11 @@
             this.btnAgregar.Depth = 0;
             this.btnAgregar.HighEmphasis = true;
             this.btnAgregar.Icon = global::Presentacion.Properties.Resources.add_24px;
-            this.btnAgregar.Location = new System.Drawing.Point(393, 330);
+            this.btnAgregar.Location = new System.Drawing.Point(889, 381);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAgregar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(170, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(259, 39);
             this.btnAgregar.TabIndex = 55;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -435,7 +433,7 @@
             this.btnImprimir.Depth = 0;
             this.btnImprimir.HighEmphasis = true;
             this.btnImprimir.Icon = global::Presentacion.Properties.Resources.print_24px;
-            this.btnImprimir.Location = new System.Drawing.Point(614, 518);
+            this.btnImprimir.Location = new System.Drawing.Point(1121, 577);
             this.btnImprimir.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnImprimir.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnImprimir.Name = "btnImprimir";
@@ -455,7 +453,7 @@
             this.btnLimpiar.Depth = 0;
             this.btnLimpiar.HighEmphasis = true;
             this.btnLimpiar.Icon = global::Presentacion.Properties.Resources.clear;
-            this.btnLimpiar.Location = new System.Drawing.Point(614, 453);
+            this.btnLimpiar.Location = new System.Drawing.Point(1121, 474);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLimpiar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLimpiar.Name = "btnLimpiar";
@@ -466,25 +464,6 @@
             this.btnLimpiar.UseAccentColor = false;
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnRegrescar
-            // 
-            this.btnRegrescar.AutoSize = false;
-            this.btnRegrescar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRegrescar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnRegrescar.Depth = 0;
-            this.btnRegrescar.HighEmphasis = true;
-            this.btnRegrescar.Icon = global::Presentacion.Properties.Resources.process_24px;
-            this.btnRegrescar.Location = new System.Drawing.Point(75, 330);
-            this.btnRegrescar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnRegrescar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnRegrescar.Name = "btnRegrescar";
-            this.btnRegrescar.Size = new System.Drawing.Size(170, 39);
-            this.btnRegrescar.TabIndex = 54;
-            this.btnRegrescar.Text = "Refrescar";
-            this.btnRegrescar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnRegrescar.UseAccentColor = false;
-            this.btnRegrescar.UseVisualStyleBackColor = true;
             // 
             // materialLabel1
             // 
@@ -499,25 +478,25 @@
             this.materialLabel1.TabIndex = 61;
             this.materialLabel1.Text = "Datos de la factura";
             // 
-            // bunifuDatepicker1
+            // txtDate
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(32, 162);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker1.TabIndex = 62;
-            this.bunifuDatepicker1.Value = new System.DateTime(2021, 8, 23, 12, 35, 17, 283);
+            this.txtDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.txtDate.BorderRadius = 0;
+            this.txtDate.ForeColor = System.Drawing.Color.White;
+            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtDate.FormatCustom = null;
+            this.txtDate.Location = new System.Drawing.Point(9, 240);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(303, 36);
+            this.txtDate.TabIndex = 62;
+            this.txtDate.Value = new System.DateTime(2021, 8, 23, 12, 35, 17, 283);
             // 
             // materialLabel6
             // 
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(29, 126);
+            this.materialLabel6.Location = new System.Drawing.Point(6, 204);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(44, 19);
@@ -530,7 +509,7 @@
             this.txtCantidadProducto.Depth = 0;
             this.txtCantidadProducto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCantidadProducto.LeadingIcon = null;
-            this.txtCantidadProducto.Location = new System.Drawing.Point(377, 162);
+            this.txtCantidadProducto.Location = new System.Drawing.Point(616, 371);
             this.txtCantidadProducto.MaxLength = 50;
             this.txtCantidadProducto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCantidadProducto.Multiline = false;
@@ -546,7 +525,7 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(374, 126);
+            this.materialLabel7.Location = new System.Drawing.Point(525, 392);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(65, 19);
@@ -558,7 +537,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(393, 401);
+            this.materialLabel8.Location = new System.Drawing.Point(287, 401);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(143, 19);
@@ -571,7 +550,7 @@
             this.LabelPorducto.Depth = 0;
             this.LabelPorducto.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.LabelPorducto.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.LabelPorducto.Location = new System.Drawing.Point(551, 401);
+            this.LabelPorducto.Location = new System.Drawing.Point(445, 401);
             this.LabelPorducto.MouseState = MaterialSkin.MouseState.HOVER;
             this.LabelPorducto.Name = "LabelPorducto";
             this.LabelPorducto.Size = new System.Drawing.Size(12, 24);
@@ -583,7 +562,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 720);
-            this.Controls.Add(this.bunifuDatepicker1);
+            this.Controls.Add(this.txtDate);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.txtCantidadProducto);
@@ -598,7 +577,6 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnRegrescar);
             this.Controls.Add(this.dataGridDetallaFactura);
             this.Controls.Add(this.dataGridPorductVentas);
             this.Name = "frmveentass";
@@ -622,7 +600,6 @@
         private MaterialSkin.Controls.MaterialButton btnAgregar;
         private MaterialSkin.Controls.MaterialButton btnImprimir;
         private MaterialSkin.Controls.MaterialButton btnLimpiar;
-        private MaterialSkin.Controls.MaterialButton btnRegrescar;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridDetallaFactura;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private System.Windows.Forms.TextBox txtBuscarProducto;
@@ -638,13 +615,12 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private Bunifu.Framework.UI.BunifuDatepicker txtDate;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialTextBox txtCantidadProducto;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel LabelPorducto;
-        private System.Drawing.Printing.PrintDocument printDocumentFac;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

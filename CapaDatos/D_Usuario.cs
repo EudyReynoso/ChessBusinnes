@@ -50,7 +50,7 @@ namespace CapaDatos
             command.Parameters.AddWithValue("@Contrasena", usuario.Password);
             command.Parameters.AddWithValue("@RoleId", usuario.RoleID);
             command.Parameters.AddWithValue("@Nombre", usuario.Firstname);
-            command.Parameters.AddWithValue("@Apellido", usuario.Loginname);
+            command.Parameters.AddWithValue("@Apellido", usuario.Lastname);
 
             command.ExecuteNonQuery();
             command.Parameters.Clear();

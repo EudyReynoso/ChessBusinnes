@@ -50,6 +50,13 @@
     <Compile Include="N_Suplidor.cs" />
     <Compile Include="N_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportClass\ListaEntradas.cs" />
+    <Compile Include="ReportClass\ListaEntradasNeta.cs" />
+    <Compile Include="ReportClass\ReporEntradas.cs" />
+    <Compile Include="ReportClass\ReportEmpleados.cs" />
+    <Compile Include="ReportClass\ReportProducto.cs" />
+    <Compile Include="ReportClass\ReportSuplidores.cs" />
+    <Compile Include="ReportVentasClass\ReportVentas.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
@@ -61,5 +68,6 @@
       <Name>CapaEntidades</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,8 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using CapaModeloNegocio;
 using CapaEntidades;
+using CapaModeloNegocio.ReportClass;
+using CapaEntidades.Cannom;
 
 namespace Presentacion.Forms
 {
@@ -111,6 +113,8 @@ namespace Presentacion.Forms
             PrecioProducto = 0;
             contadorProductos = 0;
             txtTotalAlPagar.Clear();
+            txtdDescuentoPorcentaje.Text = "";
+
         }
         private void txtdDescuentoPorcentaje_KeyUp(object sender, KeyEventArgs e)
         {
@@ -133,18 +137,76 @@ namespace Presentacion.Forms
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            foreach(DataGridViewRow Rows in dataGridDetallaFactura.Rows)
+            if (string.IsNullOrEmpty(txtdDescuentoPorcentaje.Text))
             {
-                E_OrdenElementos ordenElementos = new E_OrdenElementos
+                MaterialMessageBox.Show("Inserte el descuento para el calculo");
+            }
+            else
+            {
+                E_Orden orden = new E_Orden
                 {
-                    Idproducto = Convert.ToInt32(Rows.Cells[4].Value.ToString()),
-                    Cantidad = Convert.ToInt32(Rows.Cells[2].Value.ToString()),
-                    IdOrden = 4,
+                    Descuento = Convert.ToDecimal(txtDescuentoNormal.Text.Trim()),
+                    Montototal = Convert.ToDecimal(txtTotalAlPagar.Text.Trim()),
+                    Fecha = txtDate.Value.ToString("yyyy/MM/dd"),
+                    SubTotal = Convert.ToDecimal(txtGeneralSubTotal.Text.Trim())
+                };
+                N_InsertOrdenElementos Order = new N_InsertOrdenElementos();
+                
+                Order.InsertarOrdendate(orden);
+
+                foreach (DataGridViewRow Rows in dataGridDetallaFactura.Rows)
+                {
+                    E_OrdenElementos ordenElementos = new E_OrdenElementos();
+
+                    ordenElementos.Idproducto = Convert.ToInt32(Rows.Cells[4].Value.ToString());
+                    ordenElementos.Cantidad = Convert.ToInt32(Rows.Cells[2].Value.ToString());
+                    ordenElementos.IdOrden = Order.GetIdOrden();
+                    Order.InsertarOrdenElmemtos(ordenElementos);
+                }
+                //_______________//
+                frmFactura frmFactura = new frmFactura();
+
+                foreach (DataGridViewRow Rows in dataGridDetallaFactura.Rows)
+                {
+                    E_OrdenElementos ordenElementos = new E_OrdenElementos();
+                    
+                    ordenElementos.NombreProducto = Rows.Cells[0].Value.ToString();
+                    ordenElementos.PrecioProducto = Convert.ToDecimal(Rows.Cells[1].Value.ToString());
+                    ordenElementos.Cantidad = Convert.ToInt32(Rows.Cells[2].Value);
+                    ordenElementos.SubTotal = Convert.ToDecimal(Rows.Cells[3].Value);
+                    
+                    frmFactura.ordenElementosList.Add(ordenElementos);
+
+                }
+                string finalString = method2();
+                E_Factura factura = new E_Factura
+                {
+                    NombreVendedor = UserLoginChache.Nombre +" "+ UserLoginChache.Apellido,
+                    Codigofactura = Convert.ToString(Order.GetCodigoOrden() + finalString),
+                    Descuento = Convert.ToDecimal(txtDescuentoNormal.Text),
+                    SubtotalGeneral = Convert.ToDecimal(txtGeneralSubTotal.Text),
+                    TotalPago = Convert.ToDecimal(txtTotalAlPagar.Text)
                 };
 
-                N_InsertOrdenElementos ordenElementos1 = new N_InsertOrdenElementos();
-                ordenElementos1.InsertarOrdenElmemtos(ordenElementos);
+                frmFactura.facturas.Add(factura);
+                frmFactura.Show();
             }
+
+        }
+        public static string method2()
+        {
+            var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var Charsarr = new char[4];
+            var random = new Random();
+
+            for (int i = 0; i < Charsarr.Length; i++)
+            {
+                Charsarr[i] = characters[random.Next(characters.Length)];
+            }
+
+            var resultString = new String(Charsarr);
+
+            return resultString;
         }
     } 
 }

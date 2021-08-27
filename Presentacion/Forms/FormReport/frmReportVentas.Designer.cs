@@ -1,6 +1,6 @@
-﻿namespace Presentacion.Forms
+﻿namespace Presentacion.Forms.FormReport
 {
-    partial class frmReportEmpleados
+    partial class frmReportVentas
     {
         /// <summary>
         /// Required designer variable.
@@ -31,36 +31,39 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.ListaEntradaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ListaEntradaBindingSource)).BeginInit();
+            this.E_VentasReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.E_VentasReportBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
+            this.reportViewer1.BackColor = System.Drawing.Color.Silver;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.ListaEntradaBindingSource;
+            reportDataSource1.Value = this.E_VentasReportBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reports.ReporteEntradas.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Presentacion.Reports.ReportVentas.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(3, 64);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(916, 678);
+            this.reportViewer1.Size = new System.Drawing.Size(946, 722);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ListaEntradaBindingSource
+            // E_VentasReportBindingSource
             // 
+            this.E_VentasReportBindingSource.DataSource = typeof(CapaEntidades.E_VentasReport);
             // 
-            // frmReportEmpleados
+            // frmReportVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 745);
+            this.ClientSize = new System.Drawing.Size(952, 789);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "frmReportEmpleados";
-            this.Text = "Reportes de empleados";
-            this.Load += new System.EventHandler(this.frmReportEmpleados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ListaEntradaBindingSource)).EndInit();
+            this.Name = "frmReportVentas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reporte De Ventas";
+            this.Load += new System.EventHandler(this.frmReportVentas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.E_VentasReportBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -68,6 +71,6 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource ListaEntradaBindingSource;
+        private System.Windows.Forms.BindingSource E_VentasReportBindingSource;
     }
 }
