@@ -3,7 +3,7 @@ Este proyecto tiene la finalidad de solucionar el problema de registro en una em
 
 # Esta compuesta por los siguinetes modulos
 - Registro de empleado 
-<img src="https://github.com/EudyReynoso/ChessBusinnes/blob/master/Presentacion/ImgReaadme/ImgEmpleado.PNG" alt="Empleado" />
+<img src="https://github.com/EudyReynoso/ChessBusinnes/blob/master/Presentacion/ImgReaadme/inicioTabs.PNG" alt="Inicio" />
 
 - Registro de entrada de leche 
-<img src="https://github.com/EudyReynoso/ChessBusinnes/blob/master/Presentacion/ImgReaadme/ImgEstadoDeLeche.PNG" alt="Estado de leche" />
+<img src="https://github.com/EudyReynoso/ChessBusinnes/blob/master/Presentacion/ImgReaadme/Login.PNG" alt="Login" />
